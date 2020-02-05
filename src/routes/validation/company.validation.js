@@ -5,14 +5,70 @@
  * @subpackage validation/company.validation.js
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
-import { check } from '../../config/db.config';
-
-export const TestNameValidation = [
-  check('name').isString().withMessage('Name has to be of String type'),
-  check('name').isLength({min : 5, max : 35}).withMessage('Name has to be of length in between 5 to 35 character')
-];
+import {
+  check
+} from '../../config/db.config';
+import {
+  message
+} from '../../config/text.config';
 
 export const RegisterCompValidation = [
-  check('name').isString().withMessage('Name has to be of String type'),
-  check('name').isLength({min : 5, max : 35}).withMessage('Name has to be of length in between 5 to 35 character')
+  //Validation for required keys are present or not.
+  check('company_name').notEmpty().withMessage(message.basic.key_missing),
+  check('company_email').notEmpty().withMessage(message.basic.key_missing),
+  check('company_address').notEmpty().withMessage(message.basic.key_missing),
+  check('owner_name').notEmpty().withMessage(message.basic.key_missing),
+  check('owner_email').notEmpty().withMessage(message.basic.key_missing),
+  check('owner_mobile').notEmpty().withMessage(message.basic.key_missing),
+  check('owner_country').notEmpty().withMessage(message.basic.key_missing),
+
+  //Company name restriction for string type only.
+  check('company_name').isString().withMessage(message.compnay.name_type_err),
+
+  //Validation for company email.
+  check('company_email').isEmail().withMessage(message.compnay.invalid_email_err),
+  check('company_email').isLength({
+    min: 8,
+    max: 50
+  }).withMessage(message.compnay.email_length_err),
+
+  //validation for comapny address key
+  check('company_address').isString().withMessage(message.compnay.address_type),
+  check('company_address').isLength({
+    min: 10,
+    max: 150
+  }).withMessage(message.compnay.address_length),
+
+  //Validation for company owner name
+  check('owner_name').isString().withMessage(message.compnay.owner_name_type),
+  check('owner_name').isLength({
+    min: 5,
+    max: 50
+  }).withMessage(message.compnay.owner_name_length),
+
+  //Validation for owner_email key
+  check('owner_email').isEmail().withMessage(message.compnay.invalid_email_err),
+  check('owner_email').isLength({
+    min: 8,
+    max: 50
+  }).withMessage(message.compnay.email_length_err),
+
+  //Validation for owner mobile number
+  check('owner_mobile').isString().withMessage(message.compnay.owner_mobile_type),
+  check('owner_mobile').isLength({
+    min: 8,
+    max: 15
+  }).withMessage(message.compnay.owner_mobile_length),
+
+  //Validation for owner country
+  check('owner_country').isString().withMessage(message.compnay.owner_country_type),
+  check('owner_country').isLength({
+    min : 1,
+    max : 4
+  }).withMessage(message.compnay.owner_country_type_length)
 ];
+
+//Method for handling 
+export const companyRegistration = (req, res) =>{
+
+}

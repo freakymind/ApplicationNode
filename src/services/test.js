@@ -20,7 +20,7 @@ export class TestServices {
     try {
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
-        return res.status(422).send(await ResponseHandler.error(errors.array(), message.basic.error));
+        return res.status(422).send(await ResponseHandler.error(errors.array(), message.basic.req_body_validation_err));
       }
       let name = req.body.name;
       let TestDAORes = await TestDAO.saveName(name);
