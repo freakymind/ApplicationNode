@@ -12,8 +12,9 @@ export const message = {
     req_body_validation_err : 'Request body validation error. Please check the Request body.',
     key_missing : 'Key Missing'
   },
-  compnay : {
+  company : {
     succ : 'Company registered successfully.',
+    err : 'Error occured while registering company.',
     name_type_err : 'Comapny name has to be of string type',
     invalid_email_err : 'Invalid email type',
     email_length_err : 'Email has to be with in the length between 8 to 50 characters.',

@@ -1,3 +1,17 @@
 {"name":"dsc","hostname":"OJAS-DD132","pid":20017,"level":30,"msg":"hello","time":"2020-02-04T13:54:53.781Z","v":0}
 {"name":"dsc","hostname":"OJAS-DD132","pid":20017,"level":50,"msg":"Error","time":"2020-02-04T13:54:53.781Z","v":0}
 {"name":"dsc","hostname":"OJAS-DD132","pid":20017,"level":40,"msg":"Warn","time":"2020-02-04T13:54:53.781Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19541,"level":30,"msg":"hello","time":"2020-02-06T13:19:10.842Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19541,"level":50,"msg":"Error","time":"2020-02-06T13:19:10.843Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19541,"level":40,"msg":"Warn","time":"2020-02-06T13:19:10.843Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19822,"level":30,"msg":"hello","time":"2020-02-06T13:20:50.089Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19822,"level":50,"msg":"Error","time":"2020-02-06T13:20:50.090Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19822,"level":40,"msg":"Warn","time":"2020-02-06T13:20:50.090Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19822,"level":30,"msg":"registerCompany() method called","time":"2020-02-06T13:20:52.888Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19822,"level":30,"msg":"saveCompany() method called","time":"2020-02-06T13:20:52.888Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19822,"level":30,"msg":"getCompanyCol() initiated","time":"2020-02-06T13:20:52.888Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19822,"level":30,"msg":"getConn() initiated","time":"2020-02-06T13:20:52.889Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19822,"level":30,"msg":"Database connected","time":"2020-02-06T13:20:52.905Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19822,"level":30,"msg":"getConn() completed","time":"2020-02-06T13:20:52.905Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19822,"level":50,"err":{"message":"db is not defined","name":"ReferenceError","stack":"ReferenceError: db is not defined\n    at Function.getCompanyColl (/home/sssahu/Desktop/Dev/ApplicationNode/src/config/db.config.js:45:27)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"msg":"db is not defined","time":"2020-02-06T13:20:52.905Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19822,"level":50,"err":{"message":"Cannot read property 'insertOne' of undefined","name":"TypeError","stack":"TypeError: Cannot read property 'insertOne' of undefined\n    at Function.saveCompany (/home/sssahu/Desktop/Dev/ApplicationNode/src/dao/companyDAO.js:21:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"msg":"Cannot read property 'insertOne' of undefined","time":"2020-02-06T13:20:52.906Z","v":0}

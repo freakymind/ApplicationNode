@@ -23,52 +23,47 @@ export const RegisterCompValidation = [
   check('owner_country').notEmpty().withMessage(message.basic.key_missing),
 
   //Company name restriction for string type only.
-  check('company_name').isString().withMessage(message.compnay.name_type_err),
+  check('company_name').isString().withMessage(message.company.name_type_err),
 
   //Validation for company email.
-  check('company_email').isEmail().withMessage(message.compnay.invalid_email_err),
+  check('company_email').isEmail().withMessage(message.company.invalid_email_err),
   check('company_email').isLength({
     min: 8,
     max: 50
-  }).withMessage(message.compnay.email_length_err),
+  }).withMessage(message.company.email_length_err),
 
   //validation for comapny address key
-  check('company_address').isString().withMessage(message.compnay.address_type),
+  check('company_address').isString().withMessage(message.company.address_type),
   check('company_address').isLength({
     min: 10,
     max: 150
-  }).withMessage(message.compnay.address_length),
+  }).withMessage(message.company.address_length),
 
   //Validation for company owner name
-  check('owner_name').isString().withMessage(message.compnay.owner_name_type),
+  check('owner_name').isString().withMessage(message.company.owner_name_type),
   check('owner_name').isLength({
     min: 5,
     max: 50
-  }).withMessage(message.compnay.owner_name_length),
+  }).withMessage(message.company.owner_name_length),
 
   //Validation for owner_email key
-  check('owner_email').isEmail().withMessage(message.compnay.invalid_email_err),
+  check('owner_email').isEmail().withMessage(message.company.invalid_email_err),
   check('owner_email').isLength({
     min: 8,
     max: 50
-  }).withMessage(message.compnay.email_length_err),
+  }).withMessage(message.company.email_length_err),
 
   //Validation for owner mobile number
-  check('owner_mobile').isString().withMessage(message.compnay.owner_mobile_type),
+  check('owner_mobile').isString().withMessage(message.company.owner_mobile_type),
   check('owner_mobile').isLength({
     min: 8,
     max: 15
-  }).withMessage(message.compnay.owner_mobile_length),
+  }).withMessage(message.company.owner_mobile_length),
 
   //Validation for owner country
-  check('owner_country').isString().withMessage(message.compnay.owner_country_type),
+  check('owner_country').isString().withMessage(message.company.owner_country_type),
   check('owner_country').isLength({
     min : 1,
     max : 4
-  }).withMessage(message.compnay.owner_country_type_length)
+  }).withMessage(message.company.owner_country_type_length)
 ];
-
-//Method for handling 
-export const companyRegistration = (req, res) =>{
-
-}

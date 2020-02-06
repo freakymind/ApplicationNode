@@ -5,7 +5,7 @@
  * @subpackage routes/company
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
-import { TestServices } from '../../services/test';
+import { CompanyServices } from '../../services/company.service';
 import { RegisterCompValidation } from '../validation/company.validation';
 //Default route for checking server status
 router.get('/', (req, res)=>{
@@ -13,6 +13,6 @@ router.get('/', (req, res)=>{
 });
 
 //Router for Compeny registrtion
-router.post('/service/registerCompany', RegisterCompValidation, TestServices.saveTest);
+router.post('/service/registerCompany', RegisterCompValidation, CompanyServices.registerCompany);
 
 module.exports = router;
