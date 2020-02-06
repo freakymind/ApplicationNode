@@ -42,7 +42,7 @@ export class DbConn {
       if (this.coll == null) {
         let conn = await DbConn.getConn();
         this.db = await conn.db(process.env.DBNAME);
-        this.coll = await db.collection('company');
+        this.coll = await this.db.collection('company');
         log.info('getCompanyColl() completed');
       }
       return this.coll;
@@ -58,5 +58,6 @@ DbConn.conn = null;
 DbConn.coll = null;
 DbConn.url = 'mongodb://' + process.env.DBHOST + ':27017';
 DbConn.options = {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 }

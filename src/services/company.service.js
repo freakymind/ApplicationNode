@@ -34,7 +34,7 @@ export class CompanyServices {
         },
         user : [
           {
-            ownerName: req.body.owner_address,
+            ownerName: req.body.owner_name,
             ownerEmail: req.body.owner_email,
             ownerMobile: req.body.owner_mobile,
             ownerCountry: req.body.owner_country

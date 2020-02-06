@@ -1,2 +1,2 @@
 # MongodbUniversity
-This repo is the practice session of MongoDB University
+This repo is POC of BlockChain Tech.

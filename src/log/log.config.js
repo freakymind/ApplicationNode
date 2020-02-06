@@ -16,14 +16,6 @@ export const log = bunyan.createLogger({
       level: 'info',
       //stream : process.stdout,
       path: path.join(__dirname+'/info.log')            // log INFO and above to stdout
-    },
-    {
-      level: 'error',
-      path: path.join(__dirname+'/error.log')  // log ERROR and above to a file
-    },
-    {
-      level: 'warn',
-      path: path.join(__dirname+'/warn.log')  // log WARN and above to a file
     }
   ]
 });
