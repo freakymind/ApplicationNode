@@ -5,6 +5,8 @@ The reason behind the switch to Typescript is to follow best standards for a ent
 
 # Project Structure
 
+Note :- To get the proper structure please click edit button of this file.
+
 The idea is to follow different layers of architecture for this application. Where the UI layer will be fully design and mantained by Flutter or any other Front-End framework, Bussiness logic and Database access will be mantained here.
 
 
