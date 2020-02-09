@@ -9,7 +9,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //File import
 var bunyan = require('bunyan');
 var path = require('path');
-console.log(path.join(__dirname + '/info.log'));
 exports.log = bunyan.createLogger({
     name: 'dsc',
     streams: [

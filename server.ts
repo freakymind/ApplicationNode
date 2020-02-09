@@ -16,7 +16,7 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended : true}));
 
 //Router files
-app.use(require('./routes/API/company.api'));
+app.use(require('./src/routes/API/company.api'));
 
 app.listen( process.env.SERVER_PORT, () => {
   console.log('Server is running on port '+ process.env.SERVER_PORT + '...!!!');

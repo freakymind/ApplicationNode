@@ -36,35 +36,42 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * company controller
- * This file to extract request body data from request object.
- * @package src/controller
- * @subpackage controller/company.controller
- * @author Sekhara suman sahu <sekharasahu@gmail.com>
- */
-var common_config_1 = require("../config/common.config");
-var text_config_1 = require("../config/text.config");
-var response_config_1 = require("../config/response.config");
-var CompanyController = /** @class */ (function () {
-    function CompanyController() {
+var company_dao_1 = require("../model/dao/company.dao");
+var log_config_1 = require("../log/log.config");
+//Comapny class
+var CompanyServices = /** @class */ (function () {
+    function CompanyServices() {
     }
-    CompanyController.companyValidation = function (req, res) {
+    //Method for registering company.
+    CompanyServices.registerCompany = function (user, company) {
         return __awaiter(this, void 0, void 0, function () {
-            var errors, _a, _b;
-            return __generator(this, function (_c) {
-                switch (_c.label) {
+            var compnayDoc, saveComp, err_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
                     case 0:
-                        errors = common_config_1.validationResult(req);
-                        if (!!errors.isEmpty()) return [3 /*break*/, 2];
-                        _b = (_a = res.status(422)).send;
-                        return [4 /*yield*/, response_config_1.ResponseHandler.error(errors.array(), text_config_1.message.basic.req_body_validation_err)];
-                    case 1: return [2 /*return*/, _b.apply(_a, [_c.sent()])];
-                    case 2: return [2 /*return*/];
+                        compnayDoc = {
+                            user: [user],
+                            comapny: company
+                        };
+                        _a.label = 1;
+                    case 1:
+                        _a.trys.push([1, 3, , 4]);
+                        return [4 /*yield*/, company_dao_1.CompanyDAO.saveCompany(compnayDoc)];
+                    case 2:
+                        saveComp = _a.sent();
+                        //console.log("Saved");
+                        log_config_1.log.info("Company service called");
+                        return [3 /*break*/, 4];
+                    case 3:
+                        err_1 = _a.sent();
+                        console.log(err_1);
+                        log_config_1.log.error("Error occured at company services");
+                        return [3 /*break*/, 4];
+                    case 4: return [2 /*return*/];
                 }
             });
         });
     };
-    return CompanyController;
+    return CompanyServices;
 }());
-exports.CompanyController = CompanyController;
+exports.CompanyServices = CompanyServices;

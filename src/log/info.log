@@ -1,0 +1,4 @@
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":11424,"level":30,"msg":"DB Connected successfully...","time":"2020-02-09T14:24:22.156Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":11424,"level":30,"msg":"Comapany DAO called","time":"2020-02-09T14:24:22.170Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":11424,"level":30,"msg":"Company service called","time":"2020-02-09T14:24:22.171Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":11424,"level":30,"msg":"Comapny Controller called","time":"2020-02-09T14:24:22.171Z","v":0}

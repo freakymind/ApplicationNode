@@ -13,10 +13,10 @@ import { message } from '../../config/text.config';
     check('company_name').notEmpty().withMessage(message.basic.key_missing),
     check('company_email').notEmpty().withMessage(message.basic.key_missing),
     check('company_address').notEmpty().withMessage(message.basic.key_missing),
-    check('owner_name').notEmpty().withMessage(message.basic.key_missing),
-    check('owner_email').notEmpty().withMessage(message.basic.key_missing),
-    check('owner_mobile').notEmpty().withMessage(message.basic.key_missing),
-    check('owner_country').notEmpty().withMessage(message.basic.key_missing),
+    check('name').notEmpty().withMessage(message.basic.key_missing),
+    check('email').notEmpty().withMessage(message.basic.key_missing),
+    check('mobile').notEmpty().withMessage(message.basic.key_missing),
+    check('country').notEmpty().withMessage(message.basic.key_missing),
   
     //Company name restriction for string type only.
     check('company_name').isString().withMessage(message.company.name_type_err),
@@ -36,29 +36,29 @@ import { message } from '../../config/text.config';
     }).withMessage(message.company.address_length),
   
     //Validation for company owner name
-    check('owner_name').isString().withMessage(message.company.owner_name_type),
-    check('owner_name').isLength({
+    check('name').isString().withMessage(message.company.owner_name_type),
+    check('name').isLength({
       min: 5,
       max: 50
     }).withMessage(message.company.owner_name_length),
   
     //Validation for owner_email key
-    check('owner_email').isEmail().withMessage(message.company.invalid_email_err),
-    check('owner_email').isLength({
+    check('email').isEmail().withMessage(message.company.invalid_email_err),
+    check('email').isLength({
       min: 8,
       max: 50
     }).withMessage(message.company.email_length_err),
   
     //Validation for owner mobile number
-    check('owner_mobile').isString().withMessage(message.company.owner_mobile_type),
-    check('owner_mobile').isLength({
+    check('mobile').isString().withMessage(message.company.owner_mobile_type),
+    check('mobile').isLength({
       min: 8,
       max: 15
     }).withMessage(message.company.owner_mobile_length),
   
     //Validation for owner country
-    check('owner_country').isString().withMessage(message.company.owner_country_type),
-    check('owner_country').isLength({
+    check('country').isString().withMessage(message.company.owner_country_type),
+    check('country').isLength({
       min : 1,
       max : 4
     }).withMessage(message.company.owner_country_type_length)

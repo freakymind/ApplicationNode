@@ -8,7 +8,6 @@
 //File import
 const bunyan = require('bunyan');
 const path = require('path');
-console.log(path.join(__dirname+'/info.log'));
 
 export const log = bunyan.createLogger({
   name: 'dsc',

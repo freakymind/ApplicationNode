@@ -5,7 +5,7 @@
  * @subpackage routes/API/company
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
-import { router } from '../../../app';
+import { router } from '../../../server';
 import { CompRegValidation } from '../validation/company.validation';
 import { CompanyController } from '../../controller/company.controller';
 
