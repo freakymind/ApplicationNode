@@ -8,9 +8,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 var express = require("express");
 var bodyparser = require("body-parser");
-var log_config_1 = require("./log/log.config");
-log_config_1.log.info("Hello Sekhar Sahu");
-//declare let app : any;
 var app = express();
 exports.router = express.Router();
 require('dotenv').config();
