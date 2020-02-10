@@ -1,11 +1,11 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * app.js
  * This file acts as main file for this application a.k.a server file.
  * @package src/app.js
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
+Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
 const bodyparser = require("body-parser");
 const app = express();

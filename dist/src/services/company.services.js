@@ -22,13 +22,12 @@ class CompanyServices {
                 comapny: company
             };
             try {
-                let saveComp = yield company_dao_1.CompanyDAO.saveCompany(compnayDoc);
-                //console.log("Saved");
                 log_config_1.log.info("Company service called");
+                let saveComp = yield company_dao_1.CompanyDAO.saveCompany(compnayDoc);
+                return saveComp;
             }
             catch (err) {
-                console.log(err);
-                log_config_1.log.error("Error occured at company services");
+                log_config_1.log.error("Error occured at company services" + err);
             }
         });
     }

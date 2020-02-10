@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * company route
  * This file to define routes for company file.
@@ -7,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @subpackage routes/API/company
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
+Object.defineProperty(exports, "__esModule", { value: true });
 const server_1 = require("../../../server");
 const company_validation_1 = require("../validation/company.validation");
 const company_controller_1 = require("../../controller/company.controller");

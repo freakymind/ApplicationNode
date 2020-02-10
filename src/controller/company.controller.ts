@@ -5,6 +5,7 @@
  * @subpackage controller/company.controller
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
+import { Request, Response } from 'express';
 import { validationResult } from '../config/common.config';
 import { message } from '../config/text.config';
 import { ResponseHandler } from '../config/response.config';
@@ -14,7 +15,7 @@ import { CompanyServices } from '../services/company.services';
 import { log } from '../log/log.config';
 export class CompanyController {
 
-  static async companyValidation(req: any, res: any) {
+  static async companyValidation(req: Request, res: Response) {
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
@@ -35,15 +36,13 @@ export class CompanyController {
     let company = new Company(comapnyName, companyEmail, comapnyAddress);
 
     try {
-      let saveComp = await CompanyServices.registerCompany(user, company);
       log.info("Comapny Controller called");
+      let saveComp = await CompanyServices.registerCompany(user, company);
+      return res.status(201).send(await ResponseHandler.info(saveComp.ops, message.company.succ));
     }
     catch(err) {
       log.error("Error at company controller");
+      return res.status(500).send(ResponseHandler.error(err , message.company.err));
     }
-
-
-
-
   }
 }

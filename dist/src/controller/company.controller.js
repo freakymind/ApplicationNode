@@ -9,13 +9,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * company controller
- * This file to extract request body data from request object.
- * @package src/controller
- * @subpackage controller/company.controller
- * @author Sekhara suman sahu <sekharasahu@gmail.com>
- */
 const common_config_1 = require("../config/common.config");
 const text_config_1 = require("../config/text.config");
 const response_config_1 = require("../config/response.config");
@@ -41,11 +34,13 @@ class CompanyController {
             let user = new user_class_1.User(name, email, mobile, country);
             let company = new comapny_class_1.Company(comapnyName, companyEmail, comapnyAddress);
             try {
-                let saveComp = yield company_services_1.CompanyServices.registerCompany(user, company);
                 log_config_1.log.info("Comapny Controller called");
+                let saveComp = yield company_services_1.CompanyServices.registerCompany(user, company);
+                return res.status(201).send(yield response_config_1.ResponseHandler.info(saveComp.ops, text_config_1.message.company.succ));
             }
             catch (err) {
                 log_config_1.log.error("Error at company controller");
+                return res.status(500).send(response_config_1.ResponseHandler.error(err, text_config_1.message.company.err));
             }
         });
     }

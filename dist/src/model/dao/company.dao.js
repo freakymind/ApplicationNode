@@ -30,12 +30,11 @@ class CompanyDAO {
             try {
                 let db = yield db_config_1.DbConn.getCollObj();
                 let saveCompRes = yield db.insertOne(comapnyDoc);
-                console.log(saveCompRes);
                 log_config_1.log.info("Comapany DAO called");
+                return saveCompRes;
             }
             catch (err) {
-                console.log(err);
-                log_config_1.log.error("Company DAO error");
+                log_config_1.log.error("Company DAO error" + err);
             }
         });
     }
