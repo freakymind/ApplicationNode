@@ -7,8 +7,8 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 //File import
-var bunyan = require('bunyan');
-var path = require('path');
+const bunyan = require('bunyan');
+const path = require('path');
 exports.log = bunyan.createLogger({
     name: 'dsc',
     streams: [
@@ -19,3 +19,4 @@ exports.log = bunyan.createLogger({
         }
     ]
 });
+//# sourceMappingURL=log.config.js.map

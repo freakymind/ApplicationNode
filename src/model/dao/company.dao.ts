@@ -20,7 +20,7 @@ export class CompanyDAO {
   static async saveCompany(comapnyDoc : Object) {
     try {
       let db = await  DbConn.getCollObj();
-      let saveCompRes = db.insertOne(comapnyDoc);
+      let saveCompRes = await db.insertOne(comapnyDoc);
       console.log(saveCompRes);
       log.info("Comapany DAO called");
     }

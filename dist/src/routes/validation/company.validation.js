@@ -7,8 +7,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @subpackage validation/company.validation.js
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
-var common_config_1 = require("../../config/common.config");
-var text_config_1 = require("../../config/text.config");
+const common_config_1 = require("../../config/common.config");
+const text_config_1 = require("../../config/text.config");
 exports.CompRegValidation = [
     //Validation for required keys are present or not.
     common_config_1.check('company_name').notEmpty().withMessage(text_config_1.message.basic.key_missing),
@@ -57,3 +57,4 @@ exports.CompRegValidation = [
         max: 4
     }).withMessage(text_config_1.message.company.owner_country_type_length)
 ];
+//# sourceMappingURL=company.validation.js.map

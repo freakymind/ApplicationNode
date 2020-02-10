@@ -24,12 +24,12 @@ export class CompanyController {
     //TODO : Extract the data from request object and call the services
     let name : string = req.body.name;
     let email : string = req.body.email;
-    let mobile : string = req.body.name;
-    let country : number = req.body.name;
+    let mobile : string = req.body.mobile;
+    let country : number = req.body.country;
 
-    let comapnyName = String = req.body.company_name;
-    let companyEmail = String = req.body.comapany_email;
-    let comapnyAddress = String = req.body.comapny_address;
+    let comapnyName : string = req.body.company_name;
+    let companyEmail : string = req.body.company_email;
+    let comapnyAddress : string = req.body.company_address;
 
     let user = new User(name, email, mobile, country);
     let company = new Company(comapnyName, companyEmail, comapnyAddress);

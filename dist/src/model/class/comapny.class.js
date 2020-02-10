@@ -8,12 +8,12 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 //Comapny class
-var Company = /** @class */ (function () {
-    function Company(name, email, address) {
+class Company {
+    constructor(name, email, address) {
         this.compName = name;
         this.compEmail = email;
         this.compAddress = address;
     }
-    return Company;
-}());
+}
 exports.Company = Company;
+//# sourceMappingURL=comapny.class.js.map
