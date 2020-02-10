@@ -9,22 +9,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * Comapany DAO
- * This file is responsible for provide database access methods for company services.
- * @package src/model
- * @subpackage model/dao/company.dao
- * @author Sekhara suman sahu <sekharasahu@gmail.com>
- */
 const db_config_1 = require("../../config/db.config");
 const log_config_1 = require("../../log/log.config");
-//Comapny DAO class
 class CompanyDAO {
-    /**
-    @description Method for saving comapny object in DB.
-    @param : Compnay collection document.
-    @return Returns proper response for success and failure case.
-    */
     static saveCompany(comapnyDoc) {
         return __awaiter(this, void 0, void 0, function* () {
             try {

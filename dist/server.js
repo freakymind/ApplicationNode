@@ -1,22 +1,44 @@
 "use strict";
-/**
- * app.js
- * This file acts as main file for this application a.k.a server file.
- * @package src/app.js
- * @author Sekhara suman sahu <sekharasahu@gmail.com>
- */
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const express = require("express");
-const bodyparser = require("body-parser");
-const app = express();
-exports.router = express.Router();
-require('dotenv').config();
-app.use(bodyparser.json());
-app.use(bodyparser.urlencoded({ extended: true }));
-//Router files
+const express_1 = __importDefault(require("express"));
+const body_parser_1 = __importDefault(require("body-parser"));
+const dotenv = __importStar(require("dotenv"));
+const cors_1 = __importDefault(require("cors"));
+const app = express_1.default();
+exports.router = express_1.default.Router();
+dotenv.config();
+app.use(body_parser_1.default.json());
+app.use(body_parser_1.default.urlencoded({ extended: true }));
+app.all('*', (req, res) => {
+    res.status(404).json({
+        status: 'fail',
+        message: 'Requested route not found'
+    });
+});
+app.use(cors_1.default());
 app.use(require('./src/routes/API/company.api'));
-app.listen(process.env.SERVER_PORT, () => {
-    console.log('Server is running on port as ' + process.env.SERVER_PORT + '...!!!');
+app.get('/', (req, res) => {
+    console.log("hello krishna");
+    return res.send("welcome to app");
+});
+const server = app.listen(process.env.SERVER_PORT, () => {
+    console.log('Server is running on port ' + process.env.SERVER_PORT + '...!!!');
+});
+process.on('unhandledRejection', (err) => {
+    console.error('There was an uncaught error', err);
+    server.close(() => {
+        process.exit(1);
+    });
 });
 module.exports = app;
 //# sourceMappingURL=server.js.map

@@ -11,12 +11,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const company_dao_1 = require("../model/dao/company.dao");
 const log_config_1 = require("../log/log.config");
-//Comapny class
 class CompanyServices {
-    //Method for registering company.
     static registerCompany(user, company) {
         return __awaiter(this, void 0, void 0, function* () {
-            //Collection object
             let compnayDoc = {
                 user: [user],
                 comapny: company

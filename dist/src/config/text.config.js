@@ -1,11 +1,4 @@
 "use strict";
-/**
- * text config
- * This file is used for response message standardization.
- * @package src/config
- * @subpackage config/text.config
- * @author Sekhara suman sahu <sekharasahu@gmail.com>
- */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.message = {
     basic: {

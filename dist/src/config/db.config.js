@@ -9,17 +9,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * db config
- * db file is to store all the database configurations required for the application. it get the value from
- * the .env file present at src/.env
- * @package src/config
- * @subpackage config/db.config
- * @author Sekhara suman sahu <sekharasahu@gmail.com>
- */
 const log_config_1 = require("../log/log.config");
 const text_config_1 = require("../config/text.config");
-//Mongodb configuration class
 const MongoClient = require('mongodb').MongoClient;
 class DbConn {
     static getCollObj() {

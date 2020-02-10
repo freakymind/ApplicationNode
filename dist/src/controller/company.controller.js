@@ -23,7 +23,6 @@ class CompanyController {
             if (!errors.isEmpty()) {
                 return res.status(422).send(yield response_config_1.ResponseHandler.error(errors.array(), text_config_1.message.basic.req_body_validation_err));
             }
-            //TODO : Extract the data from request object and call the services
             let name = req.body.name;
             let email = req.body.email;
             let mobile = req.body.mobile;
