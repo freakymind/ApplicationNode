@@ -8,8 +8,8 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 //User class
-var User = /** @class */ (function () {
-    function User(name, email, mobile, country) {
+class User {
+    constructor(name, email, mobile, country) {
         this.userName = name;
         this.userEmail = email;
         this.userMmobile = mobile;
@@ -17,12 +17,12 @@ var User = /** @class */ (function () {
         this.password = this.generatePassword();
         this.role = this.setRole();
     }
-    User.prototype.generatePassword = function () {
+    generatePassword() {
         return "xyz";
-    };
-    User.prototype.setRole = function () {
+    }
+    setRole() {
         return "COMPANY_ADMIN";
-    };
-    return User;
-}());
+    }
+}
 exports.User = User;
+//# sourceMappingURL=user.class.js.map

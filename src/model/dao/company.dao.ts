@@ -17,18 +17,15 @@ export class CompanyDAO {
   @return Returns proper response for success and failure case.
   */
 
-  static async saveCompany(comapnyDoc : Object) {
+  static async saveCompany(comapnyDoc: Object) {
     try {
-      let db = await  DbConn.getCollObj();
-      let saveCompRes = db.insertOne(comapnyDoc);
-      console.log(saveCompRes);
+      let db = await DbConn.getCollObj();
+      let saveCompRes = await db.insertOne(comapnyDoc);
       log.info("Comapany DAO called");
+      return saveCompRes;
     }
     catch (err) {
-      console.log(err);
-      log.error("Company DAO error");
-      
+      log.error("Company DAO error" + err);
     }
-
   }
 }

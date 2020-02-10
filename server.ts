@@ -38,4 +38,4 @@ process.on('unhandledRejection', (err: any) => {
     process.exit(1);
   });
 });
-module.exports = app;debug node js in chrome while using typescript
+module.exports = app;

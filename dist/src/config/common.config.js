@@ -8,4 +8,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @subpackage config/common.config
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
-exports.check = (_a = require('express-validator'), _a.check), exports.validationResult = _a.validationResult, exports.body = _a.body;
+_a = require('express-validator'), exports.check = _a.check, exports.validationResult = _a.validationResult, exports.body = _a.body;
+//# sourceMappingURL=common.config.js.map

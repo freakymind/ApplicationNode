@@ -31,3 +31,4 @@ exports.message = {
         owner_country_type_length: 'Company country type length has to be in between 1 to 4 character.'
     }
 };
+//# sourceMappingURL=text.config.js.map

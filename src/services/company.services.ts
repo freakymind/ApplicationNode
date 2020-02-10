@@ -16,24 +16,20 @@ import { log } from "../log/log.config";
 export class CompanyServices {
 
   //Method for registering company.
-  static async registerCompany (user : User, company : Company) {
+  static async registerCompany(user: User, company: Company) {
     //Collection object
-    let compnayDoc : object ={
-      user : [user],
-      comapny : company
+    let compnayDoc: object = {
+      user: [user],
+      comapny: company
     }
 
     try {
-      let saveComp = await CompanyDAO.saveCompany(compnayDoc);
-      //console.log("Saved");
       log.info("Company service called")
-      
+      let saveComp = await CompanyDAO.saveCompany(compnayDoc);
+      return saveComp;
     }
     catch (err) {
-      console.log(err);
-      log.error("Error occured at company services");
-      
+      log.error("Error occured at company services" + err);
     }
-
   }
 }
