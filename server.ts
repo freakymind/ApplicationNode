@@ -4,21 +4,38 @@
  * @package src/app.js
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
-import express = require('express');
-import bodyparser = require('body-parser');
+import express,{Request,Response,NextFunction} from 'express';
+import bodyparser from 'body-parser';
+import * as dotenv from "dotenv";
+import cors from "cors";
 
 const app : express.Application = express();
 export const router : express.Router = express.Router();
 
-require('dotenv').config();
+dotenv.config();
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended : true}));
+app.all('*', (req:Request, res:Response) => {
+  res.status(404).json({
+    status: 'fail',
+    message: 'Requested route not found'
+  })
+});
+
+
+app.use(cors());
 
 //Router files
 app.use(require('./src/routes/API/company.api'));
 
-app.listen( process.env.SERVER_PORT, () => {
+const server:any = app.listen( process.env.SERVER_PORT, () => {
   console.log('Server is running on port '+ process.env.SERVER_PORT + '...!!!');
 })
-module.exports = app;
+process.on('unhandledRejection', (err: any) => {
+  console.error('There was an uncaught error', err);
+  server.close(() => {
+    process.exit(1);
+  });
+});
+module.exports = app;debug node js in chrome while using typescript
