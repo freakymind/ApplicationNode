@@ -7,7 +7,7 @@
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
 import { log } from '../log/log.config';
-import { message } from '../config/text.config';
+import { message } from '../util/text.config';
 //Mongodb configuration class
 const MongoClient = require('mongodb').MongoClient;
 
@@ -16,7 +16,7 @@ export class DbConn {
   private static conn: any = null;
   private static db: any = null;
   private static coll: any = null;
-  private static url: any = 'mongodb://' + process.env.DBHOST + ':'+ process.env.DBPORT;
+  private static url: any = 'mongodb://' + process.env.DBHOST + ':' + process.env.DBPORT;
   private static options: object = {
     useNewUrlParser: true,
     useUnifiedTopology: true

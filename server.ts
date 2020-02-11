@@ -9,19 +9,19 @@ import bodyparser from 'body-parser';
 import * as dotenv from "dotenv";
 import cors from 'cors';
 
-const app : express.Application = express();
-export const router : express.Router = express.Router();
+const app: express.Application = express();
+export const router: express.Router = express.Router();
 
 dotenv.config();
 
 app.use(bodyparser.json());
-app.use(bodyparser.urlencoded({extended : true}));
+app.use(bodyparser.urlencoded({ extended: true }));
 
 app.use(cors());
 //Router files
-app.use('/service',require('./src/routes/API/company.api'));
+app.use('/service', require('./src/routes/API/company.api'));
 //console.log("hello");
-app.all('*', (req:Request, res:Response) => {
+app.all('*', (req: Request, res: Response) => {
   res.status(404).json({
     status: 'fail',
     message: 'Requested route not found'
@@ -29,13 +29,15 @@ app.all('*', (req:Request, res:Response) => {
 });
 
 
-const server:any = app.listen( process.env.SERVER_PORT, () => {
-  console.log('Server is running on port '+ process.env.SERVER_PORT + '...!!!');
+const server: any = app.listen(process.env.SERVER_PORT, () => {
+  console.log('Server is running on port ' + process.env.SERVER_PORT + '...!!!');
 })
+
 process.on('unhandledRejection', (err: any) => {
   console.error('There was an uncaught error', err);
   server.close(() => {
     process.exit(1);
   });
 });
+
 module.exports = app;

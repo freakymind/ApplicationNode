@@ -5,8 +5,8 @@
  * @subpackage validation/company.validation.js
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
-import { check } from '../../config/common.config';
-import { message } from '../../config/text.config';
+import { check } from '../../util/common.config';
+import { message } from '../../util/text.config';
   
   export const CompRegValidation = [
     //Validation for required keys are present or not.

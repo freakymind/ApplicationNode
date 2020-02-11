@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const log_config_1 = require("../log/log.config");
-const text_config_1 = require("../config/text.config");
+const text_config_1 = require("../util/text.config");
 const MongoClient = require('mongodb').MongoClient;
 class DbConn {
     static getCollObj() {

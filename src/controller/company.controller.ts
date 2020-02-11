@@ -6,9 +6,9 @@
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
 import { Request, Response } from 'express';
-import { validationResult } from '../config/common.config';
-import { message } from '../config/text.config';
-import { ResponseHandler } from '../config/response.config';
+import { validationResult } from '../util/common.config';
+import { message } from '../util/text.config';
+import { ResponseHandler } from '../util/response.config';
 import { User } from '../model/class/user.class';
 import { Company } from '../model/class/comapny.class';
 import { CompanyServices } from '../services/company.services';
