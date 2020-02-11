@@ -16,17 +16,17 @@ dotenv.config();
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended : true}));
+
+app.use(cors());
+//Router files
+app.use('/service',require('./src/routes/API/company.api'));
+//console.log("hello");
 app.all('*', (req:Request, res:Response) => {
   res.status(404).json({
     status: 'fail',
     message: 'Requested route not found'
   })
 });
-
-app.use(cors());
-//Router files
-app.use(require('./src/routes/API/company.api'));
-console.log("hello");
 
 
 const server:any = app.listen( process.env.SERVER_PORT, () => {

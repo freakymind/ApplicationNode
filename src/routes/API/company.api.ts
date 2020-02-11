@@ -12,11 +12,11 @@ import { CompRegValidation } from '../validation/company.validation';
 import { CompanyController } from '../../controller/company.controller';
 
 //Default route for checking server status
-router.get('/', (req  : Request, res : Response)=>{
+router.get('/test', (req  : Request, res : Response)=>{
   res.status(200).send({msg : 'Server running...!!!', status : 0});
 });
 
 //Router for Compeny registrtion
-router.post('/service/registerCompany', CompRegValidation, CompanyController.companyValidation);
+router.post('/registerCompany', CompRegValidation, CompanyController.companyValidation);
 
 module.exports = router;
