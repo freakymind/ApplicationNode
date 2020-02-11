@@ -21,12 +21,26 @@ export class DbConn {
     useNewUrlParser: true,
     useUnifiedTopology: true
   };
+  //Method for getting connection object
+  static async getConnObj() {
+    try {
+      if (this.conn == null) {
+        this.client = new MongoClient(this.url, this.options);
+        this.conn = await this.client.connect();
+      }
+      return this.conn;
+    }
+    catch (err) {
+      log.error(err);
+      throw err;
+    }
+  }
 
+  //Method for getting collection object
   static async getCollObj() {
     try {
       if (this.coll == null) {
-        this.client = await new MongoClient(this.url, this.options);
-        this.conn = await this.client.connect();
+        this.conn = await this.getConnObj();
         this.db = await this.conn.db(process.env.DBNAME);
         this.coll = await this.db.collection(process.env.COLLNAME);
       }
@@ -35,6 +49,7 @@ export class DbConn {
     }
     catch (err) {
       log.error(message.basic.db_err + err);
+      throw err;
     }
   }
 }

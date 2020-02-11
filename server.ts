@@ -28,7 +28,6 @@ app.all('*', (req: Request, res: Response) => {
   })
 });
 
-
 const server: any = app.listen(process.env.SERVER_PORT, () => {
   console.log('Server is running on port ' + process.env.SERVER_PORT + '...!!!');
 })

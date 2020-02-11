@@ -27,6 +27,9 @@ app.all('*', (req, res) => {
         message: 'Requested route not found'
     });
 });
+const init_config_1 = require("./src/config/init.config");
+init_config_1.Init.init();
+init_config_1.Init.insert();
 const server = app.listen(process.env.SERVER_PORT, () => {
     console.log('Server is running on port ' + process.env.SERVER_PORT + '...!!!');
 });

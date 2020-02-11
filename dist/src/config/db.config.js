@@ -13,12 +13,26 @@ const log_config_1 = require("../log/log.config");
 const text_config_1 = require("../util/text.config");
 const MongoClient = require('mongodb').MongoClient;
 class DbConn {
+    static getConnObj() {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                if (this.conn == null) {
+                    this.client = new MongoClient(this.url, this.options);
+                    this.conn = yield this.client.connect();
+                }
+                return this.conn;
+            }
+            catch (err) {
+                log_config_1.log.error(err);
+                throw err;
+            }
+        });
+    }
     static getCollObj() {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 if (this.coll == null) {
-                    this.client = yield new MongoClient(this.url, this.options);
-                    this.conn = yield this.client.connect();
+                    this.conn = yield this.getConnObj();
                     this.db = yield this.conn.db(process.env.DBNAME);
                     this.coll = yield this.db.collection(process.env.COLLNAME);
                 }
@@ -27,6 +41,7 @@ class DbConn {
             }
             catch (err) {
                 log_config_1.log.error(text_config_1.message.basic.db_err + err);
+                throw err;
             }
         });
     }
