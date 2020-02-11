@@ -16,7 +16,7 @@ import { message } from '../../config/text.config';
     check('name').notEmpty().withMessage(message.basic.key_missing),
     check('email').notEmpty().withMessage(message.basic.key_missing),
     check('mobile').notEmpty().withMessage(message.basic.key_missing),
-    check('country').notEmpty().withMessage(message.basic.key_missing),
+    check('country').notEmpty().withMessage(message.basic.key_missing),    
   
     //Company name restriction for string type only.
     check('company_name').isString().withMessage(message.company.name_type_err),
@@ -54,7 +54,7 @@ import { message } from '../../config/text.config';
     check('mobile').isLength({
       min: 8,
       max: 15
-    }).withMessage(message.company.owner_mobile_length),
+    }).withMessage(message.company.owner_mobile_length),  
   
     //Validation for owner country
     check('country').isString().withMessage(message.company.owner_country_type),

@@ -16,19 +16,18 @@ dotenv.config();
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended : true}));
+
+app.use(cors());
+//Router files
+app.use('/service',require('./src/routes/API/company.api'));
+
 app.all('*', (req:Request, res:Response) => {
   res.status(404).json({
     status: 'fail',
     message: 'Requested route not found'
   })
 });
-
-app.use(cors());
-//Router files
-app.use(require('./src/routes/API/company.api'));
 console.log("hello");
-
-
 const server:any = app.listen( process.env.SERVER_PORT, () => {
   console.log('Server is running on port '+ process.env.SERVER_PORT + '...!!!');
 })
