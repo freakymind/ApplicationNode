@@ -9,9 +9,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const common_config_1 = require("../config/common.config");
-const text_config_1 = require("../config/text.config");
-const response_config_1 = require("../config/response.config");
+const common_config_1 = require("../util/common.config");
+const text_config_1 = require("../util/text.config");
+const response_config_1 = require("../util/response.config");
 const user_class_1 = require("../model/class/user.class");
 const comapny_class_1 = require("../model/class/comapny.class");
 const company_services_1 = require("../services/company.services");

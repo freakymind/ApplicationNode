@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const common_config_1 = require("../../config/common.config");
-const text_config_1 = require("../../config/text.config");
+const common_config_1 = require("../../util/common.config");
+const text_config_1 = require("../../util/text.config");
 exports.CompRegValidation = [
     common_config_1.check('company_name').notEmpty().withMessage(text_config_1.message.basic.key_missing),
     common_config_1.check('company_email').notEmpty().withMessage(text_config_1.message.basic.key_missing),

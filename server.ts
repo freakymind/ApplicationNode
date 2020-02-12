@@ -9,8 +9,8 @@ import bodyparser from 'body-parser';
 import * as dotenv from "dotenv";
 import cors from 'cors';
 
-const app : express.Application = express();
-export const router : express.Router = express.Router();
+const app: express.Application = express();
+export const router: express.Router = express.Router();
 
 dotenv.config();
 
@@ -31,10 +31,12 @@ console.log("hello");
 const server:any = app.listen( process.env.SERVER_PORT, () => {
   console.log('Server is running on port '+ process.env.SERVER_PORT + '...!!!');
 })
+
 process.on('unhandledRejection', (err: any) => {
   console.error('There was an uncaught error', err);
   server.close(() => {
     process.exit(1);
   });
 });
+
 module.exports = app;
