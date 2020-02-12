@@ -71,25 +71,4 @@ export class CompanyController {
       next(err);
     }
   }
-
-  async login(req:Request,res:Response,next:NextFunction) {
-    try {
-      const companyServices = new CompanyServices();
-      let userName :string = req.body.userName;
-      let password:string = req.body.password;
-      let getDetails:any = await companyServices.getDetails(userName,password,next);
-      if(getDetails.status == 0) {       
-        console.log("get",getDetails);
-        delete getDetails.status;
-        let data = getDetails;    
-       return res.status(200).send(await ResponseHandler.info(data,"login successfully done"));
-      } 
-      else {
-        return res.status(401).send(await ResponseHandler.error({},getDetails.message));
-      }     
-
-    } catch(err) {
-      next(err);
-    }
-  }
 }
