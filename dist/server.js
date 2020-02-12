@@ -27,6 +27,7 @@ app.all('*', (req, res) => {
         message: 'Requested route not found'
     });
 });
+console.log("hello");
 const server = app.listen(process.env.SERVER_PORT, () => {
     console.log('Server is running on port ' + process.env.SERVER_PORT + '...!!!');
 });

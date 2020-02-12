@@ -32,8 +32,8 @@ export class CompanyDAO {
     try{
       console.log(userData);
       let db = await DbConn.getCollObj();
-      let getDetails = await db.findOne({'user.userEmail':userData.userEmail})
-      console.log(getDetails);
+      let getDetails = await db.findOne({'user.userEmail':userData.userEmail},{'user.randomString':0});
+     // console.log(getDetails);
       return getDetails;
 
     } catch(err) {

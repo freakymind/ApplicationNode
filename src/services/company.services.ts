@@ -12,12 +12,16 @@ import { CompanyDAO } from '../model/dao/company.dao';
 import { log } from "../log/log.config";
 import * as passwordHash from 'password-hash';
 import * as jwt from 'jsonwebtoken';
-import * as dotenv from "dotenv";
-dotenv.config();
+import { NextFunction } from "express";
+
+
+
+
 //Comapny cla
 export class CompanyServices {
+  private secretKey:any = process.env.SECRETKEY;
   private generateToken(id:string) {
-    return jwt.sign({email:id},'BLOCKCHAIN',{
+    return jwt.sign({email:id},this.secretKey,{
       expiresIn:'30MIN'      
     })    
   }
@@ -33,6 +37,8 @@ export class CompanyServices {
     try {
       log.info("Company service called")
       let saveComp = await CompanyDAO.saveCompany(compnayDoc);
+      delete saveComp.ops[0].user[0].randomString;
+      delete saveComp.ops[0].user[0].password;
       return saveComp;
     }
     catch (err) {
@@ -40,7 +46,7 @@ export class CompanyServices {
     }
   }
 
-  async getDetails(userName:string,password:string):Promise<void> {
+  async getDetails(userName:string,password:string,next:NextFunction):Promise<void> {
     const companyDao = new CompanyDAO();
     let usrPwd:string = password;
     let userData = {
@@ -56,17 +62,27 @@ export class CompanyServices {
           if(passwordHash.verify(usrPwd,user.password)) {
             let token:any =this.generateToken(userData.userEmail);
             if(token) {
-             user.token = token;
+             user.token = token; 
+             user.status = 0;           
              delete user.password;
              return user;
-            }
-              
+            }              
+          } else {
+           let user:any = {};
+           user["status"] = 1;
+           user["message"]='invalid password';
+           return user;
           }
         }
+      } else {
+        let user:any = {};
+           user["status"] = 1;
+           user["message"]='invalid userName';
+           return user;
       }
-
     } catch(err) {
       log.error("Error occured at company services" + err);
+      next(err);
     }
   }
 

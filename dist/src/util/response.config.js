@@ -30,4 +30,15 @@ class ResponseHandler {
     }
 }
 exports.ResponseHandler = ResponseHandler;
+class AppError extends Error {
+    constructor(message, statusCode) {
+        super();
+        this.statusCode = statusCode;
+        this.message = message;
+        this.status = `${statusCode}`.startsWith('4') ? 'fail' : 'error';
+        this.isOperational = true;
+        Error.captureStackTrace(this, this.constructor);
+    }
+}
+exports.AppError = AppError;
 //# sourceMappingURL=response.config.js.map

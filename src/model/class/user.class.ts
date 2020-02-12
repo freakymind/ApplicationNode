@@ -28,6 +28,7 @@ export class User {
   public generateRandomNumber() {
      //let randomNumber = Math.random().toString(36).substring(7);
      let randomNumber = "ojas1525";
+     console.log(randomNumber);
      return randomNumber;
   }
   private generatePassword(randomString:any) {    
