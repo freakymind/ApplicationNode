@@ -25,6 +25,7 @@ class CompanyServices {
             }
             catch (err) {
                 log_config_1.log.error("Error occured at company services" + err);
+                throw err;
             }
         });
     }

@@ -30,6 +30,7 @@ export class CompanyServices {
     }
     catch (err) {
       log.error("Error occured at company services" + err);
+      throw err;
     }
   }
 }

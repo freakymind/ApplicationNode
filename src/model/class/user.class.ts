@@ -16,12 +16,12 @@ export class User {
   userCountry: number;
   role: string;
 
-  constructor(name: string, email: string, mobile: string, country: number) {
+  constructor(name: string, email: string, password : string, mobile: string, country: number) {
     this.userName = name;
     this.userEmail = email;
     this.userMmobile = mobile;
     this.userCountry = country;
-    this.password = this.generatePassword();
+    this.password = (password != "undefined" && password != null && password == '') ? password : this.generatePassword();
     this.role = this.setRole();
   }
 

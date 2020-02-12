@@ -27,10 +27,11 @@ class CompanyController {
             let email = req.body.email;
             let mobile = req.body.mobile;
             let country = req.body.country;
+            let password = req.body.password;
             let comapnyName = req.body.company_name;
             let companyEmail = req.body.company_email;
             let comapnyAddress = req.body.company_address;
-            let user = new user_class_1.User(name, email, mobile, country);
+            let user = new user_class_1.User(name, email, password, mobile, country);
             let company = new comapny_class_1.Company(comapnyName, companyEmail, comapnyAddress);
             try {
                 log_config_1.log.info("Comapny Controller called");
