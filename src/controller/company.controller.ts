@@ -29,7 +29,7 @@ export class CompanyController {
     let name : string = req.body.name;
     let email : string = req.body.email;
     let mobile : string = req.body.mobile;
-    let country : number = req.body.country;
+    let country : string = req.body.country;
     let password : string = req.body.password;
 
     let comapnyName : string = req.body.company_name;
@@ -47,7 +47,28 @@ export class CompanyController {
     }
     catch(err) {
       log.error("Error at company controller");
-      return res.status(500).send(ResponseHandler.error(err , message.company.err));
+      return res.status(500).send(await ResponseHandler.error(err , message.company.err));
+    }
+  }
+
+  async login(req:Request,res:Response,next:NextFunction) {
+    try {
+      const companyServices = new CompanyServices();
+      let userName :string = req.body.userName;
+      let password:string = req.body.password;
+      let getDetails:any = await companyServices.getDetails(userName,password,next);
+      if(getDetails.status == 0) {       
+        console.log("get",getDetails);
+        delete getDetails.status;
+        let data = getDetails;    
+       return res.status(200).send(await ResponseHandler.info(data,"login successfully done"));
+      } 
+      else {
+        return res.status(401).send(await ResponseHandler.error({},getDetails.message));
+      }     
+
+    } catch(err) {
+      next(err);
     }
   }
 

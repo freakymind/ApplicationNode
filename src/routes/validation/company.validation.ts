@@ -60,6 +60,6 @@ import { message } from '../../util/text.config';
     check('country').isString().withMessage(message.company.owner_country_type),
     check('country').isLength({
       min : 1,
-      max : 4
+      max : 25
     }).withMessage(message.company.owner_country_type_length)
   ];

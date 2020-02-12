@@ -40,7 +40,29 @@ class CompanyController {
             }
             catch (err) {
                 log_config_1.log.error("Error at company controller");
-                return res.status(500).send(response_config_1.ResponseHandler.error(err, text_config_1.message.company.err));
+                return res.status(500).send(yield response_config_1.ResponseHandler.error(err, text_config_1.message.company.err));
+            }
+        });
+    }
+    login(req, res, next) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const companyServices = new company_services_1.CompanyServices();
+                let userName = req.body.userName;
+                let password = req.body.password;
+                let getDetails = yield companyServices.getDetails(userName, password, next);
+                if (getDetails.status == 0) {
+                    console.log("get", getDetails);
+                    delete getDetails.status;
+                    let data = getDetails;
+                    return res.status(200).send(yield response_config_1.ResponseHandler.info(data, "login successfully done"));
+                }
+                else {
+                    return res.status(401).send(yield response_config_1.ResponseHandler.error({}, getDetails.message));
+                }
+            }
+            catch (err) {
+                next(err);
             }
         });
     }

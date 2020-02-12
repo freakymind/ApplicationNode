@@ -33,7 +33,9 @@ class CompanyServices {
         return __awaiter(this, void 0, void 0, function* () {
             let compnayDoc = {
                 user: [user],
-                comapny: company
+                comapny: company,
+                distributor: [],
+                products: []
             };
             try {
                 log_config_1.log.info("Company service called");
@@ -44,7 +46,51 @@ class CompanyServices {
             }
             catch (err) {
                 log_config_1.log.error("Error occured at company services" + err);
-                throw err;
+                throw new Error(err);
+            }
+        });
+    }
+    getDetails(userName, password, next) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const companyDao = new company_dao_1.CompanyDAO();
+            let usrPwd = password;
+            let userData = {
+                userEmail: userName,
+                password: passwordHash.generate(password)
+            };
+            try {
+                let getDetails = yield companyDao.getDetails_User(userData);
+                if (getDetails) {
+                    console.log("getDetails", getDetails);
+                    for (let user of getDetails.user) {
+                        console.log("user", user);
+                        if (passwordHash.verify(usrPwd, user.password)) {
+                            let token = this.generateToken(userData.userEmail);
+                            if (token) {
+                                user.token = token;
+                                user.status = 0;
+                                delete user.password;
+                                return user;
+                            }
+                        }
+                        else {
+                            let user = {};
+                            user["status"] = 1;
+                            user["message"] = 'invalid password';
+                            return user;
+                        }
+                    }
+                }
+                else {
+                    let user = {};
+                    user["status"] = 1;
+                    user["message"] = 'invalid userName';
+                    return user;
+                }
+            }
+            catch (err) {
+                log_config_1.log.error("Error occured at company services" + err);
+                next(err);
             }
         });
     }

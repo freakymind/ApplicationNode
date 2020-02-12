@@ -1,30 +1,21 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const passwordHash = __importStar(require("password-hash"));
+const password_hash_1 = __importDefault(require("password-hash"));
 class User {
     constructor(name, email, password, mobile, country) {
-        this.userName = name;
-        this.userEmail = email;
-        this.userMmobile = mobile;
-        this.userCountry = country;
-        this.randomString = this.generateRandomNumber();
-        this.password = this.generatePassword(this.randomString);
+        this.name = name;
+        this.email = email;
+        this.mobile = mobile;
+        this.country = country;
+        this.password = (password != "undefined" && password != null && password == '') ? password : this.generatePassword(password_hash_1.default.generate(password));
         this.role = this.setRole();
+        this.status = true;
     }
-    generateRandomNumber() {
-        let randomNumber = "ojas1525";
-        console.log(randomNumber);
-        return randomNumber;
-    }
-    generatePassword(randomString) {
-        return passwordHash.generate(randomString);
+    generatePassword(password) {
+        return password_hash_1.default.generate(password);
     }
     setRole() {
         return "COMPANY_ADMIN";

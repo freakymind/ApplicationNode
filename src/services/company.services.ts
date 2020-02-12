@@ -32,7 +32,9 @@ export class CompanyServices {
     //Collection object
     let compnayDoc: object = {
       user: [user],
-      comapny: company
+      comapny: company,
+      distributor : [],
+      products : []
     }
 
     try {
@@ -44,45 +46,45 @@ export class CompanyServices {
     }
     catch (err) {
       log.error("Error occured at company services" + err);
-      throw err;
+      throw new Error(err);
     }
   }
 
-  async getDetails(userName:string,password:string,next:NextFunction):Promise<void> {
+  async getDetails(userName: string, password: string, next: NextFunction): Promise<void> {
     const companyDao = new CompanyDAO();
-    let usrPwd:string = password;
+    let usrPwd: string = password;
     let userData = {
-      userEmail:userName,
-      password:passwordHash.generate(password)
+      userEmail: userName,
+      password: passwordHash.generate(password)
     }
     try {
-      let getDetails:any = await companyDao.getDetails_User(userData);
-      if(getDetails){
-        console.log("getDetails",getDetails);
-        for(let user of getDetails.user){
-          console.log("user",user);
-          if(passwordHash.verify(usrPwd,user.password)) {
-            let token:any =this.generateToken(userData.userEmail);
-            if(token) {
-             user.token = token; 
-             user.status = 0;           
-             delete user.password;
-             return user;
-            }              
+      let getDetails: any = await companyDao.getDetails_User(userData);
+      if (getDetails) {
+        console.log("getDetails", getDetails);
+        for (let user of getDetails.user) {
+          console.log("user", user);
+          if (passwordHash.verify(usrPwd, user.password)) {
+            let token: any = this.generateToken(userData.userEmail);
+            if (token) {
+              user.token = token;
+              user.status = 0;
+              delete user.password;
+              return user;
+            }
           } else {
-           let user:any = {};
-           user["status"] = 1;
-           user["message"]='invalid password';
-           return user;
+            let user: any = {};
+            user["status"] = 1;
+            user["message"] = 'invalid password';
+            return user;
           }
         }
       } else {
-        let user:any = {};
-           user["status"] = 1;
-           user["message"]='invalid userName';
-           return user;
+        let user: any = {};
+        user["status"] = 1;
+        user["message"] = 'invalid userName';
+        return user;
       }
-    } catch(err) {
+    } catch (err) {
       log.error("Error occured at company services" + err);
       next(err);
     }
