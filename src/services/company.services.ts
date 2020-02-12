@@ -4,7 +4,7 @@
  * This file is to store common imports and config data for  the application.
  * @package src/config
  * @subpackage config/common.config
- * @author Sekhara suman sahu <sekharasahu@gmail.com>
+ * @author Sekhara suman sahu <sekharasahu@gmail.com>,krishnakanth<krishnakanth.r@ojas-it.com>
  */
 import { User } from "../model/class/user.class";
 import { Company } from '../model/class/comapny.class';
@@ -20,6 +20,7 @@ import { NextFunction } from "express";
 //Comapny cla
 export class CompanyServices {
   private secretKey:any = process.env.SECRETKEY;
+
   private generateToken(id:string) {
     return jwt.sign({email:id},this.secretKey,{
       expiresIn:'30MIN'      
