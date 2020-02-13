@@ -387,3 +387,13 @@
 {"name":"dsc","hostname":"OJAS-DD132","pid":30239,"level":30,"msg":"DB Connected successfully...","time":"2020-02-13T13:34:31.031Z","v":0}
 {"name":"dsc","hostname":"OJAS-DD132","pid":30239,"level":30,"msg":"Comapany DAO called","time":"2020-02-13T13:34:31.032Z","v":0}
 {"name":"dsc","hostname":"OJAS-DD132","pid":30239,"level":30,"msg":"JWT token generation method called","time":"2020-02-13T13:34:31.032Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":6641,"level":30,"msg":"DB Connected successfully...","time":"2020-02-13T14:23:35.851Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":6641,"level":30,"msg":"DB Connected successfully...","time":"2020-02-13T14:24:04.449Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":6641,"level":30,"msg":"DB Connected successfully...","time":"2020-02-13T14:24:04.455Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":6641,"level":30,"msg":"Comapny Controller called","time":"2020-02-13T14:24:04.457Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":6641,"level":30,"msg":"Company service called","time":"2020-02-13T14:24:04.457Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":6641,"level":30,"msg":"DB Connected successfully...","time":"2020-02-13T14:24:04.457Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":6641,"level":30,"msg":"Comapany DAO called","time":"2020-02-13T14:24:04.661Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":6641,"level":30,"msg":"JWT token generation method called","time":"2020-02-13T14:24:04.662Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":7189,"level":30,"msg":"DB Connected successfully...","time":"2020-02-13T14:26:36.457Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":7189,"level":30,"msg":"DB Connected successfully...","time":"2020-02-13T14:26:39.282Z","v":0}

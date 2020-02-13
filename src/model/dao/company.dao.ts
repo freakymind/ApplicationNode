@@ -29,17 +29,4 @@ export class CompanyDAO {
       throw new Error(err);
     }
   }
-  // static async getDetails_User(userData:any) {
-  //   try{
-  //     console.log(userData);
-  //     let db = await DbConn.getCollObj();
-  //     let getDetails = await db.findOne({'user.userEmail':userData.userEmail},{'user.randomString':0});
-  //    // console.log(getDetails);
-  //     return getDetails;
-
-  //   } catch(err) {
-  //     log.error("Company DAO error" + err);
-  //     console.log(err);
-  //   }
-  // }
 }

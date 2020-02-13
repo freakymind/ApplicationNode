@@ -8,6 +8,12 @@ exports.message = {
         db_succ: 'DB Connected successfully...',
         db_err: 'Error while connecting to Db..'
     },
+    login: {
+        user_id_type: 'User id has to be of string type.',
+        password_type: 'Password has to be od string type.',
+        user_id_length: 'Length of the user_id has to be in between 1 to 50.',
+        password_length: 'Length of the password has to be in between 1 to 50.',
+    },
     company: {
         succ: 'Company registered successfully.',
         err: 'Error occured while registering company.',

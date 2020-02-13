@@ -53,23 +53,4 @@ export class CompanyController {
       return res.status(500).send(await ResponseHandler.error(err , message.company.err));
     }
   }
-
-  // static async login(req: Request, res: Response, next: NextFunction) {
-  //   try {      
-  //     let userName: string = req.body.userName;
-  //     let password: string = req.body.password;
-  //     let getDetails: any = await CompanyServices.getDetails(userName, password, next);
-  //     if (getDetails.status == 0) {       
-  //       delete getDetails.status;
-  //       let data = getDetails;
-  //       return res.status(200).send(await ResponseHandler.info(data, "login successfully done"));
-  //     }
-  //     else {
-  //       return res.status(401).send(await ResponseHandler.error({}, getDetails.message));
-  //     }
-
-  //   } catch (err) {
-  //     next(err);
-  //   }
-  // }
 }
