@@ -18,25 +18,11 @@ class CompanyDAO {
                 let db = yield db_config_1.DbConn.getCollObj();
                 let saveCompRes = yield db.insertOne(comapnyDoc);
                 log_config_1.log.info("Comapany DAO called");
-                return saveCompRes;
+                return saveCompRes.ops[0];
             }
             catch (err) {
                 log_config_1.log.error("Company DAO error" + err);
-                throw err;
-            }
-        });
-    }
-    getDetails_User(userData) {
-        return __awaiter(this, void 0, void 0, function* () {
-            try {
-                console.log(userData);
-                let db = yield db_config_1.DbConn.getCollObj();
-                let getDetails = yield db.findOne({ 'user.userEmail': userData.userEmail }, { 'user.randomString': 0 });
-                return getDetails;
-            }
-            catch (err) {
-                log_config_1.log.error("Company DAO error" + err);
-                console.log(err);
+                throw new Error(err);
             }
         });
     }

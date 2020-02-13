@@ -14,9 +14,13 @@ import { DbConn } from '../../config/db.config';
     check('company_name').notEmpty().withMessage(message.basic.key_missing),
     check('company_email').notEmpty().withMessage(message.basic.key_missing),
     check('company_address').notEmpty().withMessage(message.basic.key_missing),
-    check('name').notEmpty().withMessage(message.basic.key_missing),
+    check('company_mobile').notEmpty().withMessage(message.basic.key_missing),
+    
+    check('user_name').notEmpty().withMessage(message.basic.key_missing),
     check('email').notEmpty().withMessage(message.basic.key_missing),
     check('mobile').notEmpty().withMessage(message.basic.key_missing),
+    check('address').notEmpty().withMessage(message.basic.key_missing),
+    check('password').notEmpty().withMessage(message.basic.key_missing),
     check('country').notEmpty().withMessage(message.basic.key_missing),    
   
     //Company name restriction for string type only.
@@ -39,13 +43,13 @@ import { DbConn } from '../../config/db.config';
     //validation for comapny address key
     check('company_address').isString().withMessage(message.company.address_type),
     check('company_address').isLength({
-      min: 10,
+      min: 5,
       max: 150
     }).withMessage(message.company.address_length),
   
     //Validation for company owner name
-    check('name').isString().withMessage(message.company.owner_name_type),
-    check('name').isLength({
+    check('user_name').isString().withMessage(message.company.owner_name_type),
+    check('user_name').isLength({
       min: 5,
       max: 50
     }).withMessage(message.company.owner_name_length),

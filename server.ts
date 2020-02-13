@@ -36,7 +36,8 @@ const server:any = app.listen( process.env.SERVER_PORT, () => {
 
 import { Init } from './src/config/init.config';
 //Method for basic database configuration.
-Init.init();
+Init.deleteDoc();
+
 
 process.on('unhandledRejection', (err: any) => {
   console.error('There was an uncaught error', err);

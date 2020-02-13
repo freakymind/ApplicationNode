@@ -18,6 +18,12 @@ class Init {
             this.db.createCollection(this.collName, this.schema);
         });
     }
+    static deleteDoc() {
+        return __awaiter(this, void 0, void 0, function* () {
+            this.conn = yield db_config_1.DbConn.getCollObj();
+            this.conn.drop();
+        });
+    }
 }
 exports.Init = Init;
 Init.conn = null;

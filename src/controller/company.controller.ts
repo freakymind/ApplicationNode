@@ -22,30 +22,31 @@ export class CompanyController {
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-      return res.status(422).send(await ResponseHandler.error(errors.array(), message.basic.req_body_validation_err));
+      let errRes = await ResponseHandler.error(errors.array(), message.basic.req_body_validation_err);
+      return res.status(422).send(errRes);
     }
 
     //TODO : Extract the data from request object and call the services
-    let name: string = req.body.name;
+    let user_name: string = req.body.user_name;
     let email: string = req.body.email;
+    let password : string = req.body.password;
     let mobile: string = req.body.mobile;
     let country: string = req.body.country;
-    let password : string = req.body.password;
-
-    let comapnyName: string = req.body.company_name;
-    let companyEmail: string = req.body.company_email;
-    let comapnyAddress: string = req.body.company_address;   
-    
+    let address: string = req.body.address;
     
 
-
-    let user = new User(name, email, password, mobile, country);
-    let company = new Company(comapnyName, companyEmail, comapnyAddress);
+    let company_name: string = req.body.company_name;
+    let company_email: string = req.body.company_email;
+    let company_mobile : string = req.body.company_mobile;
+    let company_address: string = req.body.company_address;
+    
+    let user = new User(user_name, email, password, mobile, country, address);
+    let company = new Company(company_name, company_email, company_mobile, company_address);
 
     try {
       log.info("Comapny Controller called");
       let saveComp = await CompanyServices.registerCompany(user, company);
-      return res.status(201).send(await ResponseHandler.info(saveComp.ops, message.company.succ));
+      return res.status(201).send(await ResponseHandler.info(saveComp, message.company.succ));
     }
     catch (err) {
       log.error("Error at company controller");
@@ -53,22 +54,22 @@ export class CompanyController {
     }
   }
 
-  static async login(req: Request, res: Response, next: NextFunction) {
-    try {      
-      let userName: string = req.body.userName;
-      let password: string = req.body.password;
-      let getDetails: any = await CompanyServices.getDetails(userName, password, next);
-      if (getDetails.status == 0) {       
-        delete getDetails.status;
-        let data = getDetails;
-        return res.status(200).send(await ResponseHandler.info(data, "login successfully done"));
-      }
-      else {
-        return res.status(401).send(await ResponseHandler.error({}, getDetails.message));
-      }
+  // static async login(req: Request, res: Response, next: NextFunction) {
+  //   try {      
+  //     let userName: string = req.body.userName;
+  //     let password: string = req.body.password;
+  //     let getDetails: any = await CompanyServices.getDetails(userName, password, next);
+  //     if (getDetails.status == 0) {       
+  //       delete getDetails.status;
+  //       let data = getDetails;
+  //       return res.status(200).send(await ResponseHandler.info(data, "login successfully done"));
+  //     }
+  //     else {
+  //       return res.status(401).send(await ResponseHandler.error({}, getDetails.message));
+  //     }
 
-    } catch (err) {
-      next(err);
-    }
-  }
+  //   } catch (err) {
+  //     next(err);
+  //   }
+  // }
 }

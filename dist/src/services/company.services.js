@@ -18,43 +18,23 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const company_dao_1 = require("../model/dao/company.dao");
 const log_config_1 = require("../log/log.config");
-const passwordHash = __importStar(require("password-hash"));
 const jwt = __importStar(require("jsonwebtoken"));
 class CompanyServices {
-    constructor() {
-        this.secretKey = process.env.SECRETKEY;
-    }
-    generateToken(id) {
-        return jwt.sign({ email: id }, this.secretKey, {
-            expiresIn: '30MIN'
-        });
-    }
     static registerCompany(user, company) {
         return __awaiter(this, void 0, void 0, function* () {
             let compnayDoc = {
                 user: [user],
-                comapny: company,
+                company: company,
                 distributor: [{
-                        distributor_id: "",
-                        distributor_name: "",
-                        products: [{
-                                product_id: "",
-                                product_name: ""
-                            }]
+                        distributor_id: "", distributor_name: "",
+                        products: [{ product_id: "", product_name: "" }]
                     }],
-                products: [{
-                        product_id: "",
-                        product_name: "",
-                        mfg: "",
-                        batch: ""
-                    }]
+                products: [{ product_id: "", product_name: "", mfg: "", batch: "" }]
             };
             try {
                 log_config_1.log.info("Company service called");
                 let saveComp = yield company_dao_1.CompanyDAO.saveCompany(compnayDoc);
-                delete saveComp.ops[0].user[0].randomString;
-                delete saveComp.ops[0].user[0].password;
-                return saveComp;
+                return yield this.getResObj(saveComp);
             }
             catch (err) {
                 log_config_1.log.error("Error occured at company services" + err);
@@ -62,50 +42,31 @@ class CompanyServices {
             }
         });
     }
-    getDetails(userName, password, next) {
+    static getResObj(saveComp) {
         return __awaiter(this, void 0, void 0, function* () {
-            const companyDao = new company_dao_1.CompanyDAO();
-            let usrPwd = password;
-            let userData = {
-                userEmail: userName,
-                password: passwordHash.generate(password)
+            let resObj = {
+                "user_name": saveComp.user[0].user_name,
+                "user_email": saveComp.user[0].user_email,
+                "user_mobile": saveComp.user[0].user_mobile,
+                "user_country": saveComp.user[0].user_country,
+                "user_role": saveComp.user[0].user_role,
+                "user_status": saveComp.user[0].user_status,
+                "company_name": saveComp.company.company_name,
+                "company_email": saveComp.company.company_email,
+                "company_mobile": saveComp.company.company_mobile,
+                "company_address": saveComp.company.company_address,
+                "created_on": saveComp.company.created_on,
+                "updated_on": saveComp.company.updated_on,
             };
-            try {
-                let getDetails = yield companyDao.getDetails_User(userData);
-                if (getDetails) {
-                    console.log("getDetails", getDetails);
-                    for (let user of getDetails.user) {
-                        console.log("user", user);
-                        if (passwordHash.verify(usrPwd, user.password)) {
-                            let token = this.generateToken(userData.userEmail);
-                            if (token) {
-                                user.token = token;
-                                user.status = 0;
-                                delete user.password;
-                                return user;
-                            }
-                        }
-                        else {
-                            let user = {};
-                            user["status"] = 1;
-                            user["message"] = 'invalid password';
-                            return user;
-                        }
-                    }
-                }
-                else {
-                    let user = {};
-                    user["status"] = 1;
-                    user["message"] = 'invalid userName';
-                    return user;
-                }
-            }
-            catch (err) {
-                log_config_1.log.error("Error occured at company services" + err);
-                next(err);
-            }
+            return [resObj];
+        });
+    }
+    static generateToken(id) {
+        return jwt.sign({ email: id }, this.secretKey, {
+            expiresIn: 60 * 60
         });
     }
 }
 exports.CompanyServices = CompanyServices;
+CompanyServices.secretKey = process.env.SECRETKEY;
 //# sourceMappingURL=company.services.js.map
