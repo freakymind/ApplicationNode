@@ -10,12 +10,9 @@ import { User } from "../model/class/user.class";
 import { Company } from '../model/class/comapny.class';
 import { CompanyDAO } from '../model/dao/company.dao';
 import { log } from "../log/log.config";
+import { JWT } from '../model/class/jwt.class';
 import * as passwordHash from 'password-hash';
-import * as jwt from 'jsonwebtoken';
 import { NextFunction } from "express";
-
-
-
 
 //Comapny class
 export class CompanyServices {
@@ -24,6 +21,7 @@ export class CompanyServices {
   //Method for registering company.
   static async registerCompany(user: User, company: Company) {
     //Collection object
+    //TODO : Initial schema of collection will be created at time of server starting 
     let compnayDoc: object = {
       user: [user],
       company: company,
@@ -57,12 +55,17 @@ export class CompanyServices {
       "company_email": saveComp.company.company_email,
       "company_mobile": saveComp.company.company_mobile,
       "company_address": saveComp.company.company_address,
-      //"token" : 
+      "token": await JWT.generateToken({
+        'user_email': saveComp.user[0].user_email,
+        'role': saveComp.user[0].user_role
+      }),
       "created_on": saveComp.company.created_on,
       "updated_on": saveComp.company.updated_on,
     }
     return [resObj];
   }
+
+  //TODO : authentication methods
   // static async getDetails(userName:string,password:string,next:NextFunction):Promise<void> {   
   //   let usrPwd:string = password;
   //   let userData = {
@@ -100,9 +103,9 @@ export class CompanyServices {
   //   }
   // } 
 
-  private static generateToken(id: string): any {
-    return jwt.sign({ email: id }, this.secretKey, {
-      expiresIn: 60 * 60
-    })
-  }
+  // private static generateToken(id: string): any {
+  //   return jwt.sign({ email: id }, this.secretKey, {
+  //     expiresIn: 60 * 60
+  //   })
+  // }
 }

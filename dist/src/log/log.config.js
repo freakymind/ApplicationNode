@@ -8,6 +8,14 @@ exports.log = bunyan.createLogger({
         {
             level: 'info',
             path: path.join(__dirname + '/info.log')
+        },
+        {
+            level: 'warn',
+            path: path.join(__dirname + '/info.log')
+        },
+        {
+            level: 'error',
+            path: path.join(__dirname + '/info.log')
         }
     ]
 });

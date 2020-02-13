@@ -8,17 +8,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const company_dao_1 = require("../model/dao/company.dao");
 const log_config_1 = require("../log/log.config");
-const jwt = __importStar(require("jsonwebtoken"));
+const jwt_class_1 = require("../model/class/jwt.class");
 class CompanyServices {
     static registerCompany(user, company) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -55,15 +48,14 @@ class CompanyServices {
                 "company_email": saveComp.company.company_email,
                 "company_mobile": saveComp.company.company_mobile,
                 "company_address": saveComp.company.company_address,
+                "token": yield jwt_class_1.JWT.generateToken({
+                    'user_email': saveComp.user[0].user_email,
+                    'role': saveComp.user[0].user_role
+                }),
                 "created_on": saveComp.company.created_on,
                 "updated_on": saveComp.company.updated_on,
             };
             return [resObj];
-        });
-    }
-    static generateToken(id) {
-        return jwt.sign({ email: id }, this.secretKey, {
-            expiresIn: 60 * 60
         });
     }
 }
