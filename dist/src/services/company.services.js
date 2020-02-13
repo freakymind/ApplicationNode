@@ -34,8 +34,20 @@ class CompanyServices {
             let compnayDoc = {
                 user: [user],
                 comapny: company,
-                distributor: [],
-                products: []
+                distributor: [{
+                        distributor_id: "",
+                        distributor_name: "",
+                        products: [{
+                                product_id: "",
+                                product_name: ""
+                            }]
+                    }],
+                products: [{
+                        product_id: "",
+                        product_name: "",
+                        mfg: "",
+                        batch: ""
+                    }]
             };
             try {
                 log_config_1.log.info("Company service called");

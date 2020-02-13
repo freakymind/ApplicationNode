@@ -5,8 +5,9 @@
  * @subpackage validation/company.validation.js
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
-import { check } from '../../util/common.config';
+import { check} from '../../util/common.config';
 import { message } from '../../util/text.config';
+import { DbConn } from '../../config/db.config';
   
   export const CompRegValidation = [
     //Validation for required keys are present or not.
@@ -27,6 +28,13 @@ import { message } from '../../util/text.config';
       min: 8,
       max: 50
     }).withMessage(message.company.email_length_err),
+    check('company_email').custom(async (email : string) =>{
+      let conn = await DbConn.getCollObj();
+      let isExist = await conn.findOne({"comapny.compEmail" : email});
+      if(isExist){
+        return Promise.reject(message.company.comp_email_exist);
+      }
+    }),
   
     //validation for comapny address key
     check('company_address').isString().withMessage(message.company.address_type),
@@ -48,6 +56,13 @@ import { message } from '../../util/text.config';
       min: 8,
       max: 50
     }).withMessage(message.company.email_length_err),
+    check('email').custom(async (email : string) =>{
+      let conn = await DbConn.getCollObj();
+      let isExist = await conn.findOne({"user.email" : email});
+      if(isExist){
+        return Promise.reject(message.company.comp_email_exist);
+      }
+    }),
   
     //Validation for owner mobile number
     check('mobile').isString().withMessage(message.company.owner_mobile_type),

@@ -33,8 +33,20 @@ export class CompanyServices {
     let compnayDoc: object = {
       user: [user],
       comapny: company,
-      distributor : [],
-      products : []
+      distributor: [{
+        distributor_id: "",
+        distributor_name: "",
+        products: [{
+          product_id: "",
+          product_name: ""
+        }]
+      }],
+      products: [{
+        product_id: "",
+        product_name: "",
+        mfg: "",
+        batch: ""
+      }]
     }
 
     try {

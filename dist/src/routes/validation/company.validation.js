@@ -1,7 +1,17 @@
 "use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_config_1 = require("../../util/common.config");
 const text_config_1 = require("../../util/text.config");
+const db_config_1 = require("../../config/db.config");
 exports.CompRegValidation = [
     common_config_1.check('company_name').notEmpty().withMessage(text_config_1.message.basic.key_missing),
     common_config_1.check('company_email').notEmpty().withMessage(text_config_1.message.basic.key_missing),
@@ -16,6 +26,13 @@ exports.CompRegValidation = [
         min: 8,
         max: 50
     }).withMessage(text_config_1.message.company.email_length_err),
+    common_config_1.check('company_email').custom((email) => __awaiter(void 0, void 0, void 0, function* () {
+        let conn = yield db_config_1.DbConn.getCollObj();
+        let isExist = yield conn.findOne({ "comapny.compEmail": email });
+        if (isExist) {
+            return Promise.reject(text_config_1.message.company.comp_email_exist);
+        }
+    })),
     common_config_1.check('company_address').isString().withMessage(text_config_1.message.company.address_type),
     common_config_1.check('company_address').isLength({
         min: 10,
@@ -31,6 +48,13 @@ exports.CompRegValidation = [
         min: 8,
         max: 50
     }).withMessage(text_config_1.message.company.email_length_err),
+    common_config_1.check('email').custom((email) => __awaiter(void 0, void 0, void 0, function* () {
+        let conn = yield db_config_1.DbConn.getCollObj();
+        let isExist = yield conn.findOne({ "user.email": email });
+        if (isExist) {
+            return Promise.reject(text_config_1.message.company.comp_email_exist);
+        }
+    })),
     common_config_1.check('mobile').isString().withMessage(text_config_1.message.company.owner_mobile_type),
     common_config_1.check('mobile').isLength({
         min: 8,
