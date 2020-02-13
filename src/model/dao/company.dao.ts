@@ -28,7 +28,7 @@ export class CompanyDAO {
       log.error("Company DAO error" + err);
     }
   }
-  async getDetails_User(userData:any) {
+  static async getDetails_User(userData:any) {
     try{
       console.log(userData);
       let db = await DbConn.getCollObj();

@@ -19,11 +19,11 @@ import { NextFunction } from "express";
 
 //Comapny cla
 export class CompanyServices {
-  private secretKey:any = process.env.SECRETKEY;
+  private static secretKey:any = process.env.SECRETKEY;
 
-  private generateToken(id:string) {
+  private static generateToken(id:string):any {
     return jwt.sign({email:id},this.secretKey,{
-      expiresIn:'30MIN'      
+      expiresIn:60 * 60   
     })    
   }
 
@@ -32,7 +32,7 @@ export class CompanyServices {
     //Collection object
     let compnayDoc: object = {
       user: [user],
-      comapny: company
+      comapny: company      
     }
 
     try {
@@ -47,19 +47,16 @@ export class CompanyServices {
     }
   }
 
-  async getDetails(userName:string,password:string,next:NextFunction):Promise<void> {
-    const companyDao = new CompanyDAO();
+  static async getDetails(userName:string,password:string,next:NextFunction):Promise<void> {   
     let usrPwd:string = password;
     let userData = {
       userEmail:userName,
       password:passwordHash.generate(password)
     }
     try {
-      let getDetails:any = await companyDao.getDetails_User(userData);
-      if(getDetails){
-        console.log("getDetails",getDetails);
-        for(let user of getDetails.user){
-          console.log("user",user);
+      let getDetails:any = await CompanyDAO.getDetails_User(userData);
+      if(getDetails){       
+        for(let user of getDetails.user){        
           if(passwordHash.verify(usrPwd,user.password)) {
             let token:any =this.generateToken(userData.userEmail);
             if(token) {
@@ -85,6 +82,6 @@ export class CompanyServices {
       log.error("Error occured at company services" + err);
       next(err);
     }
-  }
-
+  } 
+  
 }
