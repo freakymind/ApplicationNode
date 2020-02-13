@@ -156,4 +156,61 @@
 {"name":"dsc","hostname":"OJAS-DD135","pid":29873,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T10:12:21.540Z","v":0}
 {"name":"dsc","hostname":"OJAS-DD135","pid":29873,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T10:12:32.178Z","v":0}
 {"name":"dsc","hostname":"OJAS-DD135","pid":29873,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T10:12:39.281Z","v":0}
-{"name":"dsc","hostname":"OJAS-DD135","pid":29873,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T12:22:16.269Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":18895,"level":30,"msg":"Comapny Controller called","time":"2020-02-12T10:35:47.367Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":18895,"level":30,"msg":"Company service called","time":"2020-02-12T10:35:47.367Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":18895,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T10:35:47.368Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":18895,"level":50,"msg":"Company DAO errorMongoError: Document failed validation","time":"2020-02-12T10:35:47.371Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":18895,"level":50,"msg":"Error occured at company servicesMongoError: Document failed validation","time":"2020-02-12T10:35:47.371Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":18895,"level":50,"msg":"Error at company controller","time":"2020-02-12T10:35:47.371Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19034,"level":30,"msg":"Comapny Controller called","time":"2020-02-12T10:36:47.566Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19034,"level":30,"msg":"Company service called","time":"2020-02-12T10:37:37.057Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19034,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T10:37:53.082Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19034,"level":50,"msg":"Company DAO errorMongoError: Document failed validation","time":"2020-02-12T10:37:53.099Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19034,"level":50,"msg":"Error occured at company servicesMongoError: Document failed validation","time":"2020-02-12T10:37:53.099Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19034,"level":50,"msg":"Error at company controller","time":"2020-02-12T10:38:06.653Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19779,"level":30,"msg":"Comapny Controller called","time":"2020-02-12T10:42:35.840Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19779,"level":30,"msg":"Company service called","time":"2020-02-12T10:42:36.447Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19779,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T10:42:37.049Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19779,"level":50,"msg":"Company DAO errorMongoError: Document failed validation","time":"2020-02-12T10:42:37.060Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19779,"level":50,"msg":"Error occured at company servicesMongoError: Document failed validation","time":"2020-02-12T10:42:37.061Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19779,"level":50,"msg":"Error at company controller","time":"2020-02-12T10:42:40.960Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19779,"level":30,"msg":"Comapny Controller called","time":"2020-02-12T10:43:34.001Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19779,"level":30,"msg":"Company service called","time":"2020-02-12T10:43:36.835Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19779,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T10:43:40.162Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19779,"level":50,"msg":"Company DAO errorMongoError: Document failed validation","time":"2020-02-12T10:43:40.175Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19779,"level":50,"msg":"Error occured at company servicesMongoError: Document failed validation","time":"2020-02-12T10:43:40.175Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":19779,"level":50,"msg":"Error at company controller","time":"2020-02-12T10:43:52.864Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":20388,"level":30,"msg":"Comapny Controller called","time":"2020-02-12T10:45:57.380Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":20388,"level":30,"msg":"Company service called","time":"2020-02-12T10:45:58.195Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":20388,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T10:46:00.359Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":20388,"level":50,"msg":"Company DAO errorMongoError: Document failed validation","time":"2020-02-12T10:46:00.375Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":20388,"level":50,"msg":"Error occured at company servicesMongoError: Document failed validation","time":"2020-02-12T10:46:00.375Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":20388,"level":50,"msg":"Error at company controller","time":"2020-02-12T10:46:15.575Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":20588,"level":30,"msg":"Comapny Controller called","time":"2020-02-12T10:46:47.545Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":20588,"level":30,"msg":"Company service called","time":"2020-02-12T10:46:48.444Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":20588,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T10:46:49.105Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":20588,"level":50,"msg":"Company DAO errorMongoError: Document failed validation","time":"2020-02-12T10:46:49.128Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":20588,"level":50,"msg":"Error occured at company servicesMongoError: Document failed validation","time":"2020-02-12T10:46:49.129Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":20588,"level":50,"msg":"Error at company controller","time":"2020-02-12T10:46:51.055Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21269,"level":30,"msg":"Comapny Controller called","time":"2020-02-12T10:51:28.503Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21269,"level":30,"msg":"Company service called","time":"2020-02-12T10:51:29.393Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21269,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T10:51:30.345Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21269,"level":50,"msg":"Company DAO errorMongoError: Document failed validation","time":"2020-02-12T10:51:30.360Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21269,"level":50,"msg":"Error occured at company servicesMongoError: Document failed validation","time":"2020-02-12T10:51:30.360Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21269,"level":50,"msg":"Error at company controller","time":"2020-02-12T10:51:38.186Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21269,"level":30,"msg":"Comapny Controller called","time":"2020-02-12T10:52:11.919Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21269,"level":30,"msg":"Company service called","time":"2020-02-12T10:52:12.407Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21269,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T10:52:13.076Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21269,"level":30,"msg":"Comapany DAO called","time":"2020-02-12T10:52:13.077Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21933,"level":30,"msg":"Comapny Controller called","time":"2020-02-12T10:55:02.237Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21933,"level":30,"msg":"Company service called","time":"2020-02-12T10:55:02.238Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21933,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T10:55:02.238Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":21933,"level":30,"msg":"Comapany DAO called","time":"2020-02-12T10:55:02.241Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":22158,"level":30,"msg":"Comapny Controller called","time":"2020-02-12T10:56:13.255Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":22158,"level":30,"msg":"Company service called","time":"2020-02-12T10:56:13.256Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":22158,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T10:56:13.257Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":22158,"level":30,"msg":"Comapany DAO called","time":"2020-02-12T10:56:13.259Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":22804,"level":30,"msg":"Comapny Controller called","time":"2020-02-12T11:00:44.084Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":22804,"level":30,"msg":"Company service called","time":"2020-02-12T11:00:44.085Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":22804,"level":30,"msg":"DB Connected successfully...","time":"2020-02-12T11:00:44.086Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":22804,"level":30,"msg":"Comapany DAO called","time":"2020-02-12T11:00:44.089Z","v":0}

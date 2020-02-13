@@ -6,13 +6,15 @@
  */
 import express,{Request,Response,NextFunction} from 'express';
 import bodyparser from 'body-parser';
-import * as dotenv from "dotenv";
+//import * as dotenv from "dotenv";
 import cors from 'cors';
+
+
 
 const app: express.Application = express();
 export const router: express.Router = express.Router();
 
-dotenv.config();
+require('dotenv').config();
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended : true}));
@@ -27,10 +29,14 @@ app.all('*', (req:Request, res:Response) => {
     message: 'Requested route not found'
   })
 });
-console.log("hello");
+
 const server:any = app.listen( process.env.SERVER_PORT, () => {
   console.log('Server is running on port '+ process.env.SERVER_PORT + '...!!!');
 })
+
+import { Init } from './src/config/init.config';
+//Method for basic database configuration.
+Init.init();
 
 process.on('unhandledRejection', (err: any) => {
   console.error('There was an uncaught error', err);

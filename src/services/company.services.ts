@@ -32,7 +32,9 @@ export class CompanyServices {
     //Collection object
     let compnayDoc: object = {
       user: [user],
-      comapny: company      
+      comapny: company,
+      distributor : [],
+      products : []
     }
 
     try {
@@ -44,14 +46,15 @@ export class CompanyServices {
     }
     catch (err) {
       log.error("Error occured at company services" + err);
+      throw new Error(err);
     }
   }
 
   static async getDetails(userName:string,password:string,next:NextFunction):Promise<void> {   
     let usrPwd:string = password;
     let userData = {
-      userEmail:userName,
-      password:passwordHash.generate(password)
+      userEmail: userName,
+      password: passwordHash.generate(password)
     }
     try {
       let getDetails:any = await CompanyDAO.getDetails_User(userData);
@@ -66,19 +69,19 @@ export class CompanyServices {
              return user;
             }              
           } else {
-           let user:any = {};
-           user["status"] = 1;
-           user["message"]='invalid password';
-           return user;
+            let user: any = {};
+            user["status"] = 1;
+            user["message"] = 'invalid password';
+            return user;
           }
         }
       } else {
-        let user:any = {};
-           user["status"] = 1;
-           user["message"]='invalid userName';
-           return user;
+        let user: any = {};
+        user["status"] = 1;
+        user["message"] = 'invalid userName';
+        return user;
       }
-    } catch(err) {
+    } catch (err) {
       log.error("Error occured at company services" + err);
       next(err);
     }

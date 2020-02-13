@@ -11,20 +11,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const db_config_1 = require("../config/db.config");
 class Init {
-    constructor() {
-        Init.init();
-    }
     static init() {
         return __awaiter(this, void 0, void 0, function* () {
             this.conn = yield db_config_1.DbConn.getConnObj();
             this.db = yield this.conn.db(process.env.DBNAME);
             this.db.createCollection(this.collName, this.schema);
-        });
-    }
-    static insert() {
-        return __awaiter(this, void 0, void 0, function* () {
-            this.coll = yield db_config_1.DbConn.getCollObj();
-            this.coll.insertOne({ demo: "Demo" });
         });
     }
 }
@@ -36,18 +27,19 @@ Init.collName = process.env.COLLNAME;
 Init.schema = {
     validator: {
         $jsonSchema: {
-            required: ["name", "address"],
+            required: ["user", "company"],
             properties: {
-                name: {
-                    bsonType: "string",
-                    description: "must be a string and is required"
+                user: {
+                    bsonType: "array"
                 },
-                address: {
+                company: {
                     bsonType: "object",
-                    required: ["town", "zipcode"],
+                    required: ["company_name", "company_email", "company_mobile", "company_address"],
                     properties: {
-                        "town": { bsonType: "string", description: "Town name has to be " },
-                        "zipcode": { bsonType: "string" }
+                        "company_name": { bsonType: "string", description: "company_name has to be string" },
+                        "company_email": { bsonType: "string", description: "company_email has to be string" },
+                        "company_mobile": { bsonType: "string", description: "company_mobile has to be string" },
+                        "company_address": { bsonType: "string", description: "company_address has to be string" }
                     }
                 }
             }

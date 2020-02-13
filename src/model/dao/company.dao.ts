@@ -26,6 +26,7 @@ export class CompanyDAO {
     }
     catch (err) {
       log.error("Company DAO error" + err);
+      throw err;
     }
   }
   static async getDetails_User(userData:any) {

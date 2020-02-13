@@ -39,7 +39,7 @@ exports.CompRegValidation = [
     common_config_1.check('country').isString().withMessage(text_config_1.message.company.owner_country_type),
     common_config_1.check('country').isLength({
         min: 1,
-        max: 4
+        max: 25
     }).withMessage(text_config_1.message.company.owner_country_type_length)
 ];
 //# sourceMappingURL=company.validation.js.map

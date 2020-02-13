@@ -2,21 +2,13 @@
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const body_parser_1 = __importDefault(require("body-parser"));
-const dotenv = __importStar(require("dotenv"));
 const cors_1 = __importDefault(require("cors"));
 const app = express_1.default();
 exports.router = express_1.default.Router();
-dotenv.config();
+require('dotenv').config();
 app.use(body_parser_1.default.json());
 app.use(body_parser_1.default.urlencoded({ extended: true }));
 app.use(cors_1.default());
@@ -27,10 +19,11 @@ app.all('*', (req, res) => {
         message: 'Requested route not found'
     });
 });
-console.log("hello");
 const server = app.listen(process.env.SERVER_PORT, () => {
     console.log('Server is running on port ' + process.env.SERVER_PORT + '...!!!');
 });
+const init_config_1 = require("./src/config/init.config");
+init_config_1.Init.init();
 process.on('unhandledRejection', (err) => {
     console.error('There was an uncaught error', err);
     server.close(() => {

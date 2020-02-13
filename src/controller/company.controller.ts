@@ -29,14 +29,17 @@ export class CompanyController {
     let name: string = req.body.name;
     let email: string = req.body.email;
     let mobile: string = req.body.mobile;
-    let country: number = req.body.country;
+    let country: string = req.body.country;
+    let password : string = req.body.password;
 
     let comapnyName: string = req.body.company_name;
     let companyEmail: string = req.body.company_email;
-    let comapnyAddress: string = req.body.company_address;
+    let comapnyAddress: string = req.body.company_address;   
+    
+    
 
 
-    let user = new User(name, email, mobile, country);
+    let user = new User(name, email, password, mobile, country);
     let company = new Company(comapnyName, companyEmail, comapnyAddress);
 
     try {
@@ -46,7 +49,7 @@ export class CompanyController {
     }
     catch (err) {
       log.error("Error at company controller");
-      return res.status(500).send(ResponseHandler.error(err, message.company.err));
+      return res.status(500).send(await ResponseHandler.error(err , message.company.err));
     }
   }
 

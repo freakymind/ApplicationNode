@@ -22,6 +22,7 @@ class CompanyDAO {
             }
             catch (err) {
                 log_config_1.log.error("Company DAO error" + err);
+                throw err;
             }
         });
     }

@@ -33,7 +33,9 @@ class CompanyServices {
         return __awaiter(this, void 0, void 0, function* () {
             let compnayDoc = {
                 user: [user],
-                comapny: company
+                comapny: company,
+                distributor: [],
+                products: []
             };
             try {
                 log_config_1.log.info("Company service called");
@@ -44,6 +46,7 @@ class CompanyServices {
             }
             catch (err) {
                 log_config_1.log.error("Error occured at company services" + err);
+                throw new Error(err);
             }
         });
     }
