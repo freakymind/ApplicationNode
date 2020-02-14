@@ -16,6 +16,7 @@ const user_class_1 = require("../model/class/user.class");
 const comapny_class_1 = require("../model/class/comapny.class");
 const company_services_1 = require("../services/company.services");
 const log_config_1 = require("../log/log.config");
+const utill_methods_1 = require("../util/utill.methods");
 class CompanyController {
     static companyValidation(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -34,7 +35,9 @@ class CompanyController {
             let company_email = req.body.company_email;
             let company_mobile = req.body.company_mobile;
             let company_address = req.body.company_address;
-            let user = new user_class_1.User(user_name, email, password, mobile, country, address);
+            let salt = yield utill_methods_1.Utill.generateSalt();
+            let hashPw = yield utill_methods_1.Utill.generatePassword(password, salt);
+            let user = new user_class_1.User(user_name, email, hashPw, mobile, country, salt, address);
             let company = new comapny_class_1.Company(company_name, company_email, company_mobile, company_address);
             try {
                 log_config_1.log.info("Comapny Controller called");

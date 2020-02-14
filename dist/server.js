@@ -22,8 +22,6 @@ app.all('*', (req, res) => {
 const server = app.listen(process.env.SERVER_PORT, () => {
     console.log('Server is running on port ' + process.env.SERVER_PORT + '...!!!');
 });
-const init_config_1 = require("./src/config/init.config");
-init_config_1.Init.init();
 process.on('unhandledRejection', (err) => {
     console.error('There was an uncaught error', err);
     server.close(() => {
