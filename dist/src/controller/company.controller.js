@@ -21,46 +21,29 @@ class CompanyController {
         return __awaiter(this, void 0, void 0, function* () {
             const errors = common_config_1.validationResult(req);
             if (!errors.isEmpty()) {
-                return res.status(422).send(yield response_config_1.ResponseHandler.error(errors.array(), text_config_1.message.basic.req_body_validation_err));
+                let errRes = yield response_config_1.ResponseHandler.error(errors.array(), text_config_1.message.basic.req_body_validation_err);
+                return res.status(422).send(errRes);
             }
-            let name = req.body.name;
+            let user_name = req.body.user_name;
             let email = req.body.email;
+            let password = req.body.password;
             let mobile = req.body.mobile;
             let country = req.body.country;
-            let password = req.body.password;
-            let comapnyName = req.body.company_name;
-            let companyEmail = req.body.company_email;
-            let comapnyAddress = req.body.company_address;
-            let user = new user_class_1.User(name, email, password, mobile, country);
-            let company = new comapny_class_1.Company(comapnyName, companyEmail, comapnyAddress);
+            let address = req.body.address;
+            let company_name = req.body.company_name;
+            let company_email = req.body.company_email;
+            let company_mobile = req.body.company_mobile;
+            let company_address = req.body.company_address;
+            let user = new user_class_1.User(user_name, email, password, mobile, country, address);
+            let company = new comapny_class_1.Company(company_name, company_email, company_mobile, company_address);
             try {
                 log_config_1.log.info("Comapny Controller called");
                 let saveComp = yield company_services_1.CompanyServices.registerCompany(user, company);
-                return res.status(201).send(yield response_config_1.ResponseHandler.info(saveComp.ops, text_config_1.message.company.succ));
+                return res.status(201).send(yield response_config_1.ResponseHandler.info(saveComp, text_config_1.message.company.succ));
             }
             catch (err) {
                 log_config_1.log.error("Error at company controller");
                 return res.status(500).send(yield response_config_1.ResponseHandler.error(err, text_config_1.message.company.err));
-            }
-        });
-    }
-    static login(req, res, next) {
-        return __awaiter(this, void 0, void 0, function* () {
-            try {
-                let userName = req.body.userName;
-                let password = req.body.password;
-                let getDetails = yield company_services_1.CompanyServices.getDetails(userName, password, next);
-                if (getDetails.status == 0) {
-                    delete getDetails.status;
-                    let data = getDetails;
-                    return res.status(200).send(yield response_config_1.ResponseHandler.info(data, "login successfully done"));
-                }
-                else {
-                    return res.status(401).send(yield response_config_1.ResponseHandler.error({}, getDetails.message));
-                }
-            }
-            catch (err) {
-                next(err);
             }
         });
     }

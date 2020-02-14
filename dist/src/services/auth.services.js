@@ -9,23 +9,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const db_config_1 = require("../../config/db.config");
-const log_config_1 = require("../../log/log.config");
-class CompanyDAO {
-    static saveCompany(comapnyDoc) {
+const db_config_1 = require("../config/db.config");
+class AuthServices {
+    static authenticate(username, password) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                let db = yield db_config_1.DbConn.getCollObj();
-                let saveCompRes = yield db.insertOne(comapnyDoc);
-                log_config_1.log.info("Comapany DAO called");
-                return saveCompRes.ops[0];
+                let coll = yield db_config_1.DbConn.getCollObj();
+                let cursor = yield coll.findOne({ "user_email": [username] }, { "user_password": 1 });
+                console.log(cursor);
             }
             catch (err) {
-                log_config_1.log.error("Company DAO error" + err);
-                throw new Error(err);
             }
         });
     }
 }
-exports.CompanyDAO = CompanyDAO;
-//# sourceMappingURL=company.dao.js.map
+exports.AuthServices = AuthServices;
+//# sourceMappingURL=auth.services.js.map

@@ -16,9 +16,12 @@ exports.CompRegValidation = [
     common_config_1.check('company_name').notEmpty().withMessage(text_config_1.message.basic.key_missing),
     common_config_1.check('company_email').notEmpty().withMessage(text_config_1.message.basic.key_missing),
     common_config_1.check('company_address').notEmpty().withMessage(text_config_1.message.basic.key_missing),
-    common_config_1.check('name').notEmpty().withMessage(text_config_1.message.basic.key_missing),
+    common_config_1.check('company_mobile').notEmpty().withMessage(text_config_1.message.basic.key_missing),
+    common_config_1.check('user_name').notEmpty().withMessage(text_config_1.message.basic.key_missing),
     common_config_1.check('email').notEmpty().withMessage(text_config_1.message.basic.key_missing),
     common_config_1.check('mobile').notEmpty().withMessage(text_config_1.message.basic.key_missing),
+    common_config_1.check('address').notEmpty().withMessage(text_config_1.message.basic.key_missing),
+    common_config_1.check('password').notEmpty().withMessage(text_config_1.message.basic.key_missing),
     common_config_1.check('country').notEmpty().withMessage(text_config_1.message.basic.key_missing),
     common_config_1.check('company_name').isString().withMessage(text_config_1.message.company.name_type_err),
     common_config_1.check('company_email').isEmail().withMessage(text_config_1.message.company.invalid_email_err),
@@ -35,11 +38,11 @@ exports.CompRegValidation = [
     })),
     common_config_1.check('company_address').isString().withMessage(text_config_1.message.company.address_type),
     common_config_1.check('company_address').isLength({
-        min: 10,
+        min: 5,
         max: 150
     }).withMessage(text_config_1.message.company.address_length),
-    common_config_1.check('name').isString().withMessage(text_config_1.message.company.owner_name_type),
-    common_config_1.check('name').isLength({
+    common_config_1.check('user_name').isString().withMessage(text_config_1.message.company.owner_name_type),
+    common_config_1.check('user_name').isLength({
         min: 5,
         max: 50
     }).withMessage(text_config_1.message.company.owner_name_length),

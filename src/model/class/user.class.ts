@@ -8,23 +8,30 @@
 import passwordHash from 'password-hash';
 //User class
 export class User {
-  private name: string;
-  private email: string;
-  private password: string;
-  private mobile: string;
-  private country: string;
-  private role: string;
-  private status : boolean;
+  private user_name: string;
+  private user_email: string;
+  private user_password: string;
+  private user_mobile: string;
+  private user_country: string;
+  private user_role: string;
+  private user_status : boolean;
+  private created_on : Date;
+  private updated_on : Date;
 
-  constructor(name: string, email: string, password : string, mobile: string, country: string) {
-    this.name = name;
-    this.email = email;
-    this.mobile = mobile;
-    this.country = country;
-    this.password = (password != "undefined" && password != null && password == '') ? password : this.generatePassword(passwordHash.generate(password));
-    this.role = this.setRole();
-    this.status = true;
+  constructor(name: string, email: string, password : string, mobile: string, country: string,
+  address : string) {
+  
+    this.user_name = name;
+    this.user_email = email;
+    this.user_mobile = mobile;
+    this.user_country = country;
+    this.user_password = (password != "undefined" && password != null && password == '') ? password : this.generatePassword(passwordHash.generate(password));
+    this.user_role = this.setRole();
+    this.user_status = true;
+    this.created_on = new Date();
+    this.updated_on = new Date();
   }
+
   private generatePassword(password: string) {    
     return  passwordHash.generate(password);
   }

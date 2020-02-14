@@ -42,4 +42,9 @@ export class Init {
     this.db = await this.conn.db(process.env.DBNAME);
     this.db.createCollection(this.collName, this.schema);
   }
+
+  static async deleteDoc() {
+    this.conn = await DbConn.getCollObj();
+    this.conn.drop();
+  }
 }
