@@ -22,6 +22,7 @@ app.use(bodyparser.urlencoded({extended : true}));
 app.use(cors());
 //Router files
 app.use('/service',require('./src/routes/API/company.api'));
+app.use('/service',require('./src/routes/API/distributor.api'))
 
 app.all('*', (req:Request, res:Response) => {
   res.status(404).json({

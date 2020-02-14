@@ -10,36 +10,37 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const db_config_1 = require("../../config/db.config");
-const log_config_1 = require("../../log/log.config");
-class CompanyDAO {
-    static saveCompany(comapnyDoc) {
+class DistributorDao {
+    static distributorDao(distObj) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                let db = yield db_config_1.DbConn.getCollObj();
-                let saveCompRes = yield db.insertOne(comapnyDoc);
-                log_config_1.log.info("Comapany DAO called");
-                return saveCompRes;
+                let Db = yield db_config_1.DbConn.getCollObj();
+                let addDistributor = yield Db.updateOne({ "user.userEmail": distObj.email }, {
+                    $push: {
+                        "user": distObj
+                    }
+                });
+                console.log("add", addDistributor);
+                return addDistributor;
             }
             catch (err) {
-                log_config_1.log.error("Company DAO error" + err);
-                throw err;
+                console.log(err);
             }
         });
     }
-    static getDetails_User(userData) {
+    static checkUser(email) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                console.log(userData);
-                let db = yield db_config_1.DbConn.getCollObj();
-                let getDetails = yield db.findOne({ 'user.userEmail': userData.userEmail }, { 'user.randomString': 0 });
-                return getDetails;
+                let Db = yield db_config_1.DbConn.getCollObj();
+                let checkUserDetails = yield Db.findOne({ "user.userEmail": 'krishna@ojas-it.com' });
+                console.log("check", checkUserDetails);
+                return checkUserDetails;
             }
             catch (err) {
-                log_config_1.log.error("Company DAO error" + err);
                 console.log(err);
             }
         });
     }
 }
-exports.CompanyDAO = CompanyDAO;
-//# sourceMappingURL=company.dao.js.map
+exports.DistributorDao = DistributorDao;
+//# sourceMappingURL=distributor.dao.js.map

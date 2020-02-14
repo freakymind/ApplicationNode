@@ -21,12 +21,9 @@ const log_config_1 = require("../log/log.config");
 const passwordHash = __importStar(require("password-hash"));
 const jwt = __importStar(require("jsonwebtoken"));
 class CompanyServices {
-    constructor() {
-        this.secretKey = process.env.SECRETKEY;
-    }
-    generateToken(id) {
+    static generateToken(id) {
         return jwt.sign({ email: id }, this.secretKey, {
-            expiresIn: '30MIN'
+            expiresIn: 60 * 60
         });
     }
     static registerCompany(user, company) {
@@ -62,20 +59,17 @@ class CompanyServices {
             }
         });
     }
-    getDetails(userName, password, next) {
+    static getDetails(userName, password, next) {
         return __awaiter(this, void 0, void 0, function* () {
-            const companyDao = new company_dao_1.CompanyDAO();
             let usrPwd = password;
             let userData = {
                 userEmail: userName,
                 password: passwordHash.generate(password)
             };
             try {
-                let getDetails = yield companyDao.getDetails_User(userData);
+                let getDetails = yield company_dao_1.CompanyDAO.getDetails_User(userData);
                 if (getDetails) {
-                    console.log("getDetails", getDetails);
                     for (let user of getDetails.user) {
-                        console.log("user", user);
                         if (passwordHash.verify(usrPwd, user.password)) {
                             let token = this.generateToken(userData.userEmail);
                             if (token) {
@@ -108,4 +102,5 @@ class CompanyServices {
     }
 }
 exports.CompanyServices = CompanyServices;
+CompanyServices.secretKey = process.env.SECRETKEY;
 //# sourceMappingURL=company.services.js.map

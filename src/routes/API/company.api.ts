@@ -18,7 +18,7 @@ router.get('/test', (req  : Request, res : Response)=>{
 
 //Router for Compeny registrtion
 router.post('/registerCompany', CompRegValidation, CompanyController.companyValidation);
-router.post('/login',CompRegValidation, new CompanyController().login);
+router.post('/login',CompRegValidation, CompanyController.login);
 
 
 module.exports = router;

@@ -7,6 +7,6 @@ server_1.router.get('/test', (req, res) => {
     res.status(200).send({ msg: 'Server running...!!!', status: 0 });
 });
 server_1.router.post('/registerCompany', company_validation_1.CompRegValidation, company_controller_1.CompanyController.companyValidation);
-server_1.router.post('/login', company_validation_1.CompRegValidation, new company_controller_1.CompanyController().login);
+server_1.router.post('/login', company_validation_1.CompRegValidation, company_controller_1.CompanyController.login);
 module.exports = server_1.router;
 //# sourceMappingURL=company.api.js.map

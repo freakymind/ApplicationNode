@@ -44,15 +44,13 @@ class CompanyController {
             }
         });
     }
-    login(req, res, next) {
+    static login(req, res, next) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                const companyServices = new company_services_1.CompanyServices();
                 let userName = req.body.userName;
                 let password = req.body.password;
-                let getDetails = yield companyServices.getDetails(userName, password, next);
+                let getDetails = yield company_services_1.CompanyServices.getDetails(userName, password, next);
                 if (getDetails.status == 0) {
-                    console.log("get", getDetails);
                     delete getDetails.status;
                     let data = getDetails;
                     return res.status(200).send(yield response_config_1.ResponseHandler.info(data, "login successfully done"));
