@@ -420,3 +420,665 @@
 {"name":"dsc","hostname":"OJAS-DD132","pid":9820,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T04:51:18.324Z","v":0}
 {"name":"dsc","hostname":"OJAS-DD132","pid":9820,"level":30,"msg":"Comapany DAO called","time":"2020-02-14T04:51:18.347Z","v":0}
 {"name":"dsc","hostname":"OJAS-DD132","pid":9820,"level":30,"msg":"JWT token generation method called","time":"2020-02-14T04:51:18.349Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13550,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:05:51.546Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13550,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:05:51.710Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13550,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:06:02.518Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13550,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:06:50.822Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13550,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:06:50.849Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13550,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:06:57.254Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13550,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:07:19.360Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13550,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:07:19.383Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13550,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:07:32.144Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13890,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:08:45.147Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13890,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:08:45.297Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13890,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:08:45.318Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13969,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:09:58.196Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13969,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:09:58.322Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13969,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:10:07.319Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13969,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:10:39.208Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13969,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:10:39.243Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13969,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:10:50.735Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":14341,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:19:06.420Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":14341,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:19:06.543Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":14341,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:19:10.984Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":14341,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:19:29.942Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":14341,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:19:29.966Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":14341,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:19:34.888Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":14698,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:24:58.711Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":14698,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:24:58.833Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":14698,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:25:04.021Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15233,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:38:07.947Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15233,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:38:08.137Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15233,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:38:12.740Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15356,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:39:22.144Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15356,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:39:22.276Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15356,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:39:26.988Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15492,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:41:17.890Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15492,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:41:18.039Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15492,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:41:18.060Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15492,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:41:37.078Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15492,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:41:37.134Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15492,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:41:43.044Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15492,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:42:00.805Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15492,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:42:00.851Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15492,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:42:08.171Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15931,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:52:48.583Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15931,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:52:48.822Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":15931,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T06:52:53.355Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":24118,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T10:09:52.712Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":24118,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T10:09:52.876Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":24118,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T10:10:01.967Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":24118,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T10:15:29.806Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":24118,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T10:15:29.828Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":24118,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T10:15:40.813Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":24594,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T10:16:45.436Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":24594,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T10:16:45.582Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":24594,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T10:16:47.500Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":24594,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T10:17:59.211Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":24594,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T10:17:59.235Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":24594,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T10:18:00.909Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":27441,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:03:57.966Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":27441,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:03:58.115Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":27441,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:04:03.028Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":27932,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:10:02.042Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":27932,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:10:02.227Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":27932,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:10:02.253Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:21:46.549Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:21:46.696Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:21:48.185Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:22:06.236Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:22:06.265Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:34.636Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:34.657Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T11:24:34.679Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Company service called","time":"2020-02-14T11:24:34.679Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:34.679Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:34.714Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:34.714Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:34.714Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:34.714Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:34.714Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:34.714Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:34.714Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:34.714Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:34.714Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:56.529Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:56.553Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T11:24:56.575Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Company service called","time":"2020-02-14T11:24:56.575Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:56.575Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:56.596Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:56.596Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:56.596Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:56.596Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:56.596Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:56.596Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:56.596Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:56.596Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:56.596Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:57.967Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:57.992Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T11:24:58.013Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Company service called","time":"2020-02-14T11:24:58.014Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:58.014Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:58.035Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:58.035Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:58.035Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:58.035Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:58.035Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:58.035Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:58.035Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:58.035Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:58.035Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:58.834Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:58.856Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T11:24:58.876Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Company service called","time":"2020-02-14T11:24:58.876Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:58.877Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:58.897Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:58.897Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:58.897Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:58.897Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:58.897Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:58.897Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:58.897Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:58.897Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:58.897Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:59.645Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:59.666Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T11:24:59.688Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Company service called","time":"2020-02-14T11:24:59.688Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:24:59.688Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:59.709Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:59.709Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:59.709Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:59.709Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:59.709Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:59.709Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:59.709Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:24:59.709Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:24:59.709Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:25:00.247Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:25:00.269Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T11:25:00.289Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Company service called","time":"2020-02-14T11:25:00.289Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:25:00.289Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:25:00.309Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:25:00.309Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:25:00.309Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:25:00.309Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:25:00.309Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:25:00.309Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:25:00.309Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:25:00.309Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:25:00.309Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:25:00.913Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:25:00.937Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T11:25:00.958Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"Company service called","time":"2020-02-14T11:25:00.958Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:25:00.958Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:25:00.980Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:25:00.980Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:25:00.980Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:25:00.980Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:25:00.980Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:25:00.980Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:25:00.980Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T11:25:00.980Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28564,"level":50,"msg":"Error at company controller","time":"2020-02-14T11:25:00.980Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:25:31.980Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:25:32.436Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T11:25:32.467Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"Company service called","time":"2020-02-14T11:25:32.467Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:25:32.467Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"Comapany DAO called","time":"2020-02-14T11:25:32.511Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"JWT token generation method called","time":"2020-02-14T11:25:32.512Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:30:33.826Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:30:33.847Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T11:30:33.868Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"Company service called","time":"2020-02-14T11:30:33.868Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T11:30:33.868Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"Comapany DAO called","time":"2020-02-14T11:30:33.891Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":28800,"level":30,"msg":"JWT token generation method called","time":"2020-02-14T11:30:33.891Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:35:54.792Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:35:54.961Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:35:54.991Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"Company service called","time":"2020-02-14T12:35:54.992Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:35:54.993Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:35:55.025Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:35:55.025Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:35:55.025Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:35:55.026Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:35:55.026Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:35:55.026Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:35:55.026Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:35:55.026Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:35:55.026Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:37:01.627Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:37:01.681Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:37:01.740Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:37:41.623Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:37:41.623Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"Company service called","time":"2020-02-14T12:37:04.716Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:37:08.556Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:37:41.623Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:37:45.742Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:37:46.443Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:37:45.742Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:37:46.443Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:37:45.742Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:37:46.443Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:38:07.654Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:38:07.675Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:38:07.698Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"Company service called","time":"2020-02-14T12:38:18.270Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:38:18.270Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:38:18.291Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:38:18.291Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:38:18.291Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:38:18.291Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:38:19.687Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:38:18.291Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:38:19.687Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:38:18.291Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:38:19.687Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:38:27.350Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:38:27.382Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:38:27.408Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"Company service called","time":"2020-02-14T12:38:27.408Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:38:27.409Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:38:27.433Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:38:27.433Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:38:27.433Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:38:27.433Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:38:29.072Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:38:27.433Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:38:29.072Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:38:27.433Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":31984,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:38:29.072Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:43:16.679Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:43:16.795Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:43:16.812Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"Company service called","time":"2020-02-14T12:43:16.812Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:43:16.812Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:16.846Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:16.846Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:16.846Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:16.846Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:43:16.846Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:16.846Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:43:16.846Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:16.846Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:43:16.846Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:43:18.057Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:43:18.074Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:43:18.097Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"Company service called","time":"2020-02-14T12:43:18.097Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:43:18.097Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:18.114Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:18.114Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:18.114Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:18.114Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:43:18.114Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:18.114Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:43:18.114Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:18.114Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:43:18.114Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:43:18.853Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:43:18.870Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:43:18.886Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"Company service called","time":"2020-02-14T12:43:18.886Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:43:18.886Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:18.902Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:18.902Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:18.902Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:18.902Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:43:18.902Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:18.902Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:43:18.902Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:43:18.902Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:43:18.902Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:43:55.585Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:43:55.615Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:43:55.634Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:44:28.980Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:44:28.980Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"Company service called","time":"2020-02-14T12:43:55.634Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:43:57.892Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:44:28.980Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:44:29.628Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:44:30.541Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:44:29.628Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:44:30.541Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:44:29.628Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:44:30.541Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:45:12.389Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:45:12.408Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":32439,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:45:12.425Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:50:11.444Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:50:11.636Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:50:11.665Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":30,"msg":"Company service called","time":"2020-02-14T12:50:11.666Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:50:11.667Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:50:11.709Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:50:11.709Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:50:11.709Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:50:11.710Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:50:11.710Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:50:11.710Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:50:11.710Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:50:11.710Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":620,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:50:11.710Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:20.229Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:20.371Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:51:20.394Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Company service called","time":"2020-02-14T12:51:20.394Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:20.394Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:20.429Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:20.429Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:20.429Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:20.429Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:20.429Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:20.429Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:20.429Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:20.429Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:20.429Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:21.541Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:21.562Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:51:21.582Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Company service called","time":"2020-02-14T12:51:21.582Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:21.582Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:21.607Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:21.607Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:21.607Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:21.607Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:21.607Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:21.607Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:21.607Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:21.607Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:21.607Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:23.086Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:23.112Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:51:23.137Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Company service called","time":"2020-02-14T12:51:23.137Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:23.138Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:23.164Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:23.164Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:23.164Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:23.164Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:23.164Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:23.164Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:23.164Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:23.164Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:23.164Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:50.810Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:50.832Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:51:50.853Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Company service called","time":"2020-02-14T12:51:50.854Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:50.854Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:50.874Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:50.874Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:50.874Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:50.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:50.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:50.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:50.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:50.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:50.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:51.814Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:51.835Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:51:51.855Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Company service called","time":"2020-02-14T12:51:51.855Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:51.855Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:51.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:51.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:51.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:51.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:51.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:51.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:51.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:51.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:51.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:52.616Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:52.638Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:51:52.659Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Company service called","time":"2020-02-14T12:51:52.659Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:52.659Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:52.679Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:52.679Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:52.679Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:52.679Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:52.679Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:52.679Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:52.679Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:52.679Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:52.679Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:53.470Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:53.494Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:51:53.514Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Company service called","time":"2020-02-14T12:51:53.514Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:53.514Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:53.534Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:53.534Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:53.534Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:53.534Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:53.534Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:53.534Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:53.534Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:53.534Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:53.534Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:54.173Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:54.193Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:51:54.217Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Company service called","time":"2020-02-14T12:51:54.217Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:54.217Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:54.238Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:54.238Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:54.238Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:54.238Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:54.238Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:54.238Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:54.238Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:54.238Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:54.238Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:55.447Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:55.467Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:51:55.489Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Company service called","time":"2020-02-14T12:51:55.490Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:55.490Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:55.509Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:55.509Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:55.509Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:55.509Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:55.509Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:55.509Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:55.509Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:55.509Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:55.509Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:56.219Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:56.246Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:51:56.268Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Company service called","time":"2020-02-14T12:51:56.269Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:56.269Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:56.290Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:56.290Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:56.290Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:56.290Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:56.290Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:56.290Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:56.290Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:56.290Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:56.290Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:56.866Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:56.886Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:51:56.907Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Company service called","time":"2020-02-14T12:51:56.907Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:51:56.907Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:56.927Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:56.927Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:56.927Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:56.927Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:56.927Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:56.927Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:56.927Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:51:56.927Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:51:56.927Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:52:07.711Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:52:07.730Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:52:07.762Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Company service called","time":"2020-02-14T12:52:07.762Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:52:07.762Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:52:07.802Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:52:07.802Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:52:07.802Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:52:07.802Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:52:07.803Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:52:07.802Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:52:07.803Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:52:07.802Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:52:07.803Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:52:08.539Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:52:08.576Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:52:08.599Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Company service called","time":"2020-02-14T12:52:08.599Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:52:08.599Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:52:08.619Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:52:08.619Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:52:08.619Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:52:08.619Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:52:08.619Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:52:08.619Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:52:08.619Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:52:08.619Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:52:08.619Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:52:21.381Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:52:21.411Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":680,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:52:21.433Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:13.376Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:13.541Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:55:13.566Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"Company service called","time":"2020-02-14T12:55:13.566Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:13.566Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:13.604Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:13.604Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:13.604Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:13.604Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:55:13.604Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:13.604Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:55:13.604Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:13.604Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:55:13.604Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:14.779Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:14.804Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:55:14.827Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"Company service called","time":"2020-02-14T12:55:14.827Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:14.827Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:14.851Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:14.851Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:14.851Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:14.851Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:55:14.851Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:14.851Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:55:14.851Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:14.851Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:55:14.851Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:15.604Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:15.648Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:55:15.675Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"Company service called","time":"2020-02-14T12:55:15.675Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:15.675Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:15.703Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:15.703Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:15.703Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:15.703Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:55:15.703Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:15.703Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:55:15.703Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:15.703Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:55:15.703Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:16.466Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:16.490Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:55:16.514Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"Company service called","time":"2020-02-14T12:55:16.514Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:16.514Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:16.538Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:16.538Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Company DAO errorMongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:16.538Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:16.538Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:55:16.538Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:16.538Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:55:16.538Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error occured at company servicesError: MongoError: db already exists with different case already have: [dsc] trying to create [DSC]","time":"2020-02-14T12:55:16.538Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":970,"level":50,"msg":"Error at company controller","time":"2020-02-14T12:55:16.538Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:51.704Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:51.819Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:55:51.836Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"Company service called","time":"2020-02-14T12:55:51.837Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:55:51.837Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"Comapany DAO called","time":"2020-02-14T12:55:51.862Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"JWT token generation method called","time":"2020-02-14T12:55:51.863Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:56:42.422Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:56:42.440Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T12:56:42.456Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"Company service called","time":"2020-02-14T12:56:42.456Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T12:56:42.457Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"Comapany DAO called","time":"2020-02-14T12:56:42.475Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1307,"level":30,"msg":"JWT token generation method called","time":"2020-02-14T12:56:42.475Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1741,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:00:56.601Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1741,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:00:56.613Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1741,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T13:00:56.616Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1741,"level":30,"msg":"Company service called","time":"2020-02-14T13:00:56.616Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1741,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:00:56.616Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1741,"level":30,"msg":"Comapany DAO called","time":"2020-02-14T13:00:56.962Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1741,"level":30,"msg":"JWT token generation method called","time":"2020-02-14T13:00:56.963Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1741,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:05:44.046Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1741,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:05:44.060Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":1741,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:05:47.660Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2035,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:07:28.838Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2035,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:07:28.870Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2035,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:07:28.875Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2173,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:08:48.690Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2173,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:08:48.706Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2173,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:09:01.149Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2453,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:13:06.442Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2453,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:13:06.460Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2453,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:13:30.172Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2453,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:13:30.185Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2905,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:18:22.979Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2905,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:18:22.994Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2905,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:18:22.997Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2905,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:19:53.486Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2905,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:19:53.506Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":2905,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T13:20:10.045Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":10774,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:17:44.035Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":10774,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:17:44.047Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":10774,"level":30,"msg":"Comapny Controller called","time":"2020-02-14T15:17:44.050Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":10774,"level":30,"msg":"Company service called","time":"2020-02-14T15:17:44.050Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":10774,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:17:44.051Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":10774,"level":30,"msg":"Comapany DAO called","time":"2020-02-14T15:17:44.054Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":10774,"level":30,"msg":"JWT token generation method called","time":"2020-02-14T15:17:44.054Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":10774,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:19:46.778Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":10774,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:19:46.799Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":10774,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:19:52.438Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":10774,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:20:10.790Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":10774,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:20:26.246Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11046,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:22:22.879Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11046,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:22:22.895Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11046,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:22:29.270Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11046,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:23:25.126Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11255,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:25:05.116Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11255,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:25:05.137Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11255,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:25:15.640Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11255,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:25:52.623Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11255,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:26:38.436Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11255,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:26:38.446Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11255,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:26:46.078Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11255,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:27:22.933Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:28:19.249Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:28:19.265Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:28:23.903Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11439,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:28:29.237Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11567,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:29:48.793Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11567,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:29:48.807Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11567,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:29:54.604Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11567,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:29:59.135Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11567,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:30:13.569Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11722,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:31:56.193Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11722,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:31:56.209Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11722,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:31:59.068Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11722,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:32:08.353Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":11722,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:32:23.857Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":12171,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:38:15.807Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":12171,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:38:15.828Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":12171,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:38:17.425Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":12171,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:38:23.744Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":12171,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:38:30.306Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":12346,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:41:13.621Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":12346,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:41:13.639Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":12346,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:41:15.453Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":12346,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:41:19.703Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":12346,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:41:46.310Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":12346,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:42:55.266Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13177,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:52:49.349Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13177,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:52:49.364Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13177,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:52:49.369Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13177,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:52:49.376Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13177,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:55:02.288Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13177,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:55:02.298Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13177,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:55:02.301Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13177,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:55:02.305Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13177,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:55:02.307Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":13177,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T15:55:02.312Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":16506,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T16:44:53.809Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":16506,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T16:44:53.837Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":16506,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T16:44:53.847Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":16506,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T16:44:53.857Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":16506,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T16:44:53.858Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":16506,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T16:44:53.863Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":16506,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T16:46:25.582Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":16506,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T16:46:25.588Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":16506,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T16:46:25.589Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":16506,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T16:46:25.593Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":16506,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T16:47:42.535Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":16506,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T16:47:42.537Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD135","pid":16506,"level":30,"msg":"DB Connected successfully...","time":"2020-02-14T16:47:42.538Z","v":0}

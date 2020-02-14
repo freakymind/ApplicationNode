@@ -10,18 +10,18 @@ import { log } from '../log/log.config';
 export class DistributorClass {
   static async addDistributor(req: Request, res: Response, next: NextFunction) {
     try {
+      let referenceBy: string = req.body.reference_by;
       let name: string = req.body.name;
       let email: string = req.body.email;
       let mobile: number = req.body.mobile;
       let country: number = req.body.country;
-      let distributor = new Distributor(name, email, mobile, country);
+      let distributor = new Distributor(name, email, mobile, country, referenceBy);
       let adddistributor = await DistributorService.adddistributor(distributor);
+      console.log(adddistributor);
       res.send(adddistributor);
-
+      //res.send( ResponseHandler.info(adddistributor,"adddistributor.message"));
     } catch (err) {
-      res.send(`${err}`);
+      res.send(new AppError(`${err}`, 400));
     }
-
   }
-
 }

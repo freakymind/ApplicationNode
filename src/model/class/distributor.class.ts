@@ -1,24 +1,33 @@
+import {User} from './user.class'; 
 import passwordHash from 'password-hash';
 
 export class Distributor {
-  private name: string;
-  private email: string;
+  private user_name: string;
+  private user_id :string;
+  private user_email: string;
   private randomPassword: any;
-  private password: any;
-  private mobile: number;
-  private country: number;
-  private role: string;
-  private status: boolean;
+  private user_password: any;
+  private user_mobile: number;
+  private user_country: number;
+  private user_role: string;
+  private user_status: boolean;
+  private referenceBy ?:string;
+  private product_id  ?:string
+  private product_name ?:string
 
-  constructor(name: string, email: string, mobile: number, country: number) {
-    this.name = name;
-    this.email = email;
+  constructor(name: string, email: string, mobile: number, country: number,referenceBy ?:string,productId ?:string,productName ?:string) {      
+    this.user_name = name;
+    this.user_id ="DSC-"+"DIST-"+Math.floor(Math.random()*10000);
+    this.user_email = email;
     this.randomPassword = this.randomNumber();
-    this.password = this.getPassword();
-    this.mobile = mobile;
-    this.country = country;
-    this.role = "DISTRIBUTOR";
-    this.status = false;
+   this.user_password = this.getPassword();
+    this.user_mobile = mobile;
+    this.user_country = country;
+    this.user_role = "DISTRIBUTOR";
+    this.user_status = false;
+    this.referenceBy = referenceBy;
+    this.product_id=productId;
+    this.product_name=productName;
   }
   private randomNumber() {
     return "Ojas1525";

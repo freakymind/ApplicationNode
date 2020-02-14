@@ -51,7 +51,7 @@ DbConn.client = null;
 DbConn.conn = null;
 DbConn.db = null;
 DbConn.coll = null;
-DbConn.url = "mongodb+srv://m001-student:Sekharsahu@123@cluster0-ysylc.mongodb.net/test?retryWrites=true&w=majority";
+DbConn.url = 'mongodb://' + process.env.DBHOST + ':' + process.env.DBPORT;
 DbConn.options = {
     useNewUrlParser: true,
     useUnifiedTopology: true

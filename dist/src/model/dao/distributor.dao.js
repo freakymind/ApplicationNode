@@ -15,16 +15,17 @@ class DistributorDao {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 let Db = yield db_config_1.DbConn.getCollObj();
-                let addDistributor = yield Db.updateOne({ "user.userEmail": distObj.email }, {
+                let addDistributor = yield Db.updateOne({ "user.user_email": distObj.user_referenceBy }, {
                     $push: {
-                        "user": distObj
+                        "user": {
+                            $each: [distObj]
+                        }
                     }
                 });
-                console.log("add", addDistributor);
                 return addDistributor;
             }
             catch (err) {
-                console.log(err);
+                return err;
             }
         });
     }
@@ -32,12 +33,29 @@ class DistributorDao {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 let Db = yield db_config_1.DbConn.getCollObj();
-                let checkUserDetails = yield Db.findOne({ "user.userEmail": 'krishna@ojas-it.com' });
-                console.log("check", checkUserDetails);
+                let checkUserDetails = yield Db.findOne({
+                    "user.user_email": email
+                });
                 return checkUserDetails;
             }
             catch (err) {
-                console.log(err);
+                return err;
+            }
+        });
+    }
+    static addProducts(distObj) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                let Db = yield db_config_1.DbConn.getCollObj();
+                let addDistributor = yield Db.updateOne({ "user.user_id": distObj.distributor_id }, {
+                    $push: {
+                        "distributor": distObj
+                    }
+                });
+                return addDistributor;
+            }
+            catch (err) {
+                return err;
             }
         });
     }

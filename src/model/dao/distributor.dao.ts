@@ -4,38 +4,47 @@ import { log } from '../../log/log.config';
 
 export class DistributorDao {
 
-  static async distributorDao(distObj:any) {
-    try {      
-       let Db = await DbConn.getCollObj();
-      let addDistributor = await Db.updateOne({"user.userEmail":distObj.email}, {
+  static async distributorDao(distObj: any) {
+    try {
+      let Db = await DbConn.getCollObj();
+      let addDistributor = await Db.updateOne({ "user.user_email": distObj.user_referenceBy }, {
         $push: {
-          "user":distObj
+          "user": {
+            $each: [distObj]
+          }
         }
       });
-      console.log("add",addDistributor);
       return addDistributor;
-
     } catch (err) {
-      console.log(err);
+      return err;
 
     }
   }
-  static async checkUser(email:string) {
-    try{
+  static async checkUser(email: string) {
+    try {
       let Db = await DbConn.getCollObj();
-      //let checkUserDetails = await Db.findOne({"user.userEmail":email},{$exists: true}).count();
-      let checkUserDetails = await Db.findOne({"user.userEmail":{
-        $exists:true,$in:email
-      }});
-      console.log("check",checkUserDetails);
-      return checkUserDetails;
+      let checkUserDetails = await Db.findOne({
+        "user.user_email": email
+      });
 
-    }catch(err) {
-      console.log(err);
+      return checkUserDetails;
+    } catch (err) {
+      return err;
+    }
+  }
+
+  static async addProducts(distObj: any) {
+    try {
+      let Db = await DbConn.getCollObj();
+      let addDistributor = await Db.updateOne({ "user.user_id": distObj.distributor_id }, {
+        $push: {
+          "distributor": distObj
+        }
+      });
+      return addDistributor;
+    } catch (err) {
+      return err;
     }
   }
 }
 
-// {
-//   $each: [distObj]
-// }

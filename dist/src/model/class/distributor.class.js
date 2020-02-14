@@ -5,15 +5,19 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const password_hash_1 = __importDefault(require("password-hash"));
 class Distributor {
-    constructor(name, email, mobile, country) {
-        this.name = name;
-        this.email = email;
+    constructor(name, email, mobile, country, referenceBy, productId, productName) {
+        this.user_name = name;
+        this.user_id = "DSC-" + "DIST-" + Math.floor(Math.random() * 10000);
+        this.user_email = email;
         this.randomPassword = this.randomNumber();
-        this.password = this.getPassword();
-        this.mobile = mobile;
-        this.country = country;
-        this.role = "DISTRIBUTOR";
-        this.status = false;
+        this.user_password = this.getPassword();
+        this.user_mobile = mobile;
+        this.user_country = country;
+        this.user_role = "DISTRIBUTOR";
+        this.user_status = false;
+        this.referenceBy = referenceBy;
+        this.product_id = productId;
+        this.product_name = productName;
     }
     randomNumber() {
         return "Ojas1525";
