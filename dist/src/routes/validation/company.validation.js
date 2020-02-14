@@ -31,7 +31,7 @@ exports.CompRegValidation = [
     }).withMessage(text_config_1.message.company.email_length_err),
     common_config_1.check('company_email').custom((email) => __awaiter(void 0, void 0, void 0, function* () {
         let conn = yield db_config_1.DbConn.getCollObj();
-        let isExist = yield conn.findOne({ "comapny.compEmail": email });
+        let isExist = yield conn.findOne({ "comapny.company_email": email });
         if (isExist) {
             return Promise.reject(text_config_1.message.company.comp_email_exist);
         }
@@ -53,7 +53,7 @@ exports.CompRegValidation = [
     }).withMessage(text_config_1.message.company.email_length_err),
     common_config_1.check('email').custom((email) => __awaiter(void 0, void 0, void 0, function* () {
         let conn = yield db_config_1.DbConn.getCollObj();
-        let isExist = yield conn.findOne({ "user.email": email });
+        let isExist = yield conn.findOne({ "user.user_email": email });
         if (isExist) {
             return Promise.reject(text_config_1.message.company.comp_email_exist);
         }

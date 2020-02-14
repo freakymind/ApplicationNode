@@ -23,8 +23,13 @@ class AuthController {
             }
             let user_id = req.body.user_id;
             let password = req.body.password;
-            let authRes = yield auth_services_1.AuthServices.authenticate(user_id, password);
-            console.log(authRes);
+            let authRes = yield auth_services_1.AuthServices.login(user_id, password);
+            if (authRes[0].status) {
+                let succRes = yield response_config_1.ResponseHandler.info(authRes, text_config_1.message.login.succ);
+                return res.status(200).send(succRes);
+            }
+            let errRes = yield response_config_1.ResponseHandler.error(authRes, text_config_1.message.login.fail);
+            return res.status(422).send(errRes);
         });
     }
 }

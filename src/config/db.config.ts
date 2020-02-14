@@ -16,8 +16,8 @@ export class DbConn {
   private static conn: any = null;
   private static db: any = null;
   private static coll: any = null;
- // private static url: any = "mongodb+srv://m001-student:Sekharsahu@123@cluster0-ysylc.mongodb.net/test?retryWrites=true&w=majority";
-  private static url:any='mongodb://' + process.env.DBHOST + ':'+ process.env.DBPORT;
+  private static url: any = 'mongodb://' + process.env.DBHOST + ':' + process.env.DBPORT;
+  //private static url: any = "mongodb+srv://m001-student:Sekharsahu@123@cluster0-ysylc.mongodb.net/test?retryWrites=true&w=majority";
   private static options: object = {
     useNewUrlParser: true,
     useUnifiedTopology: true

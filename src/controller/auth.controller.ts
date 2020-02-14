@@ -10,6 +10,7 @@ import { ResponseHandler } from '../util/response.config';
 import { message } from '../util/text.config';
 import { Request, Response } from 'express';
 import { AuthServices  } from '../services/auth.services';
+import { log } from '../log/log.config';
 
 
 export class AuthController {
@@ -31,9 +32,12 @@ export class AuthController {
     let user_id = req.body.user_id;
     let password = req.body.password;
 
-    let authRes = await AuthServices.authenticate(user_id, password);
-    console.log(authRes);
-    
-
+    let authRes = await AuthServices.login(user_id, password);
+    if(authRes[0].status){
+      let succRes = await ResponseHandler.info(authRes, message.login.succ);
+      return res.status(200).send(succRes);
+    }
+    let errRes = await ResponseHandler.error(authRes, message.login.fail);
+    return res.status(422).send(errRes);
   }
 } 

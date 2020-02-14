@@ -9,11 +9,11 @@ import { Request, Response, NextFunction } from 'express';
 import { validationResult } from '../util/common.config';
 import { message } from '../util/text.config';
 import { ResponseHandler } from '../util/response.config';
-import { AppError } from '../util/response.config';
 import { User } from '../model/class/user.class';
 import { Company } from '../model/class/comapny.class';
 import { CompanyServices } from '../services/company.services';
 import { log } from '../log/log.config';
+import { Utill } from '../util/utill.methods';
 //import * as passwordHash from 'password-hash';
 
 export class CompanyController {
@@ -39,8 +39,11 @@ export class CompanyController {
     let company_email: string = req.body.company_email;
     let company_mobile : string = req.body.company_mobile;
     let company_address: string = req.body.company_address;
+
+    let salt : string = await Utill.generateSalt();
+    let hashPw : string = await Utill.generatePassword(password, salt);
     
-    let user = new User(user_name, email, password, mobile, country, address);
+    let user = new User(user_name, email, hashPw, mobile, country, salt, address);
     let company = new Company(company_name, company_email, company_mobile, company_address);
 
     try {

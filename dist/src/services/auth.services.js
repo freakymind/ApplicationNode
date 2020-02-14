@@ -9,16 +9,29 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const db_config_1 = require("../config/db.config");
+const auth_dao_1 = require("../model/dao/auth.dao");
+const utill_methods_1 = require("../util/utill.methods");
+const jwt_class_1 = require("../model/class/jwt.class");
 class AuthServices {
-    static authenticate(username, password) {
+    static login(username, password) {
         return __awaiter(this, void 0, void 0, function* () {
-            try {
-                let coll = yield db_config_1.DbConn.getCollObj();
-                let cursor = yield coll.findOne({ "user_email": [username] }, { "user_password": 1 });
-                console.log(cursor);
+            let authRes = yield auth_dao_1.AuthDAO.authenticate(username);
+            let hashPw = yield utill_methods_1.Utill.generatePassword(password, authRes[0].user[0].password_salt);
+            if (hashPw == authRes[0].user[0].user_password) {
+                let loginRes = [{
+                        token: yield jwt_class_1.JWT.generateToken({
+                            email: authRes[0].user[0].user_email,
+                            role: authRes[0].user[0].user_role
+                        }),
+                        status: true
+                    }];
+                return loginRes;
             }
-            catch (err) {
+            else {
+                let loginRes = [{
+                        status: false
+                    }];
+                return loginRes;
             }
         });
     }

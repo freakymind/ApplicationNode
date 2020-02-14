@@ -24,7 +24,7 @@ export class CompanyServices {
       user: [user],
       company: company,
       distributor: [],
-      products: [{ product_id: "", product_name: "", mfg: "", batch: "",status:""}]
+      products: []
     }
 
     try {

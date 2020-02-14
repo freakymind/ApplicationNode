@@ -5,6 +5,10 @@
  * @subpackage config/common.config
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
+
+//import passwordHash, { generate } from 'password-hash';
+
+
 export const {
     check,
     validationResult,
@@ -15,5 +19,4 @@ export const {
   Request,
   Response 
 }  = require('express');
-  
   
