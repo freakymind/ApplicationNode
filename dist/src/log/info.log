@@ -1,0 +1,13 @@
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":6956,"level":30,"msg":"DB Connected successfully...","time":"2020-02-16T06:52:24.329Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":6956,"level":30,"msg":"DB Connected successfully...","time":"2020-02-16T06:52:24.532Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":6956,"level":30,"msg":"Comapny Controller called","time":"2020-02-16T06:52:26.235Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":6956,"level":30,"msg":"Company service called","time":"2020-02-16T06:52:26.235Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":6956,"level":30,"msg":"DB Connected successfully...","time":"2020-02-16T06:52:26.236Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":6956,"level":30,"msg":"Comapany DAO called","time":"2020-02-16T06:52:26.245Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":6956,"level":30,"msg":"JWT token generation method called","time":"2020-02-16T06:52:26.246Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":6956,"level":30,"msg":"DB Connected successfully...","time":"2020-02-16T06:54:37.316Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":10428,"level":30,"msg":"DB Connected successfully...","time":"2020-02-16T07:23:38.928Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":11776,"level":30,"msg":"DB Connected successfully...","time":"2020-02-16T07:26:06.204Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":11776,"level":30,"msg":"JWT token generation method called","time":"2020-02-16T07:26:08.664Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":12108,"level":30,"msg":"DB Connected successfully...","time":"2020-02-16T07:28:04.522Z","v":0}
+{"name":"dsc","hostname":"DESKTOP-VNO46U3","pid":12108,"level":30,"msg":"JWT token generation method called","time":"2020-02-16T07:28:06.273Z","v":0}

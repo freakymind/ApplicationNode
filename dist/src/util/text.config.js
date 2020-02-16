@@ -11,6 +11,7 @@ exports.message = {
     login: {
         succ: 'Login Success',
         fail: 'Login Failed',
+        user_not_found: "User not found.",
         user_id_type: 'User id has to be of string type.',
         password_type: 'Password has to be od string type.',
         user_id_length: 'Length of the user_id has to be in between 1 to 50.',
