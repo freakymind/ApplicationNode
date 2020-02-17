@@ -22,7 +22,7 @@ export class AuthServices {
   static async login(username: string, password: string) {
     try {
       let authRes = await AuthDAO.authenticate(username);
-      if(authRes) {
+      if(authRes.length > 0) {
         let hashPw = await Utill.generatePassword(password, authRes[0].user[0].password_salt);
         if (hashPw == authRes[0].user[0].user_password) {
         let loginRes = [{

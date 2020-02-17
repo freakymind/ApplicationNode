@@ -12,7 +12,8 @@
 export const {
     check,
     validationResult,
-    body
+    body,
+    header
   } = require('express-validator');
   
 export const {

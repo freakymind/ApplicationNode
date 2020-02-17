@@ -9,7 +9,7 @@
  import { check } from '../../util/common.config';
  import { message } from '../../util/text.config';
 
-export const authValidation = [
+export const AuthValidation = [
   //Key is present or not
   check('user_id').notEmpty().withMessage(message.basic.key_missing),
   check('password').notEmpty().withMessage(message.basic.key_missing),

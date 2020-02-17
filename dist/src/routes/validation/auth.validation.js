@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_config_1 = require("../../util/common.config");
 const text_config_1 = require("../../util/text.config");
-exports.authValidation = [
+exports.AuthValidation = [
     common_config_1.check('user_id').notEmpty().withMessage(text_config_1.message.basic.key_missing),
     common_config_1.check('password').notEmpty().withMessage(text_config_1.message.basic.key_missing),
     common_config_1.check('user_id').isString().withMessage(text_config_1.message.login.user_id_type),

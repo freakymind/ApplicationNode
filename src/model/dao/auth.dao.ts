@@ -17,6 +17,7 @@ export class AuthDAO {
  @param : password  : string , password of an user.
  @return : boolean = either true or false.
  */
+
   static async authenticate(username: string) {
     try {
       let coll = await DbConn.getCollObj();

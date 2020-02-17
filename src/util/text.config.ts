@@ -12,7 +12,10 @@ export const message = {
     req_body_validation_err : 'Request body validation error. Please check the Request body.',
     key_missing : 'Key Missing',
     db_succ : 'DB Connected successfully...',
-    db_err : 'Error while connecting to Db..'
+    db_err : 'Error while connecting to Db..',
+    invalid_email : 'Invalid email.',
+    header_missing : 'Authorization token missing',
+    invalid_token : 'Invalid token'
   },
   login : {
     succ : 'Login Success',
@@ -40,7 +43,18 @@ export const message = {
     owner_country_type : 'Company country type has to be string.',
     owner_country_type_length : 'Company country type length has to be in between 1 to 4 character.'
   },
+  company_user : {
+    name_type : 'User name has to be string type.',
+    name_length : 'Name length can not be empty.',
+    mobile_number_type : 'Mobile number has to be of string type.',
+    user_mobile_length : 'User mobile number has to be in between 8 to 15 character.',
+    user_country_type : 'User country has to be of string type.',
+    user_country_length : 'User country length has to be in between 3 to 25 characters.',
+    user_address_type : 'User address type has to be string type.',
+    user_address_length : 'User address length has to be in between 5 to 150'
+  },
   password:{
+
     resetErr :'Error occured while resetting password'
-  }
+  },
 }
