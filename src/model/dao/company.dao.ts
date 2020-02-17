@@ -29,4 +29,36 @@ export class CompanyDAO {
       throw new Error(err);
     }
   }
+
+
+  static async findUserByEmail(email:String) {
+    try {
+      let db = await DbConn.getCollObj();
+      let saveCompRes = await db.findOne({"user.user_email":`${email}`});
+      log.info("Comapany DAO called");
+      return saveCompRes;
+    }
+    catch (err) {
+      log.error("Company DAO error" + err);
+    }
+  }
+
+
+  static async updatePassword(email:any,hasPwd:any,salt:any) {
+    try {
+      let db = await DbConn.getCollObj();
+      let updatePass= db.updateOne({"user.user_email":email},{
+        $set:{
+          'user.$.user_password':hasPwd,
+          'user.$.password_salt':salt
+        }
+      })
+      log.info("Comapany DAO called");
+      return updatePass;
+    }
+    catch (err) {
+      return err;
+      log.error("Company DAO error" + err);
+    }
+  }
 }

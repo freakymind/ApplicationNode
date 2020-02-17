@@ -39,5 +39,8 @@ export const message = {
     owner_mobile_length : 'Company owner length has to be in between 8 to 15 character.',
     owner_country_type : 'Company country type has to be string.',
     owner_country_type_length : 'Company country type length has to be in between 1 to 4 character.'
+  },
+  password:{
+    resetErr :'Error occured while resetting password'
   }
 }
