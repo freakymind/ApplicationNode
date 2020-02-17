@@ -53,13 +53,4 @@ export class DbConn {
       throw err;
     }
   }
-
-  static async staDemo () {
-    console.log('Thsi is static method.. has to be called by Class name.');
-    
-  }
-  async nonstaDemo () {
-    console.log('Thsi is non stat method.. has to be called by object.');
-    
-  }
 }
