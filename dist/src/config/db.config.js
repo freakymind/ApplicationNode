@@ -45,6 +45,16 @@ class DbConn {
             }
         });
     }
+    static staDemo() {
+        return __awaiter(this, void 0, void 0, function* () {
+            console.log('Thsi is static method.. has to be called by Class name.');
+        });
+    }
+    nonstaDemo() {
+        return __awaiter(this, void 0, void 0, function* () {
+            console.log('Thsi is non stat method.. has to be called by object.');
+        });
+    }
 }
 exports.DbConn = DbConn;
 DbConn.client = null;

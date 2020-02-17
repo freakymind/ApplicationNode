@@ -18,7 +18,7 @@ class AuthServices {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 let authRes = yield auth_dao_1.AuthDAO.authenticate(username);
-                if (authRes) {
+                if (authRes.length > 0) {
                     let hashPw = yield utill_methods_1.Utill.generatePassword(password, authRes[0].user[0].password_salt);
                     if (hashPw == authRes[0].user[0].user_password) {
                         let loginRes = [{
