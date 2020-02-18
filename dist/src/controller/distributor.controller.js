@@ -13,7 +13,7 @@ const response_config_1 = require("../util/response.config");
 const distributor_class_1 = require("../model/class/distributor.class");
 const distributor_services_1 = require("../services/distributor.services");
 class DistributorClass {
-    static addDistributor(req, res, next) {
+    static addDistributor(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 let referenceBy = req.body.reference_by;
@@ -28,6 +28,37 @@ class DistributorClass {
             }
             catch (err) {
                 res.send(new response_config_1.AppError(`${err}`, 400));
+            }
+        });
+    }
+    static updateDistributor(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                let updateBy = req.body.update_by;
+                let name = req.body.name;
+                let email = req.body.email;
+                let mobile = req.body.mobile;
+                let country = req.body.country;
+                let updateDistributor = new distributor_class_1.Distributor(name, email, mobile, country, updateBy);
+                let updateDistributorList = yield distributor_services_1.DistributorService.updateDistributorDetails(updateDistributor);
+                console.log(updateDistributorList);
+                return res.send(updateDistributorList);
+            }
+            catch (err) {
+                return res.send(new response_config_1.AppError(`${err}`, 400));
+            }
+        });
+    }
+    static deleteDistributor(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                let email = req.params.email;
+                let deleteDistributor = yield distributor_services_1.DistributorService.deleteDistributordetails(email);
+                console.log(deleteDistributor);
+                return res.send(deleteDistributor);
+            }
+            catch (err) {
+                return res.send(new response_config_1.AppError(`${err}`, 400));
             }
         });
     }

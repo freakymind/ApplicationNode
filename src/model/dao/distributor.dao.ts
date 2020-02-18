@@ -23,16 +23,19 @@ export class DistributorDao {
   static async checkUser(email: string) {
     try {
       let Db = await DbConn.getCollObj();
-      let checkUserDetails = await Db.findOne({
-        "user.user_email": email
-      });
-
+     
+      let checkUserDetails = await Db.aggregate([
+        {"$unwind":"$user"},
+        {"$match":{"user.user_email":email,"user.user_status":true}},
+            {"$project":{"user":1,_id:0}}
+      ]).toArray();
+      console.log(checkUserDetails);
       return checkUserDetails;
     } catch (err) {
       return err;
     }
   }
-
+  
   static async addProducts(distObj: any) {
     try {
       let Db = await DbConn.getCollObj();
@@ -43,6 +46,34 @@ export class DistributorDao {
       });
       return addDistributor;
     } catch (err) {
+      return err;
+    }
+  }
+  static async updateUser(distObj: any,id:number|string) {
+    try {
+      let Db = await DbConn.getCollObj();
+      let updateDistributor = await Db.updateOne({
+        "user": { $elemMatch: { user_id:id} },
+        "distributor": { $elemMatch: { distributor_id:id } }
+      },
+        { $set: { "user.$.user_name": distObj.user_name,"user.$.user_mobile":distObj.user_mobile, "distributor.$[element].distributor_name": distObj.user_name } },
+        { multi: true, arrayFilters: [{ "element.distributor_id": id }] });
+        return updateDistributor;
+
+    } catch (err) {
+      return err;
+
+    }
+  }
+  static async deleteUser(email:string) {
+    try{
+      let Db = await DbConn.getCollObj();
+      let deleteDistributor = await Db.updateOne({
+        "user.user_email":email
+      },{$set:{"user.$.user_status":false}});
+      return deleteDistributor;
+
+    } catch(err) {
       return err;
     }
   }
