@@ -12,11 +12,15 @@ export const message = {
     req_body_validation_err : 'Request body validation error. Please check the Request body.',
     key_missing : 'Key Missing',
     db_succ : 'DB Connected successfully...',
-    db_err : 'Error while connecting to Db..'
+    db_err : 'Error while connecting to Db..',
+    invalid_email : 'Invalid email.',
+    header_missing : 'Authorization token missing',
+    invalid_token : 'Invalid token'
   },
   login : {
     succ : 'Login Success',
     fail : 'Login Failed',
+    user_not_found : "User not found.",
     user_id_type : 'User id has to be of string type.',
     password_type : 'Password has to be od string type.',
     user_id_length : 'Length of the user_id has to be in between 1 to 50.',
@@ -38,5 +42,39 @@ export const message = {
     owner_mobile_length : 'Company owner length has to be in between 8 to 15 character.',
     owner_country_type : 'Company country type has to be string.',
     owner_country_type_length : 'Company country type length has to be in between 1 to 4 character.'
+  },
+  company_user : {
+    name_type : 'User name has to be string type.',
+    name_length : 'Name length can not be empty.',
+    mobile_number_type : 'Mobile number has to be of string type.',
+    user_mobile_length : 'User mobile number has to be in between 8 to 15 character.',
+    user_country_type : 'User country has to be of string type.',
+    user_country_length : 'User country length has to be in between 3 to 25 characters.',
+    user_address_type : 'User address type has to be string type.',
+    user_address_length : 'User address length has to be in between 5 to 150'
+  },
+  password:{
+
+    resetErr :'Error occured while resetting password'
+  },
+  product:{
+    succ : 'Product Created successfully',
+    err  : 'Error occured while Creating product.',
+    name_type_err : 'product name has to be of string type',
+    product_dimension_type :'product dimension shouble be double type',
+    product_dimension_length:'Atleast one number',
+    company_Ref_Type : 'company ref type should be number',
+    company_Ref_length : 'company ref length has to be in between 5 to 15',
+    UPCA_type : 'UPCA has to be in number type',
+    UPCA_length : 'UPCA has to be in  between 3 to 15',
+    country_Code_Type : 'Contry code  has to be in number type',
+    weight_Type : 'Weight has to be in number type',
+    weight_length : 'Weight length has to  in between 1 to 100' ,
+    brand_type : 'brand name has to be String type',
+    brand_length : 'brand has to be in between 5 to 15',
+    contrycode_length : 'coutry code has to be atleast 3 to 15',
+    company_Name : 'Company Name Invalid',
+    Product_name : 'Product name Aleready Exits'
+
   }
 }
