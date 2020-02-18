@@ -45,7 +45,10 @@ exports.message = {
         user_country_type: 'User country has to be of string type.',
         user_country_length: 'User country length has to be in between 3 to 25 characters.',
         user_address_type: 'User address type has to be string type.',
-        user_address_length: 'User address length has to be in between 5 to 150',
-    }
+        user_address_length: 'User address length has to be in between 5 to 150'
+    },
+    password: {
+        resetErr: 'Error occured while resetting password'
+    },
 };
 //# sourceMappingURL=text.config.js.map

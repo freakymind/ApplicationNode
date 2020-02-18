@@ -27,3 +27,5 @@
 {"name":"dsc","hostname":"OJAS-DD132","pid":16889,"level":30,"msg":"DB Connected successfully...","time":"2020-02-17T11:09:00.740Z","v":0}
 {"name":"dsc","hostname":"OJAS-DD132","pid":17087,"level":30,"msg":"DB Connected successfully...","time":"2020-02-17T11:09:19.773Z","v":0}
 {"name":"dsc","hostname":"OJAS-DD132","pid":17281,"level":30,"msg":"DB Connected successfully...","time":"2020-02-17T11:10:06.184Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":490,"level":30,"msg":"DB Connected successfully...","time":"2020-02-17T13:53:42.556Z","v":0}
+{"name":"dsc","hostname":"OJAS-DD132","pid":490,"level":30,"msg":"JWT token generation method called","time":"2020-02-17T13:53:43.279Z","v":0}
