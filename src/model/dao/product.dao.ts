@@ -52,20 +52,16 @@ export class ProductDao {
 
 
   static async findProducts(productname: any) {
-console.log(productname,"productname")
+    console.log(productname, "productname")
     try {
       let db = await DbConn.getCollObj();
-      // let productdata = db.aggregate([{$unwind :'$products'},{$elemMatch:{
-      //   "products.product_Name":productname
-      // }}])
-
-    let productdata=await db.findOne({"products.product_Name":productname},
-      {"products.$":1}
-    );
-     
-    
- if (productdata) {
-        console.log(productdata,"find")
+      let productdata = await db.aggregate([
+        { "$unwind": "$products" },
+        { "$match": { "products.product_Name": productname } },
+        { "$project": { "products": 1, _id: 0 } }
+      ]).toArray();
+      if (productdata) {
+        console.log(productdata, "find")
         return productdata;
       }
     }
@@ -85,6 +81,65 @@ console.log(productname,"productname")
     }
     catch (err) {
       log.error("Company DAO error" + err);
+    }
+
+  }
+  static async updateProduct(product: any) {
+    try {
+      // console.log("enterstoupdate2")
+      // console.log(product,"updateobjectin dao")
+      // console.log(product.updated_on,"productupdation in dao")
+      let db = await DbConn.getCollObj();
+      let updateproduct = await db.updateOne({ 'products.product_id': product.product_id }, {
+        $set: {
+          "products.$.product_id": product.product_id,
+          "products.$.product_Name": product.product_Name,
+          "products.$.brand": product.brand,
+          "products.$.product_dimensions": product.product_dimensions,
+          "products.$.company_Ref": product.company_Ref,
+          "products.$.UPCA": product.UPCA,
+          "products.$.countrycode": product.countrycode,
+          "products.$.Weight": product.Weight,
+          "products.$.status": product.status,
+          "products.$.created_on": product.created_on,
+          "products.$.updated_on": product.updated_on
+        }
+      });
+      if (updateproduct) {
+        // console.log(updateproduct, "updateddata");
+        return updateproduct;
+      }
+
+
+    }
+    catch (error) {
+      console.log(error, "error at dao");
+
+    }
+    let db = await DbConn.getCollObj();
+    return Product;
+
+  }
+
+  static async deleteproduct(product: any) {
+    try {
+      let db = await DbConn.getCollObj();
+      let deleteproduct = await db.updateOne({
+        'products.product_id': product.product_id
+      }, {
+        $set: {
+
+          "products.$.status": product.status,
+        }
+
+      });
+      if (deleteproduct) {
+        return deleteproduct;
+      }
+
+    }
+    catch (err) {
+      console.log(err)
     }
 
   }

@@ -75,20 +75,58 @@ export class ProductController {
             Weight: Weight,
             status: status,
             created_on: created_on,
+            updated_on: new Date()
 
         }
 
 
         try {
-            // console.log(product.product_Name, "productName")
+
             let updateproduct = await ProductService.updateProduct(product);
             if (updateproduct) {
-              return updateproduct;
+                res.status(201).send(updateproduct);
             }
         }
         catch (err) {
+            log.error("Error at company controller");
+            return res.status(500).send(ResponseHandler.error(err, message.product.err_Update));
+        }
+
+    }
+
+    static async productDeletion(req: Request, res: Response) {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(422).send(await ResponseHandler.error(errors.array(), message.basic.req_body_validation_err));
 
         }
+        try {
+            log.info("product Controller called");
+
+            let product_id: String = req.body.product_id;
+            let product_Name: String = req.body.product_Name;
+            let product = {
+                product_id: product_id,
+                product_Name: product_Name,
+                status: false
+            }
+
+            let deleteproduct = await ProductService.deleteProduct(product)
+            if (deleteproduct) {
+
+                res.status(201).send(deleteproduct)
+            }
+
+
+
+        }
+        catch (err) {
+
+            console.log("error at controller")
+        }
+
+
+
 
     }
 
