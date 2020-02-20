@@ -8,6 +8,8 @@
  */
 import { DbConn } from '../../config/db.config';
 import { log } from '../../log/log.config';
+import { Company } from '../class/comapny.class';
+import { transactionOptions } from '../../util/common.config';
 //Comapny DAO class
 
 export class CompanyDAO {
@@ -17,10 +19,10 @@ export class CompanyDAO {
   @return Returns proper response for success and failure case.
   */
 
-  static async saveCompany(comapnyDoc: Object) {
+  static async saveCompany(company : any, session : any ) {
     try {
-      let db = await DbConn.getCollObj();
-      let saveCompRes = await db.insertOne(comapnyDoc);
+      let coll = await DbConn.getCompColl();
+      let saveCompRes = await coll.insertOne(company, { session });
       log.info("Comapany DAO called");
       return saveCompRes.ops[0];
     }
@@ -33,7 +35,7 @@ export class CompanyDAO {
 
   static async findUserByEmail(email:String) {
     try {
-      let db = await DbConn.getCollObj();
+      let db = await DbConn.getUserColl();
       let saveCompRes = await db.findOne({"user.user_email":`${email}`});
       log.info("Comapany DAO called");
       return saveCompRes;
@@ -46,7 +48,7 @@ export class CompanyDAO {
 
   static async updatePassword(email:any,hasPwd:any,salt:any) {
     try {
-      let db = await DbConn.getCollObj();
+      let db = await DbConn.getUserColl();
       let updatePass= db.updateOne({"user.user_email":email},{
         $set:{
           'user.$.user_password':hasPwd,

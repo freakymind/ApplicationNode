@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_config_1 = require("../util/common.config");
 const text_config_1 = require("../util/text.config");
 const response_config_1 = require("../util/response.config");
-const user_class_1 = require("../model/class/user.class");
+const company_admin_class_1 = require("../model/class/company_admin.class.");
 const comapny_class_1 = require("../model/class/comapny.class");
 const company_services_1 = require("../services/company.services");
 const log_config_1 = require("../log/log.config");
@@ -37,7 +37,7 @@ class CompanyController {
             let company_address = req.body.company_address;
             let salt = yield utill_methods_1.Utill.generateSalt();
             let hashPw = yield utill_methods_1.Utill.generatePassword(password, salt);
-            let user = new user_class_1.User(user_name, email, hashPw, mobile, country, salt, address);
+            let user = new company_admin_class_1.CompanyAdmin(user_name, email, hashPw, mobile, country, salt, address);
             let company = new comapny_class_1.Company(company_name, company_email, company_mobile, company_address);
             try {
                 log_config_1.log.info("Comapny Controller called");

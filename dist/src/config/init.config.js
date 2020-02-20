@@ -15,21 +15,34 @@ class Init {
         return __awaiter(this, void 0, void 0, function* () {
             this.conn = yield db_config_1.DbConn.getConnObj();
             this.db = yield this.conn.db(process.env.DBNAME);
-            this.db.createCollection(this.collName, this.schema);
+            this.db.createCollection(this.user_coll);
+            this.db.createCollection(this.comp_coll);
         });
     }
     static deleteDoc() {
         return __awaiter(this, void 0, void 0, function* () {
-            this.conn = yield db_config_1.DbConn.getCollObj();
-            this.conn.drop();
+            this.user = yield db_config_1.DbConn.getUserColl();
+            this.user.drop();
+            this.comp = yield db_config_1.DbConn.getCompColl();
+            this.comp.drop();
+        });
+    }
+    static demo() {
+        return __awaiter(this, void 0, void 0, function* () {
+            let userColl = yield db_config_1.DbConn.getUserColl();
+            yield userColl.insertOne({ demo: "Demo" });
+            let compColl = yield db_config_1.DbConn.getCompColl();
+            yield compColl.insertOne({ demo: "Demo" });
         });
     }
 }
 exports.Init = Init;
 Init.conn = null;
 Init.db = null;
-Init.coll = null;
-Init.collName = process.env.COLLNAME;
+Init.user_coll = process.env.USER_COLL;
+Init.comp_coll = process.env.COMP_COLL;
+Init.user = null;
+Init.comp = null;
 Init.schema = {
     validator: {
         $jsonSchema: {

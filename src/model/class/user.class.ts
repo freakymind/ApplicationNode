@@ -5,9 +5,10 @@
  * @subpackage config/common.config
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
-import { Utill } from '../../util/utill.methods';
+//import { Utill } from '../../util/utill.methods';
+import { status } from '../../util/common.config';
  //User class
-export class User {
+export abstract class User {
   private user_id : string;
   private user_name: string;
   private user_email: string;
@@ -15,10 +16,13 @@ export class User {
   private password_salt : string;
   private user_mobile: string;
   private user_country: string;
+  private user_address: string;
   private user_role: string;
-  private user_status : boolean;
+  private user_status : string;
   private created_on : Date;
   private updated_on : Date;
+
+  
 
   constructor(name: string, email: string, password : string, mobile: string, country: string,
   salt : string, address : string) {  
@@ -27,28 +31,61 @@ export class User {
     this.user_email = email;
     this.user_mobile = mobile;
     this.user_country = country;
+    this.user_address = address;
     this.password_salt = salt;
     this.user_password = password;
     this.user_role = this.setRole();
-    this.user_status = true;
+    this.user_status = this.setStatus();
     this.created_on = new Date();
     this.updated_on = new Date();
   }
-
-  private generateUserId () {
-    return 'DSC-USER-'+Math.floor(Math.random()*10000);
+  
+  private setStatus () {
+    //TODO : Need to define logic here for setting user role
+    return status.pending;
   }
 
-  // private generatePassword(password: string) {
-  //   if (password == null || password == 'undefined') {
-  //     password = 'dsc' + Math.floor(Math.random() * 1000000);
-  //   }
-  //   let salt = crypto.randomBytes(256).toString('hex');
-  //   let hashedPw = crypto.pbkdf2Sync(password, salt, 99999, 512, 'sha512');
-  //   return hashedPw.toString('hex');
-  // }
-  private setRole() {
-    //TODO : Define the logic for assigning role to individual user.
-    return "COMPANY_ADMIN";
+  abstract generateUserId() : string;
+  abstract setRole() : string;
+
+  //Required getter methods
+  getUserId() {
+    return this.user_id;
+  }
+
+  getUserName () {
+    return this.user_name;
+  }
+
+  getUserEmail () {
+    return this.user_email;
+  }
+
+  getUserMobile () {
+    return this.user_mobile;
+  }
+
+  getUserCountry () {
+    return this.user_country;
+  }
+
+  getUserAddress () {
+    return this.user_address;
+  }
+
+  getUserRole () {
+    return this.user_role;
+  }
+
+  getUserStatus () {
+    return this.user_status;
+  }
+
+  getUserCreatedOn () {
+    return this.created_on;
+  }
+
+  getUserUpdatedOn () {
+    return this.updated_on;
   }
 }

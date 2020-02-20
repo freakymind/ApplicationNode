@@ -7,7 +7,7 @@ export class ProductDao {
   static async saveproduct(products: any) {
     try {
 
-      let db = await DbConn.getCollObj();
+      let db = await DbConn.getUserColl();
       let saveproductdb = await db.updateOne({ "comapny.compName": products.companyRef }, {
         $push: {
           "products": {
@@ -29,7 +29,7 @@ export class ProductDao {
   static async updateProducts(products: any) {
     try {
 
-      let db = await DbConn.getCollObj();
+      let db = await DbConn.getUserColl();
 
       let updateproduct = await db.updateOne({ "comapny.compName": products.company_Ref }, {
         $push: {
@@ -54,7 +54,7 @@ export class ProductDao {
   static async findProducts(productname: any) {
     console.log(productname, "productname")
     try {
-      let db = await DbConn.getCollObj();
+      let db = await DbConn.getUserColl();
       let productdata = await db.aggregate([
         { "$unwind": "$products" },
         { "$match": { "products.product_Name": productname } },
@@ -73,7 +73,7 @@ export class ProductDao {
   static async findCompany(companyref: any) {
     try {
 
-      let db = await DbConn.getCollObj();
+      let db = await DbConn.getUserColl();
       let companydata = await db.findOne({ "comapny.compName": companyref });
       if (companydata) {
         return companydata;
@@ -89,7 +89,7 @@ export class ProductDao {
       // console.log("enterstoupdate2")
       // console.log(product,"updateobjectin dao")
       // console.log(product.updated_on,"productupdation in dao")
-      let db = await DbConn.getCollObj();
+      let db = await DbConn.getUserColl();
       let updateproduct = await db.updateOne({ 'products.product_id': product.product_id }, {
         $set: {
           "products.$.product_id": product.product_id,
@@ -116,14 +116,14 @@ export class ProductDao {
       console.log(error, "error at dao");
 
     }
-    let db = await DbConn.getCollObj();
+    let db = await DbConn.getUserColl();
     return Product;
 
   }
 
   static async deleteproduct(product: any) {
     try {
-      let db = await DbConn.getCollObj();
+      let db = await DbConn.getUserColl();
       let deleteproduct = await db.updateOne({
         'products.product_id': product.product_id
       }, {

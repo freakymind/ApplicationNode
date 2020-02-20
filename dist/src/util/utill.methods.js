@@ -26,6 +26,14 @@ class Utill {
             return hashedPw.toString('hex');
         });
     }
+    static getRandomString() {
+        const character = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let ch = '';
+        for (let i = 0; i < 2; i++) {
+            ch += character.charAt(Math.floor(Math.random() * character.length));
+        }
+        return Math.floor(Math.random() * 10000) + ch;
+    }
 }
 exports.Utill = Utill;
 //# sourceMappingURL=utill.methods.js.map

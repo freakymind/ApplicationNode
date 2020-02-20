@@ -33,8 +33,8 @@ import { DbConn } from '../../config/db.config';
       max: 50
     }).withMessage(message.company.email_length_err),
     check('company_email').custom(async (email : string) =>{
-      let conn = await DbConn.getCollObj();
-      let isExist = await conn.findOne({"comapny.company_email" : email});
+      let conn = await DbConn.getCompColl();
+      let isExist = await conn.findOne({"company_email" : email});
       if(isExist){
         return Promise.reject(message.company.comp_email_exist);
       }
@@ -61,10 +61,10 @@ import { DbConn } from '../../config/db.config';
       max: 50
     }).withMessage(message.company.email_length_err),
     check('email').custom(async (email : string) =>{
-      let conn = await DbConn.getCollObj();
-      let isExist = await conn.findOne({"user.user_email" : email});
+      let conn = await DbConn.getUserColl();
+      let isExist = await conn.findOne({"user_email" : email});
       if(isExist){
-        return Promise.reject(message.company.comp_email_exist);
+        return Promise.reject(message.company.user_email_exist);
       }
     }),
   

@@ -12,11 +12,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const db_config_1 = require("../../config/db.config");
 const log_config_1 = require("../../log/log.config");
 class CompanyDAO {
-    static saveCompany(comapnyDoc) {
+    static saveCompany(company, session) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                let db = yield db_config_1.DbConn.getCollObj();
-                let saveCompRes = yield db.insertOne(comapnyDoc);
+                let coll = yield db_config_1.DbConn.getCompColl();
+                let saveCompRes = yield coll.insertOne(company, { session });
                 log_config_1.log.info("Comapany DAO called");
                 return saveCompRes.ops[0];
             }
@@ -29,7 +29,7 @@ class CompanyDAO {
     static findUserByEmail(email) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                let db = yield db_config_1.DbConn.getCollObj();
+                let db = yield db_config_1.DbConn.getUserColl();
                 let saveCompRes = yield db.findOne({ "user.user_email": `${email}` });
                 log_config_1.log.info("Comapany DAO called");
                 return saveCompRes;
@@ -42,7 +42,7 @@ class CompanyDAO {
     static updatePassword(email, hasPwd, salt) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                let db = yield db_config_1.DbConn.getCollObj();
+                let db = yield db_config_1.DbConn.getUserColl();
                 let updatePass = db.updateOne({ "user.user_email": email }, {
                     $set: {
                         'user.$.user_password': hasPwd,

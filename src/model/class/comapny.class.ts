@@ -6,6 +6,7 @@
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
 
+ import { Utill } from '../../util/utill.methods';
 //Comapny class
 
 export class Company {
@@ -14,6 +15,8 @@ export class Company {
   private company_email: string;
   private company_address: string;
   private company_mobile: string;
+  private users : Array<Object>;
+  private distributors : Array<Object>;
   private created_on : Date;
   private updated_on : Date;
 
@@ -23,11 +26,31 @@ export class Company {
     this.company_email = email;
     this.company_mobile = mobile;
     this.company_address = address;
+    this.users = [];
+    this.distributors = [];
     this.created_on = new Date();
     this.updated_on = new Date();
   }
 
   private generateCompId () {
-    return 'DSC-COMP-'+Math.floor(Math.random()*10000);
+    return 'DSC-COMP-'+ Utill.getRandomString();
   }
+
+  //Getter methods
+  getCompName () {
+    return this.company_name;
+  }
+
+  getCompEmail () {
+    return this.company_email;
+  }
+
+  getCompAddress () {
+    return this.company_address;
+  }
+
+  getCompMobile () {
+    return this.company_mobile;
+  }
+
 }

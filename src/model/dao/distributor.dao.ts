@@ -6,7 +6,7 @@ export class DistributorDao {
 
   static async distributorDao(distObj: any) {
     try {
-      let Db = await DbConn.getCollObj();
+      let Db = await DbConn.getUserColl();
       let addDistributor = await Db.updateOne({ "user.user_email": distObj.user_referenceBy }, {
         $push: {
           "user": {
@@ -22,7 +22,7 @@ export class DistributorDao {
   }
   static async checkUser(email: string) {
     try {
-      let Db = await DbConn.getCollObj();
+      let Db = await DbConn.getUserColl();
      
       let checkUserDetails = await Db.aggregate([
         {"$unwind":"$user"},
@@ -38,7 +38,7 @@ export class DistributorDao {
   
   static async addProducts(distObj: any) {
     try {
-      let Db = await DbConn.getCollObj();
+      let Db = await DbConn.getUserColl();
       let addDistributor = await Db.updateOne({ "user.user_id": distObj.distributor_id }, {
         $push: {
           "distributor": distObj
@@ -51,7 +51,7 @@ export class DistributorDao {
   }
   static async updateUser(distObj: any,id:number|string) {
     try {
-      let Db = await DbConn.getCollObj();
+      let Db = await DbConn.getUserColl();
       let updateDistributor = await Db.updateOne({
         "user": { $elemMatch: { user_id:id} },
         "distributor": { $elemMatch: { distributor_id:id } }
@@ -67,7 +67,7 @@ export class DistributorDao {
   }
   static async deleteUser(email:string) {
     try{
-      let Db = await DbConn.getCollObj();
+      let Db = await DbConn.getUserColl();
       let deleteDistributor = await Db.updateOne({
         "user.user_email":email
       },{$set:{"user.$.user_status":false}});

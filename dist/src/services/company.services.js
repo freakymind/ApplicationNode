@@ -10,47 +10,50 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const company_dao_1 = require("../model/dao/company.dao");
+const user_dao_1 = require("../model/dao/user.dao");
 const log_config_1 = require("../log/log.config");
 const jwt_class_1 = require("../model/class/jwt.class");
+const common_config_1 = require("../util/common.config");
+const db_config_1 = require("../config/db.config");
 class CompanyServices {
     static registerCompany(user, company) {
         return __awaiter(this, void 0, void 0, function* () {
-            let compnayDoc = {
-                user: [user],
-                company: company,
-                distributor: [],
-                products: []
-            };
+            let conn = yield db_config_1.DbConn.getConnObj();
+            let session = yield conn.startSession();
             try {
-                log_config_1.log.info("Company service called");
-                let saveComp = yield company_dao_1.CompanyDAO.saveCompany(compnayDoc);
-                return yield this.getResObj(saveComp);
+                yield session.withTransaction(() => __awaiter(this, void 0, void 0, function* () {
+                    yield user_dao_1.UserDAO.saveUser(user, session);
+                    yield company_dao_1.CompanyDAO.saveCompany(company, session);
+                }), common_config_1.transactionOptions);
+                return this.getResObj(user, company);
             }
             catch (err) {
-                log_config_1.log.error("Error occured at company services" + err);
-                throw new Error(err);
+                log_config_1.log.error(err);
+            }
+            finally {
+                yield session.endSession();
             }
         });
     }
-    static getResObj(saveComp) {
+    static getResObj(user, company) {
         return __awaiter(this, void 0, void 0, function* () {
             let resObj = {
-                "user_name": saveComp.user[0].user_name,
-                "user_email": saveComp.user[0].user_email,
-                "user_mobile": saveComp.user[0].user_mobile,
-                "user_country": saveComp.user[0].user_country,
-                "user_role": saveComp.user[0].user_role,
-                "user_status": saveComp.user[0].user_status,
-                "company_name": saveComp.company.company_name,
-                "company_email": saveComp.company.company_email,
-                "company_mobile": saveComp.company.company_mobile,
-                "company_address": saveComp.company.company_address,
+                "user_name": user.getUserName(),
+                "user_email": user.getUserEmail(),
+                "user_mobile": user.getUserMobile(),
+                "user_country": user.getUserCountry(),
+                "user_role": user.getUserRole(),
+                "user_status": user.getUserStatus(),
+                "company_name": company.getCompName(),
+                "company_email": company.getCompEmail(),
+                "company_mobile": company.getCompMobile(),
+                "company_address": company.getCompAddress(),
                 "token": yield jwt_class_1.JWT.generateToken({
-                    'user_email': saveComp.user[0].user_email,
-                    'role': saveComp.user[0].user_role
+                    'user_email': user.getUserEmail(),
+                    'role': user.getUserRole()
                 }),
-                "created_on": saveComp.company.created_on,
-                "updated_on": saveComp.company.updated_on,
+                "created_on": user.getUserCreatedOn(),
+                "updated_on": user.getUserUpdatedOn(),
             };
             return [resObj];
         });

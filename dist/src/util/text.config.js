@@ -50,5 +50,24 @@ exports.message = {
     password: {
         resetErr: 'Error occured while resetting password'
     },
+    product: {
+        succ: 'Product Created successfully',
+        err: 'Error occured while Creating product.',
+        name_type_err: 'product name has to be of string type',
+        product_dimension_type: 'product dimension shouble be double type',
+        product_dimension_length: 'Atleast one number',
+        company_Ref_Type: 'company ref type should be number',
+        company_Ref_length: 'company ref length has to be in between 5 to 15',
+        UPCA_type: 'UPCA has to be in number type',
+        UPCA_length: 'UPCA has to be in  between 3 to 15',
+        country_Code_Type: 'Contry code  has to be in number type',
+        weight_Type: 'Weight has to be in number type',
+        weight_length: 'Weight length has to  in between 1 to 100',
+        brand_type: 'brand name has to be String type',
+        brand_length: 'brand has to be in between 5 to 15',
+        contrycode_length: 'coutry code has to be atleast 3 to 15',
+        company_Name: 'Company Name Invalid',
+        Product_name: 'Product name Aleready Exits'
+    }
 };
 //# sourceMappingURL=text.config.js.map

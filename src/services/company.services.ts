@@ -9,53 +9,56 @@
 import { User } from "../model/class/user.class";
 import { Company } from '../model/class/comapny.class';
 import { CompanyDAO } from '../model/dao/company.dao';
+import { UserDAO } from '../model/dao/user.dao';
 import { log } from "../log/log.config";
 import { JWT } from '../model/class/jwt.class';
+import { transactionOptions } from '../util/common.config';
+import { DbConn } from '../config/db.config';
+import { CompanyAdmin } from "../model/class/company_admin.class.";
 
 //Comapny class
 export class CompanyServices {
   private static secretKey: any = process.env.SECRETKEY;
 
   //Method for registering company.
-  static async registerCompany(user: User, company: Company) {
-    //Collection object
-    //TODO : Initial schema of collection will be created at time of server starting 
-    let compnayDoc: object = {
-      user: [user],
-      company: company,
-      distributor: [],
-      products: []
-    }
+  static async registerCompany(user: CompanyAdmin, company: Company) {
+    let conn = await DbConn.getConnObj();
+    let session = await conn.startSession();
 
     try {
-      log.info("Company service called")
-      let saveComp = await CompanyDAO.saveCompany(compnayDoc);
-      return await this.getResObj(saveComp);
+
+      await session.withTransaction(async () => {
+        await UserDAO.saveUser(user, session);
+        await CompanyDAO.saveCompany(company, session);
+      }, transactionOptions);
+      return this.getResObj(user, company);
+    } catch (err) {
+      log.error(err);
     }
-    catch (err) {
-      log.error("Error occured at company services" + err);
-      throw new Error(err);
+    finally {
+      await session.endSession();
     }
+
   }
 
-  private static async getResObj(saveComp: any) {
+  private static async getResObj(user: CompanyAdmin, company: Company) {
     let resObj = {
-      "user_name": saveComp.user[0].user_name,
-      "user_email": saveComp.user[0].user_email,
-      "user_mobile": saveComp.user[0].user_mobile,
-      "user_country": saveComp.user[0].user_country,
-      "user_role": saveComp.user[0].user_role,
-      "user_status": saveComp.user[0].user_status,
-      "company_name": saveComp.company.company_name,
-      "company_email": saveComp.company.company_email,
-      "company_mobile": saveComp.company.company_mobile,
-      "company_address": saveComp.company.company_address,
+      "user_name": user.getUserName(),
+      "user_email": user.getUserEmail(),
+      "user_mobile": user.getUserMobile(),
+      "user_country": user.getUserCountry(),
+      "user_role": user.getUserRole(),
+      "user_status": user.getUserStatus(),
+      "company_name": company.getCompName(),
+      "company_email": company.getCompEmail(),
+      "company_mobile": company.getCompMobile(),
+      "company_address": company.getCompAddress(),
       "token": await JWT.generateToken({
-        'user_email': saveComp.user[0].user_email,
-        'role': saveComp.user[0].user_role
+        'user_email': user.getUserEmail(),
+        'role': user.getUserRole()
       }),
-      "created_on": saveComp.company.created_on,
-      "updated_on": saveComp.company.updated_on,
+      "created_on": user.getUserCreatedOn(),
+      "updated_on": user.getUserUpdatedOn(),
     }
     return [resObj];
   }

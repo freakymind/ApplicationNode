@@ -14,7 +14,7 @@ class DistributorDao {
     static distributorDao(distObj) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                let Db = yield db_config_1.DbConn.getCollObj();
+                let Db = yield db_config_1.DbConn.getUserColl();
                 let addDistributor = yield Db.updateOne({ "user.user_email": distObj.user_referenceBy }, {
                     $push: {
                         "user": {
@@ -32,7 +32,7 @@ class DistributorDao {
     static checkUser(email) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                let Db = yield db_config_1.DbConn.getCollObj();
+                let Db = yield db_config_1.DbConn.getUserColl();
                 let checkUserDetails = yield Db.aggregate([
                     { "$unwind": "$user" },
                     { "$match": { "user.user_email": email, "user.user_status": true } },
@@ -49,7 +49,7 @@ class DistributorDao {
     static addProducts(distObj) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                let Db = yield db_config_1.DbConn.getCollObj();
+                let Db = yield db_config_1.DbConn.getUserColl();
                 let addDistributor = yield Db.updateOne({ "user.user_id": distObj.distributor_id }, {
                     $push: {
                         "distributor": distObj
@@ -65,7 +65,7 @@ class DistributorDao {
     static updateUser(distObj, id) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                let Db = yield db_config_1.DbConn.getCollObj();
+                let Db = yield db_config_1.DbConn.getUserColl();
                 let updateDistributor = yield Db.updateOne({
                     "user": { $elemMatch: { user_id: id } },
                     "distributor": { $elemMatch: { distributor_id: id } }
@@ -80,7 +80,7 @@ class DistributorDao {
     static deleteUser(email) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                let Db = yield db_config_1.DbConn.getCollObj();
+                let Db = yield db_config_1.DbConn.getUserColl();
                 let deleteDistributor = yield Db.updateOne({
                     "user.user_email": email
                 }, { $set: { "user.$.user_status": false } });

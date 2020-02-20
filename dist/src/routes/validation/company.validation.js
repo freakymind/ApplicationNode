@@ -30,8 +30,8 @@ exports.CompRegValidation = [
         max: 50
     }).withMessage(text_config_1.message.company.email_length_err),
     common_config_1.check('company_email').custom((email) => __awaiter(void 0, void 0, void 0, function* () {
-        let conn = yield db_config_1.DbConn.getCollObj();
-        let isExist = yield conn.findOne({ "comapny.company_email": email });
+        let conn = yield db_config_1.DbConn.getCompColl();
+        let isExist = yield conn.findOne({ "company_email": email });
         if (isExist) {
             return Promise.reject(text_config_1.message.company.comp_email_exist);
         }
@@ -52,10 +52,10 @@ exports.CompRegValidation = [
         max: 50
     }).withMessage(text_config_1.message.company.email_length_err),
     common_config_1.check('email').custom((email) => __awaiter(void 0, void 0, void 0, function* () {
-        let conn = yield db_config_1.DbConn.getCollObj();
-        let isExist = yield conn.findOne({ "user.user_email": email });
+        let conn = yield db_config_1.DbConn.getUserColl();
+        let isExist = yield conn.findOne({ "user_email": email });
         if (isExist) {
-            return Promise.reject(text_config_1.message.company.comp_email_exist);
+            return Promise.reject(text_config_1.message.company.user_email_exist);
         }
     })),
     common_config_1.check('mobile').isString().withMessage(text_config_1.message.company.owner_mobile_type),

@@ -11,124 +11,124 @@ import { message } from './../util/text.config';
 
 export class ProductController {
 
-    static async productCreation(req: Request, res: Response) {
+  static async productCreation(req: Request, res: Response) {
 
-        const errors = validationResult(req);
-        if (!errors.isEmpty()) {
-            return res.status(422).send(await ResponseHandler.error(errors.array(), message.basic.req_body_validation_err));
-
-        }
-
-        let product_Name: String = req.body.product_Name;
-        let brand: String = req.body.brand;
-        let product_dimensions: String = req.body.product_dimensions;
-        let company_Ref: String = req.body.company_Ref;
-        let UPCA: Number = req.body.UPCA;
-        let countrycode: Number = req.body.countrycode;
-        let Weight: DoubleRange = req.body.Weight;
-        let product = new Product(product_Name, product_dimensions, brand, company_Ref, UPCA, countrycode, Weight);
-        try {
-            log.info("product Controller called");
-            console.log("service")
-            console.log(product, "controller")
-            let savePRod = await ProductService.saveProduct(product);
-            if (savePRod) {
-                return res.status(201).send(savePRod);
-            }
-
-
-        }
-        catch (err) {
-            log.error("Error at company controller");
-            return res.status(500).send(ResponseHandler.error(err, message.product.err));
-        }
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(422).send(await ResponseHandler.error(errors.array(), message.basic.req_body_validation_err));
 
     }
 
-    static async productUpdation(req: Request, res: Response) {
-
-        const errors = validationResult(req);
-        if (!errors.isEmpty()) {
-            return res.status(422).send(await ResponseHandler.error(errors.array(), message.basic.req_body_validation_err));
-
-        }
-        // console.log("req.body", req.body)
-        let product_id: String = req.body.product_id;
-        let product_Name: String = req.body.product_Name;
-        let brand: String = req.body.brand;
-        let product_dimensions: String = req.body.product_dimensions;
-        let company_Ref: String = req.body.company_Ref;
-        let UPCA: Number = req.body.UPCA;
-        let countrycode: Number = req.body.countrycode;
-        let Weight: DoubleRange = req.body.Weight;
-        let status: Boolean = req.body.status;
-        let created_on: Date = req.body.created_on;
-
-        let product = {
-            product_id: product_id,
-            product_Name: product_Name,
-            brand: brand,
-            product_dimensions: product_dimensions,
-            company_Ref: company_Ref,
-            UPCA: UPCA,
-            countrycode: countrycode,
-            Weight: Weight,
-            status: status,
-            created_on: created_on,
-            updated_on: new Date()
-
-        }
+    let product_Name: String = req.body.product_Name;
+    let brand: String = req.body.brand;
+    let product_dimensions: String = req.body.product_dimensions;
+    let company_Ref: String = req.body.company_Ref;
+    let UPCA: Number = req.body.UPCA;
+    let countrycode: Number = req.body.countrycode;
+    let Weight: DoubleRange = req.body.Weight;
+    let product = new Product(product_Name, product_dimensions, brand, company_Ref, UPCA, countrycode, Weight);
+    try {
+      log.info("product Controller called");
+      console.log("service")
+      console.log(product, "controller")
+      let savePRod = await ProductService.saveProduct(product);
+      if (savePRod) {
+        return res.status(201).send(savePRod);
+      }
 
 
-        try {
+    }
+    catch (err) {
+      log.error("Error at company controller");
+      return res.status(500).send(ResponseHandler.error(err, message.product.err));
+    }
 
-            let updateproduct = await ProductService.updateProduct(product);
-            if (updateproduct) {
-                res.status(201).send(updateproduct);
-            }
-        }
-        catch (err) {
-            log.error("Error at company controller");
-            return res.status(500).send(ResponseHandler.error(err, message.product.err_Update));
-        }
+  }
+
+  static async productUpdation(req: Request, res: Response) {
+
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(422).send(await ResponseHandler.error(errors.array(), message.basic.req_body_validation_err));
+
+    }
+    // console.log("req.body", req.body)
+    let product_id: String = req.body.product_id;
+    let product_Name: String = req.body.product_Name;
+    let brand: String = req.body.brand;
+    let product_dimensions: String = req.body.product_dimensions;
+    let company_Ref: String = req.body.company_Ref;
+    let UPCA: Number = req.body.UPCA;
+    let countrycode: Number = req.body.countrycode;
+    let Weight: DoubleRange = req.body.Weight;
+    let status: Boolean = req.body.status;
+    let created_on: Date = req.body.created_on;
+
+    let product = {
+      product_id: product_id,
+      product_Name: product_Name,
+      brand: brand,
+      product_dimensions: product_dimensions,
+      company_Ref: company_Ref,
+      UPCA: UPCA,
+      countrycode: countrycode,
+      Weight: Weight,
+      status: status,
+      created_on: created_on,
+      updated_on: new Date()
 
     }
 
-    static async productDeletion(req: Request, res: Response) {
-        const errors = validationResult(req);
-        if (!errors.isEmpty()) {
-            return res.status(422).send(await ResponseHandler.error(errors.array(), message.basic.req_body_validation_err));
 
-        }
-        try {
-            log.info("product Controller called");
+    try {
 
-            let product_id: String = req.body.product_id;
-            let product_Name: String = req.body.product_Name;
-            let product = {
-                product_id: product_id,
-                product_Name: product_Name,
-                status: false
-            }
+      let updateproduct = await ProductService.updateProduct(product);
+      if (updateproduct) {
+        res.status(201).send(updateproduct);
+      }
+    }
+    catch (err) {
+      log.error("Error at company controller");
+      return res.status(500).send(ResponseHandler.error(err, message.product.err));
+    }
 
-            let deleteproduct = await ProductService.deleteProduct(product)
-            if (deleteproduct) {
+  }
 
-                res.status(201).send(deleteproduct)
-            }
+  static async productDeletion(req: Request, res: Response) {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(422).send(await ResponseHandler.error(errors.array(), message.basic.req_body_validation_err));
 
+    }
+    try {
+      log.info("product Controller called");
 
+      let product_id: String = req.body.product_id;
+      let product_Name: String = req.body.product_Name;
+      let product = {
+        product_id: product_id,
+        product_Name: product_Name,
+        status: false
+      }
 
-        }
-        catch (err) {
+      let deleteproduct = await ProductService.deleteProduct(product)
+      if (deleteproduct) {
 
-            console.log("error at controller")
-        }
-
+        res.status(201).send(deleteproduct)
+      }
 
 
 
     }
+    catch (err) {
+
+      console.log("error at controller")
+    }
+
+
+
+
+  }
 
 
 }

@@ -11,23 +11,20 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const db_config_1 = require("../../config/db.config");
 const log_config_1 = require("../../log/log.config");
-class AuthDAO {
-    static authenticate(username) {
+class UserDAO {
+    static saveUser(user, session) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 let coll = yield db_config_1.DbConn.getUserColl();
-                let cursor = yield coll.find({ "user.user_email": username })
-                    .project({ _id: 0, "user.user_password": 1, "user.password_salt": 1,
-                    "user.user_email": 1, "user.user_role": 1 })
-                    .toArray();
-                return cursor;
+                let saveUserRes = yield coll.insertOne(user, { session });
+                log_config_1.log.info(saveUserRes);
+                return saveUserRes.ops[0];
             }
             catch (err) {
                 log_config_1.log.error(err);
-                throw err;
             }
         });
     }
 }
-exports.AuthDAO = AuthDAO;
-//# sourceMappingURL=auth.dao.js.map
+exports.UserDAO = UserDAO;
+//# sourceMappingURL=user.dao.js.map

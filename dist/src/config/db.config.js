@@ -28,16 +28,47 @@ class DbConn {
             }
         });
     }
-    static getCollObj() {
+    static getUserColl() {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                if (this.coll == null) {
-                    this.conn = yield this.getConnObj();
-                    this.db = yield this.conn.db(process.env.DBNAME);
-                    this.coll = yield this.db.collection(process.env.COLLNAME);
+                if (this.user_coll == null) {
+                    this.db = yield this.getDbObj();
+                    this.user_coll = yield this.db.collection(process.env.USER_COLL);
                 }
                 log_config_1.log.info(text_config_1.message.basic.db_succ);
-                return this.coll;
+                return this.user_coll;
+            }
+            catch (err) {
+                log_config_1.log.error(text_config_1.message.basic.db_err + err);
+                throw err;
+            }
+        });
+    }
+    static getCompColl() {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                if (this.comp_coll == null) {
+                    this.db = yield this.getDbObj();
+                    this.comp_coll = yield this.db.collection(process.env.COMP_COLL);
+                }
+                log_config_1.log.info(text_config_1.message.basic.db_succ);
+                return this.comp_coll;
+            }
+            catch (err) {
+                log_config_1.log.error(text_config_1.message.basic.db_err + err);
+                throw err;
+            }
+        });
+    }
+    static getDbObj() {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                if (this.db == null) {
+                    this.client = new MongoClient(this.url, this.options);
+                    this.conn = yield this.client.connect();
+                    this.db = yield this.conn.db(process.env.DBNAME);
+                }
+                return this.db;
             }
             catch (err) {
                 log_config_1.log.error(text_config_1.message.basic.db_err + err);
@@ -50,8 +81,9 @@ exports.DbConn = DbConn;
 DbConn.client = null;
 DbConn.conn = null;
 DbConn.db = null;
-DbConn.coll = null;
-DbConn.url = "mongodb+srv://m001-student:Sekharsahu@123@cluster0-ysylc.mongodb.net/test?retryWrites=true&w=majority";
+DbConn.user_coll = null;
+DbConn.comp_coll = null;
+DbConn.url = "mongodb+srv://" + process.env.ATLAS_USER_NAME + ':' + process.env.ATLAS_PW + '@cluster0-ysylc.mongodb.net/test?retryWrites=true&w=majority';
 DbConn.options = {
     useNewUrlParser: true,
     useUnifiedTopology: true

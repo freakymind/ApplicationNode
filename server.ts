@@ -37,7 +37,8 @@ const server:any = app.listen( process.env.SERVER_PORT, () => {
 
 import { Init } from './src/config/init.config';
 //Method for basic database configuration.
-//Init.init();
+Init.init();
+//Init.demo();
 //Init.deleteDoc();
 
 
