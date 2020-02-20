@@ -44,7 +44,7 @@ export class CompanyController {
     let hashPw : string = await Utill.generatePassword(password, salt);
     
     let user = new CompanyAdmin(user_name, email, hashPw, mobile, country, salt, address);
-    let company = new Company(company_name, company_email, company_mobile, company_address);
+    let company = new Company(company_name, company_email, company_mobile, company_address, user.getUserId());
 
     try {
       log.info("Comapny Controller called");

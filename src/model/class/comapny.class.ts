@@ -7,6 +7,7 @@
  */
 
  import { Utill } from '../../util/utill.methods';
+import { CompanyAdmin } from './company_admin.class.';
 //Comapny class
 
 export class Company {
@@ -15,17 +16,20 @@ export class Company {
   private company_email: string;
   private company_address: string;
   private company_mobile: string;
+  private comp_admin_id : string;
   private users : Array<Object>;
   private distributors : Array<Object>;
   private created_on : Date;
   private updated_on : Date;
 
-  constructor(name: string, email: string, mobile: string, address: string) {
+  constructor(name: string, email: string, mobile: string, address: string, admin_id : string) {
+    //super();
     this.company_id = this.generateCompId();
     this.company_name = name;
     this.company_email = email;
     this.company_mobile = mobile;
     this.company_address = address;
+    this.comp_admin_id = admin_id;
     this.users = [];
     this.distributors = [];
     this.created_on = new Date();

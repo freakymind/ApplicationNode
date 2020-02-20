@@ -18,7 +18,7 @@ class AuthDAO {
                 let coll = yield db_config_1.DbConn.getUserColl();
                 let cursor = yield coll.find({ "user_email": username })
                     .project({ _id: 0, "user_password": 1, "password_salt": 1,
-                    "user_email": 1, "user_role": 1 })
+                    "user_email": 1, "user_role": 1, "user_id": 1 })
                     .toArray();
                 return cursor;
             }

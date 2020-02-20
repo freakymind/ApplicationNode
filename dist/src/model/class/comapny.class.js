@@ -2,12 +2,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const utill_methods_1 = require("../../util/utill.methods");
 class Company {
-    constructor(name, email, mobile, address) {
+    constructor(name, email, mobile, address, admin_id) {
         this.company_id = this.generateCompId();
         this.company_name = name;
         this.company_email = email;
         this.company_mobile = mobile;
         this.company_address = address;
+        this.comp_admin_id = admin_id;
         this.users = [];
         this.distributors = [];
         this.created_on = new Date();

@@ -27,19 +27,20 @@ export class AuthServices {
       if(authRes.length > 0){
         let user_email = authRes[0].user_email;
         let user_role = authRes[0].user_role;
+        let user_id = authRes[0].user_id;
 
         let salt = authRes[0].password_salt;
         let userPw = authRes[0].user_password;
         let hashPw = await Utill.generatePassword(password, salt);
 
         if(hashPw == userPw) {
-          return await this.resObj(user_email, user_role, true);
+          return await this.resObj(user_email, user_role, user_id ,true);
         }
-        return await this.resObj('', '', false);
+        return await this.resObj('', '', '' , false);
 
       }
       else {
-        return await this.resObj('', '', false);
+        return await this.resObj('', '', '' , false);
       }
     } catch (err) {
       log.error(err);
@@ -47,7 +48,7 @@ export class AuthServices {
   }
 
   //Method for generating response Object
-  static async resObj(email: string, role: string,
+  static async resObj(email: string, role: string, user_id : string,
     isSuccess: boolean) {
 
     let loginRes = [];
@@ -57,6 +58,7 @@ export class AuthServices {
       let obj = {
         token: await JWT.generateToken({
           email: email,
+          user_id : user_id,
           role: role
         }),
         status: isSuccess

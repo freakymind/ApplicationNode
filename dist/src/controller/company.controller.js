@@ -38,7 +38,7 @@ class CompanyController {
             let salt = yield utill_methods_1.Utill.generateSalt();
             let hashPw = yield utill_methods_1.Utill.generatePassword(password, salt);
             let user = new company_admin_class_1.CompanyAdmin(user_name, email, hashPw, mobile, country, salt, address);
-            let company = new comapny_class_1.Company(company_name, company_email, company_mobile, company_address);
+            let company = new comapny_class_1.Company(company_name, company_email, company_mobile, company_address, user.getUserId());
             try {
                 log_config_1.log.info("Comapny Controller called");
                 let saveComp = yield company_services_1.CompanyServices.registerCompany(user, company);

@@ -21,16 +21,17 @@ class AuthServices {
                 if (authRes.length > 0) {
                     let user_email = authRes[0].user_email;
                     let user_role = authRes[0].user_role;
+                    let user_id = authRes[0].user_id;
                     let salt = authRes[0].password_salt;
                     let userPw = authRes[0].user_password;
                     let hashPw = yield utill_methods_1.Utill.generatePassword(password, salt);
                     if (hashPw == userPw) {
-                        return yield this.resObj(user_email, user_role, true);
+                        return yield this.resObj(user_email, user_role, user_id, true);
                     }
-                    return yield this.resObj('', '', false);
+                    return yield this.resObj('', '', '', false);
                 }
                 else {
-                    return yield this.resObj('', '', false);
+                    return yield this.resObj('', '', '', false);
                 }
             }
             catch (err) {
@@ -38,13 +39,14 @@ class AuthServices {
             }
         });
     }
-    static resObj(email, role, isSuccess) {
+    static resObj(email, role, user_id, isSuccess) {
         return __awaiter(this, void 0, void 0, function* () {
             let loginRes = [];
             if (isSuccess) {
                 let obj = {
                     token: yield jwt_class_1.JWT.generateToken({
                         email: email,
+                        user_id: user_id,
                         role: role
                     }),
                     status: isSuccess
