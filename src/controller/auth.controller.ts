@@ -32,7 +32,7 @@ export class AuthController {
     let user_id = req.body.user_id;
     let password = req.body.password;
 
-    let authRes = await AuthServices.login(user_id, password);
+    let authRes : any = await AuthServices.login(user_id, password);
     if(authRes[0].status){
       let succRes = await ResponseHandler.info(authRes, message.login.succ);
       return res.status(200).send(succRes);

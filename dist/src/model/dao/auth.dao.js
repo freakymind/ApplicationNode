@@ -16,9 +16,9 @@ class AuthDAO {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 let coll = yield db_config_1.DbConn.getUserColl();
-                let cursor = yield coll.find({ "user.user_email": username })
-                    .project({ _id: 0, "user.user_password": 1, "user.password_salt": 1,
-                    "user.user_email": 1, "user.user_role": 1 })
+                let cursor = yield coll.find({ "user_email": username })
+                    .project({ _id: 0, "user_password": 1, "password_salt": 1,
+                    "user_email": 1, "user_role": 1 })
                     .toArray();
                 return cursor;
             }

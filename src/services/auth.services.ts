@@ -10,6 +10,7 @@ import { AuthDAO } from '../model/dao/auth.dao';
 import { Utill } from '../util/utill.methods';
 import { JWT } from '../model/class/jwt.class';
 import { message } from '../util/text.config';
+import { log } from '../log/log.config';
 //Auth services class
 export class AuthServices {
   /**
@@ -22,34 +23,55 @@ export class AuthServices {
   static async login(username: string, password: string) {
     try {
       let authRes = await AuthDAO.authenticate(username);
-      if(authRes.length > 0) {
-        let hashPw = await Utill.generatePassword(password, authRes[0].user[0].password_salt);
-        if (hashPw == authRes[0].user[0].user_password) {
-        let loginRes = [{
-          token: await JWT.generateToken({
-            email: authRes[0].user[0].user_email,
-            role: authRes[0].user[0].user_role
-          }),
-            status: true
-          }]
-        return loginRes;
-        } else {
-        let loginRes = [{
-          status: false
-        }]
-        return loginRes;
+      
+      if(authRes.length > 0){
+        let user_email = authRes[0].user_email;
+        let user_role = authRes[0].user_role;
+
+        let salt = authRes[0].password_salt;
+        let userPw = authRes[0].user_password;
+        let hashPw = await Utill.generatePassword(password, salt);
+
+        if(hashPw == userPw) {
+          return await this.resObj(user_email, user_role, true);
         }
+        return await this.resObj('', '', false);
+
       }
       else {
-        let loginRes = [{
-          status: false,
-          msg : message.login.user_not_found
-        }]
-        return loginRes;
+        return await this.resObj('', '', false);
       }
+    } catch (err) {
+      log.error(err);
     }
-    catch (err) {
-      throw err;
+  }
+
+  //Method for generating response Object
+  static async resObj(email: string, role: string,
+    isSuccess: boolean) {
+
+    let loginRes = [];
+
+    if (isSuccess) {
+
+      let obj = {
+        token: await JWT.generateToken({
+          email: email,
+          role: role
+        }),
+        status: isSuccess
+      };
+
+      loginRes.push(obj);
     }
+    else {
+
+      let obj = {
+        status: isSuccess
+      };
+
+      loginRes.push(obj);
+    }
+    return loginRes;
   }
 }

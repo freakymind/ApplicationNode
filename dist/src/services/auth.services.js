@@ -12,42 +12,52 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const auth_dao_1 = require("../model/dao/auth.dao");
 const utill_methods_1 = require("../util/utill.methods");
 const jwt_class_1 = require("../model/class/jwt.class");
-const text_config_1 = require("../util/text.config");
+const log_config_1 = require("../log/log.config");
 class AuthServices {
     static login(username, password) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 let authRes = yield auth_dao_1.AuthDAO.authenticate(username);
                 if (authRes.length > 0) {
-                    let hashPw = yield utill_methods_1.Utill.generatePassword(password, authRes[0].user[0].password_salt);
-                    if (hashPw == authRes[0].user[0].user_password) {
-                        let loginRes = [{
-                                token: yield jwt_class_1.JWT.generateToken({
-                                    email: authRes[0].user[0].user_email,
-                                    role: authRes[0].user[0].user_role
-                                }),
-                                status: true
-                            }];
-                        return loginRes;
+                    let user_email = authRes[0].user_email;
+                    let user_role = authRes[0].user_role;
+                    let salt = authRes[0].password_salt;
+                    let userPw = authRes[0].user_password;
+                    let hashPw = yield utill_methods_1.Utill.generatePassword(password, salt);
+                    if (hashPw == userPw) {
+                        return yield this.resObj(user_email, user_role, true);
                     }
-                    else {
-                        let loginRes = [{
-                                status: false
-                            }];
-                        return loginRes;
-                    }
+                    return yield this.resObj('', '', false);
                 }
                 else {
-                    let loginRes = [{
-                            status: false,
-                            msg: text_config_1.message.login.user_not_found
-                        }];
-                    return loginRes;
+                    return yield this.resObj('', '', false);
                 }
             }
             catch (err) {
-                throw err;
+                log_config_1.log.error(err);
             }
+        });
+    }
+    static resObj(email, role, isSuccess) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let loginRes = [];
+            if (isSuccess) {
+                let obj = {
+                    token: yield jwt_class_1.JWT.generateToken({
+                        email: email,
+                        role: role
+                    }),
+                    status: isSuccess
+                };
+                loginRes.push(obj);
+            }
+            else {
+                let obj = {
+                    status: isSuccess
+                };
+                loginRes.push(obj);
+            }
+            return loginRes;
         });
     }
 }

@@ -21,9 +21,9 @@ export class AuthDAO {
   static async authenticate(username: string) {
     try {
       let coll = await DbConn.getUserColl();
-      let cursor = await coll.find({ "user.user_email": username })
-        .project({ _id: 0, "user.user_password": 1 , "user.password_salt" : 1,
-        "user.user_email" : 1, "user.user_role" : 1})
+      let cursor = await coll.find({ "user_email": username })
+        .project({ _id: 0, "user_password": 1 , "password_salt" : 1,
+        "user_email" : 1, "user_role" : 1})
         .toArray();
       return cursor;  
     }
