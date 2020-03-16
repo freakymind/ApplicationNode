@@ -12,11 +12,11 @@ export class ProductService {
     try {
       log.info("enters into the productservice");
 
-      console.log("dao")
+      // console.log("dao")
       let productarray: any = {
         products: [product]
       }
-      console.log(productarray.products[0].company_Ref,"companyreference")
+      // console.log(productarray.products[0].company_Ref,"companyreference")
       let getcompany = await ProductDao.findCompany(productarray.products[0].company_Ref);
 
       if (getcompany) {
@@ -28,7 +28,7 @@ export class ProductService {
         else {
           let saveProduct = await ProductDao.updateProducts(productarray.products[0]);
           if (saveProduct) {
-            console.log(saveProduct,"product created successffully")
+            // console.log(saveProduct,"product created successffully")
             let response = ResponseHandler.info({}, "product created successfully")
             return response;
           }

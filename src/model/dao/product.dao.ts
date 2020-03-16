@@ -18,7 +18,7 @@ export class ProductDao {
       }
       );
       if (saveproductdb) {
-        console.log(saveproductdb, "savedresult")
+        // console.log(saveproductdb, "savedresult")
         return saveproductdb;
       }
     }
@@ -53,10 +53,10 @@ export class ProductDao {
 
 
   static async findProducts(productname: any) {
-    console.log(productname, "productname")
+    // console.log(productname, "productname")
     try {
       let db = await DbConn.getCompColl();
-      console.log("entry to query");
+      // console.log("entry to query");
       let productdata =
         await db.aggregate([
           { "$unwind": "$products" },
@@ -65,7 +65,7 @@ export class ProductDao {
         ]).toArray();
 
 
-   console.log(productdata,"queryresult")
+  //  console.log(productdata,"queryresult")
       if (productdata.length > 0) {
         return productdata;
       }
@@ -77,7 +77,7 @@ export class ProductDao {
 
   static async findCompany(companyref: any) {
     try {
-      console.log("enters into dao")
+      // console.log("enters into dao")
       let db = await DbConn.getCompColl();
       let companydata = await db.findOne({ "company_name": companyref });
       if (companydata) {
