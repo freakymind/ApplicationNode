@@ -21,7 +21,7 @@ export class DbConn {
   private static url: any = "mongodb+srv://"+process.env.ATLAS_USER_NAME+':'+process.env.ATLAS_PW+'@cluster0-ysylc.mongodb.net/test?retryWrites=true&w=majority'
   private static options: object = {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,   
   };
   //Method for getting connection object
   static async getConnObj() {

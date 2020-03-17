@@ -8,9 +8,7 @@
 
 //product class
 
-export class Product {
-
- 
+export class Product { 
     private product_id: String;
     private product_Name:String;
     private product_dimensions: String;

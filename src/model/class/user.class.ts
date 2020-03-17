@@ -25,7 +25,7 @@ export abstract class User {
   
 
   constructor(name: string, email: string, password : string, mobile: string, country: string,
-  salt : string, address : string) {  
+  salt : string, address : string,role:string) {  
     this.user_id = this.generateUserId();
     this.user_name = name;
     this.user_email = email;
@@ -34,7 +34,7 @@ export abstract class User {
     this.user_address = address;
     this.password_salt = salt;
     this.user_password = password;
-    this.user_role = this.setRole();
+    this.user_role = role;
     this.user_status = this.setStatus();
     this.created_on = new Date();
     this.updated_on = new Date();
@@ -46,7 +46,7 @@ export abstract class User {
   }
 
   abstract generateUserId() : string;
-  abstract setRole() : string;
+  // abstract setRole() : string;
 
   //Required getter methods
   getUserId() {

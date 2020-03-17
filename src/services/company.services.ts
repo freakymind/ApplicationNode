@@ -35,7 +35,7 @@ export class CompanyServices {
     } catch (err) {
       log.error(err);
     }
-    finally {
+    finally {``
       await session.endSession();
     }
 

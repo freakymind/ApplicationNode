@@ -6,6 +6,9 @@ import { AppError } from '../util/response.config';
 import { Distributor } from '../model/class/distributor.class';
 import { DistributorService } from '../services/distributor.services';
 import { log } from '../log/log.config';
+import { Utill } from '../util/utill.methods';
+import { role } from '../util/common.config';
+import { CompanyAdmin } from '../model/class/company_admin.class.';
 
 /**
  * common config
@@ -27,10 +30,17 @@ export class DistributorClass {
       let referenceBy: string = req.body.reference_by;
       let name: string = req.body.name;
       let email: string = req.body.email;
-      let mobile: number = req.body.mobile;
-      let country: number = req.body.country;
-      let distributor = new Distributor(name, email, mobile, country, referenceBy);
-      let adddistributor = await DistributorService.adddistributor(distributor);
+      let mobile: string = req.body.mobile;
+      let country: string = req.body.country;
+      let address:string = req.body.address;
+      let password:string = "Ojas1525";
+      let user_role :string = role.distributor; 
+
+      let salt : string = await Utill.generateSalt();
+      let hashPw : string = await Utill.generatePassword(password, salt);
+      let companyUser = new CompanyAdmin(name, email, hashPw, mobile, country, salt, address,user_role);
+      let distributor = new Distributor (email, mobile,referenceBy,companyUser.getUserId());
+      let adddistributor = await DistributorService.adddistributor(companyUser,distributor);
       console.log(adddistributor);
       res.send(adddistributor);
       //res.send( ResponseHandler.info(adddistributor,"adddistributor.message"));
@@ -51,9 +61,9 @@ export class DistributorClass {
       let updateBy: string = req.body.update_by;
       let name: string = req.body.name;
       let email: string = req.body.email;
-      let mobile: number = req.body.mobile;
-      let country: number = req.body.country;
-      let updateDistributor: any = new Distributor(name, email, mobile, country, updateBy);
+      let mobile: string = req.body.mobile;
+      let country: string = req.body.country;
+      let updateDistributor: any = new Distributor(name, email, mobile, country);
       let updateDistributorList = await DistributorService.updateDistributorDetails(updateDistributor);
       console.log(updateDistributorList);
       return res.send(updateDistributorList);

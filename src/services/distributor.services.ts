@@ -1,6 +1,9 @@
 import { DistributorDao } from '../model/dao/distributor.dao';
-import { response } from 'express';
-import e = require('express');
+import { DbConn } from '../config/db.config';
+import { UserDAO } from '../model/dao/user.dao';
+import { transactionOptions } from '../util/common.config';
+import e, { response } from 'express';
+// import e = require('express');
 /**
  * common config
  * This file will add the distributors,and update the distributors list,delete distributors
@@ -23,62 +26,76 @@ export class DistributorService {
 * @return return response
 **/
 
-  static async adddistributor(dist_obj: any) {
+  static async adddistributor(user: any, dist_obj: any) {
+    let conn = await DbConn.getConnObj();
+    const session = await conn.startSession();
     try {
-      let distributorUserObj: object = {
-        user_name: dist_obj.user_namem,
-        user_id: dist_obj.user_id,
-        user_email: dist_obj.user_email,
-        user_randomPassword: dist_obj.randomPassword,
-        user_password: dist_obj.user_password,
-        user_mobile: dist_obj.user_mobile,
-        user_country: dist_obj.user_country,
-        user_role: dist_obj.user_role,
-        user_status: dist_obj.user_status,
-        user_referenceBy: dist_obj.referenceBy
-      }
+      // let distributorUserObj: object = {
+      //   user_name: dist_obj.user_namem,
+      //   user_id: dist_obj.user_id,
+      //   user_email: dist_obj.user_email,
+      //   user_randomPassword: dist_obj.randomPassword,
+      //   user_password: dist_obj.user_password,
+      //   user_mobile: dist_obj.user_mobile,
+      //   user_country: dist_obj.user_country,
+      //   user_role: dist_obj.user_role,
+      //   user_status: dist_obj.user_status,
+      //   user_referenceBy: dist_obj.referenceBy
+      // }
       let prodcut: object = {
         product_id: "",
         prodcut_name: ""
       }
       let distributor: object = {
         distributor_id: dist_obj.user_id,
-        distributor_name: dist_obj.user_name,
-        products: [prodcut]
+        distributor_email: dist_obj.email,
+        distributor_mobile: dist_obj.mobile,
+        createdBy: dist_obj.referenceBy,
+        products: []
       }
 
       let referenceBy: string = dist_obj.referenceBy;
+
+
       if (referenceBy) {
         // checking the created user exit or not
         let checkUserEmail = await DistributorDao.checkUser(referenceBy);
 
-        if (checkUserEmail) {
+        if (checkUserEmail.length > 0) {
           console.log(checkUserEmail);
           //check the roles of the person
-          if (ROLE.includes(checkUserEmail.user[0].user_role)) {
-            let userEmail: string = dist_obj.user_email;
+          if (ROLE.includes(checkUserEmail[0].user_role)) {
+            let userEmail: string = dist_obj.email;
             //check the user exit or not
             let checkUser = await DistributorDao.checkUser(userEmail);
-            if (checkUser) {
+            if (checkUser.length > 0) {
 
               return await this.responseMsg(1, "user already registered");
 
             } else {
-              let addDistributor = await DistributorDao.distributorDao(distributorUserObj);
-
-              if (addDistributor.modifiedCount == 1) {
-                let addProdcuts = await DistributorDao.addProducts(distributor);
-                if (addProdcuts.modifiedCount == 1) {
-                  return await this.responseMsg(0, "successfully registered");
+              //transaction starts
+              await session.startTransaction();
+              var saveUser = await UserDAO.saveUser(user, session);
+              if (saveUser) {
+                var saveDistributor = await DistributorDao.distributorDao(distributor, session);
+                if (saveDistributor.modifiedCount == 1) {
+                  //if successfully get the response then commit the transaction
+                  await session.commitTransaction();
+                  //end the session
+                  await session.endSession();
+                  return await this.responseMsg(0, "Successfully registered");
                 } else {
+                  //abort the transaction
+                  await session.abortTransaction();
+                  session.endSession();
                   return await this.responseMsg(1, "failed while update the data");
                 }
-
               } else {
+                await session.abortTransaction();
+                session.endSession();
                 return await this.responseMsg(1, "failed while update the data");
-              }
+              }             
             }
-
           } else {
             return await this.responseMsg(1, "user Not found");
           }
@@ -87,6 +104,8 @@ export class DistributorService {
         }
       }
     } catch (err) {
+      await session.abortTransaction();
+      session.endSession();
       return err;
     }
   }
@@ -106,7 +125,7 @@ export class DistributorService {
       let getuserDetails = await DistributorDao.checkUser(distObject.user_email)
       if (getuserDetails) {
         console.log("get user details", getuserDetails);
-        let updateUserDetails: any = await DistributorDao.updateUser(distObject,getuserDetails[0].user.user_id);
+        let updateUserDetails: any = await DistributorDao.updateUser(distObject, getuserDetails[0].user.user_id);
         if (updateUserDetails.modifiedCount == 1) {
           console.log(updateUserDetails);
           console.log("successs");
@@ -121,29 +140,29 @@ export class DistributorService {
   }
 
 
-   /**
- * @desc this method for delete the distributor .
- * @method deleteDistributorDetails
- * @param email:string -email of the distributor 
- * @return return message and status code
- **/
-  
-  static async deleteDistributordetails(email:string) {
-    try{
-      let validateUser  = await DistributorDao.checkUser(email);
-      if(validateUser) {
+  /**
+* @desc this method for delete the distributor .
+* @method deleteDistributorDetails
+* @param email:string -email of the distributor 
+* @return return message and status code
+**/
+
+  static async deleteDistributordetails(email: string) {
+    try {
+      let validateUser = await DistributorDao.checkUser(email);
+      if (validateUser) {
         let deleteDistributor = await DistributorDao.deleteUser(email);
-        if(deleteDistributor.modifiedCount == 1) {
-          return await this.responseMsg(0,"successfully deleted");
+        if (deleteDistributor.modifiedCount == 1) {
+          return await this.responseMsg(0, "successfully deleted");
         } else {
-         return await this.responseMsg(1, "failed to delete");
+          return await this.responseMsg(1, "failed to delete");
         }
       } else {
-        return await this.responseMsg(1,"user not found");
+        return await this.responseMsg(1, "user not found");
       }
-     
-    }catch(err) {
-      return await this.responseMsg(1,`${err}`);
+
+    } catch (err) {
+      return await this.responseMsg(1, `${err}`);
     }
   }
 

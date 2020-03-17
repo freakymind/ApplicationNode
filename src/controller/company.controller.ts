@@ -14,6 +14,7 @@ import { Company } from '../model/class/comapny.class';
 import { CompanyServices } from '../services/company.services';
 import { log } from '../log/log.config';
 import { Utill } from '../util/utill.methods';
+import { role } from '../util/common.config';
 //import * as passwordHash from 'password-hash';
 
 export class CompanyController {
@@ -32,18 +33,20 @@ export class CompanyController {
     let password : string = req.body.password;
     let mobile: string = req.body.mobile;
     let country: string = req.body.country;
-    let address: string = req.body.address;
+    let address: string = req.body.address;    
     
 
     let company_name: string = req.body.company_name;
     let company_email: string = req.body.company_email;
     let company_mobile : string = req.body.company_mobile;
     let company_address: string = req.body.company_address;
+    let user_role :string = role.company_admin; 
 
     let salt : string = await Utill.generateSalt();
     let hashPw : string = await Utill.generatePassword(password, salt);
+   
     
-    let user = new CompanyAdmin(user_name, email, hashPw, mobile, country, salt, address);
+    let user = new CompanyAdmin(user_name, email, hashPw, mobile, country, salt, address,user_role);
     let company = new Company(company_name, company_email, company_mobile, company_address, user.getUserId());
 
     try {

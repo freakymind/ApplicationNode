@@ -8,21 +8,21 @@
 
 import { User } from './user.class';
 import { Utill } from '../../util/utill.methods';
-import { role } from '../../util/common.config';
+// import { role } from '../../util/common.config';
 
 //Defining company admin class
 export class CompanyAdmin extends User{
 
   constructor(name: string, email: string, password: string, mobile: string, country: string,
-    salt: string, address: string) {
+    salt: string, address: string,role:string) {
     //user class constructor called  
-    super(name, email, password, mobile, country, salt, address);
+    super(name, email, password, mobile, country, salt, address,role);
   }
 
   generateUserId(): string {
     return 'DSC-USER-' + Utill.getRandomString();
   } 
-  setRole(): string {
-    return role.company_admin;
-  }
+  // setRole(): string {
+  //   return role.company_admin;
+  // }
 }

@@ -4,16 +4,14 @@ import { log } from '../../log/log.config';
 
 export class DistributorDao {
 
-  static async distributorDao(distObj: any) {
+  static async distributorDao(distObj: any,session:any) {
     try {
-      let Db = await DbConn.getUserColl();
-      let addDistributor = await Db.updateOne({ "user.user_email": distObj.user_referenceBy }, {
+      let Db = await DbConn.getCompColl();
+      let addDistributor = await Db.updateOne({ "company_email": distObj.createdBy}, {
         $push: {
-          "user": {
-            $each: [distObj]
-          }
+          "distributors": distObj 
         }
-      });
+      },{session});
       return addDistributor;
     } catch (err) {
       return err;
@@ -24,11 +22,12 @@ export class DistributorDao {
     try {
       let Db = await DbConn.getUserColl();
      
-      let checkUserDetails = await Db.aggregate([
-        {"$unwind":"$user"},
-        {"$match":{"user.user_email":email,"user.user_status":true}},
-            {"$project":{"user":1,_id:0}}
-      ]).toArray();
+      // let checkUserDetails = await Db.aggregate([
+      //   {"$unwind":"$user"},
+      //   {"$match":{"user.user_email":email,"user.user_status":true}},
+      //       {"$project":{"user":1,_id:0}}
+      // ]).toArray();
+      let checkUserDetails = await Db.find({"user_email":email}).toArray();
       console.log(checkUserDetails);
       return checkUserDetails;
     } catch (err) {
