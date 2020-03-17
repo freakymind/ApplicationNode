@@ -12,11 +12,11 @@ export class ProductService {
     try {
       log.info("enters into the productservice");
 
-      console.log("dao")
+      // console.log("dao")
       let productarray: any = {
         products: [product]
       }
-
+      // console.log(productarray.products[0].company_Ref,"companyreference")
       let getcompany = await ProductDao.findCompany(productarray.products[0].company_Ref);
 
       if (getcompany) {

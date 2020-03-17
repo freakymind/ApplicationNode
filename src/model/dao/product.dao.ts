@@ -7,8 +7,8 @@ export class ProductDao {
   static async saveproduct(products: any) {
     try {
 
-      let db = await DbConn.getUserColl();
-      let saveproductdb = await db.updateOne({ "comapny.compName": products.companyRef }, {
+      let db = await DbConn.getCompColl();
+      let saveproductdb = await db.updateOne({ "company_name": products.companyRef }, {
         $push: {
           "products": {
             $each:
@@ -18,6 +18,7 @@ export class ProductDao {
       }
       );
       if (saveproductdb) {
+        // console.log(saveproductdb, "savedresult")
         return saveproductdb;
       }
     }
@@ -29,9 +30,9 @@ export class ProductDao {
   static async updateProducts(products: any) {
     try {
 
-      let db = await DbConn.getUserColl();
+      let db = await DbConn.getCompColl();
 
-      let updateproduct = await db.updateOne({ "comapny.compName": products.company_Ref }, {
+      let updateproduct = await db.updateOne({ "company_name": products.company_Ref }, {
         $push: {
           "products": {
             $each:
@@ -52,16 +53,20 @@ export class ProductDao {
 
 
   static async findProducts(productname: any) {
-    console.log(productname, "productname")
+    // console.log(productname, "productname")
     try {
-      let db = await DbConn.getUserColl();
-      let productdata = await db.aggregate([
-        { "$unwind": "$products" },
-        { "$match": { "products.product_Name": productname } },
-        { "$project": { "products": 1, _id: 0 } }
-      ]).toArray();
-      if (productdata) {
-        console.log(productdata, "find")
+      let db = await DbConn.getCompColl();
+      // console.log("entry to query");
+      let productdata =
+        await db.aggregate([
+          { "$unwind": "$products" },
+          { "$match": { "products.product_Name": productname } },
+          { "$project": { "products": 1, _id: 0 } }
+        ]).toArray();
+
+
+  //  console.log(productdata,"queryresult")
+      if (productdata.length > 0) {
         return productdata;
       }
     }
@@ -72,9 +77,9 @@ export class ProductDao {
 
   static async findCompany(companyref: any) {
     try {
-
-      let db = await DbConn.getUserColl();
-      let companydata = await db.findOne({ "comapny.compName": companyref });
+      // console.log("enters into dao")
+      let db = await DbConn.getCompColl();
+      let companydata = await db.findOne({ "company_name": companyref });
       if (companydata) {
         return companydata;
       }
@@ -89,7 +94,7 @@ export class ProductDao {
       // console.log("enterstoupdate2")
       // console.log(product,"updateobjectin dao")
       // console.log(product.updated_on,"productupdation in dao")
-      let db = await DbConn.getUserColl();
+      let db = await DbConn.getCompColl();
       let updateproduct = await db.updateOne({ 'products.product_id': product.product_id }, {
         $set: {
           "products.$.product_id": product.product_id,
